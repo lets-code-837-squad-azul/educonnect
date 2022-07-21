@@ -1,30 +1,29 @@
-# Educonnect
+# EduConnect
 
 > Democratizando a educação e conectando pessoas. Estude gratuitamente!
 
-### O que é o Educonnect:
-
-Educonnect é uma plataforma de ensino a distância que tem como proposta unir pessoas que possuem dúvidas ou dificuldades em aprendizagem de algum assunto acadêmico e gostariam de orientação e explicação sobre determinado assunto ou matéria.
+### O que é o EduConnect:
+EduConnect é uma plataforma de ensino a distância que tem como proposta unir pessoas que possuem dúvidas ou dificuldades em aprendizagem de algum assunto acadêmico e gostariam de orientação e explicação sobre determinado assunto ou matéria.
 
 ### Nosso objetivo:
-Educonnect é uma iniciativa com o objetivo de unir pessoas que desejam compartilhar conhecimento com pessoas com dúvidas ou dificuldades de aprendizagem, tudo isso sem fins lucrativos e de forma remota. Ajudado a transformar vidas e incentivando jovens a construir uma sociedade mais justa e igualitária.
+EduConnect é uma iniciativa com o objetivo de unir pessoas que desejam compartilhar conhecimento com pessoas com dúvidas ou dificuldades de aprendizagem, tudo isso sem fins lucrativos e de forma remota. Ajudado a transformar vidas e incentivando jovens a construir uma sociedade mais justa e igualitária.
 
 ### Aluno: 
-Não sabe nada de uma matéria, pintou uma dúvida e tem vergonha de se expor na sala de aula, não sabe como fazer naquele exercício? Aqui você pode encontrar aquela força que faltava. Tire suas duvidas com um orientador em equipe ou individualmente. Participe, é de graça!
+Não sabe nada de uma matéria, pintou uma dúvida e tem vergonha de se expor na sala de aula, não sabe como fazer naquele exercício? Aqui você pode encontrar aquela força que faltava. Tire suas duvidas com um monitor em equipe ou individualmente. Participe, é de graça!
 
-### Orientador:
-Você quer ajudar a comunidade mas não sabe como fazer a diferença? Aqui o seu conhecimento acadêmico, técnico ou certificação podem fazer a diferença. Seja orientador de um aluno ou mais, ajude no engajamento de jovens e interessados num futuro brilhante e mais justo.
+### Monitor:
+Você quer ajudar a comunidade mas não sabe como fazer a diferença? Aqui o seu conhecimento acadêmico, técnico ou certificação podem fazer a diferença. Seja monitor de um aluno ou mais, ajude no engajamento de jovens e interessados num futuro brilhante e mais justo.
 
 ### Quem pode participar: 
 - Como aluno: qualquer pessoa que queira aprender, tirar dúvidas ou expandir seu conhecimento.
-- Como orientador: qualquer pessoa com formação acadêmica, técnica, cursos certificados pelo MEC ou que ainda esteja cursando.
+- Como monitor: qualquer pessoa com formação acadêmica, técnica, cursos certificados pelo MEC ou que ainda esteja cursando.
 
 ### Como funciona:
-1. Faça seu cadastro, escolha o seu perfil de usuário como orientador ou aluno, pesquise o assunto desejado; Exemplo: Matemática, história, inglês, programação, elétrica e etc.
-2. Defina o dia e horário desejado e combine no nosso chat como proceder à aula a ser ministrada pelo orientador.
+1. Faça seu cadastro, escolha o seu perfil de usuário como monitor ou aluno, pesquise o assunto desejado; Exemplo: Matemática, história, inglês, programação, elétrica e etc.
+2. Defina o dia e horário desejado e combine no nosso chat como proceder à aula a ser ministrada pelo monitor.
 3. Caso não encontre o assunto desejado envie para nós sua solicitação em : [atendimento@educonnect.com.br](mailto:atendimento@educonnect.com.br)
 4. Receba o histórico do chat e avisos por e-mail, conforme sua preferência.  
-5. Tenha a liberdade de utilizar outras plataformas, para auxiliar no ensino conforme definido orientador. Exemplo: chat, e-mail, Google Meet, Loom, WhatsApp, Telegram entre outros.
+5. Tenha a liberdade de utilizar outras plataformas, para auxiliar no ensino conforme definido monitor. Exemplo: chat, e-mail, Google Meet, Loom, WhatsApp, Telegram entre outros.
 
 ### Seja um EduConect apoiador e compartilhe nossos ideais:
 Envie este e-mail para um amigo:
