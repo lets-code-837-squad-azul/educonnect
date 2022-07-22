@@ -2,7 +2,7 @@
 
 > Democratizando a educação e conectando pessoas. Estude gratuitamente!
 
-
+Acesse o site do EduConnect [aqui](https://lets-code-837-squad-azul.github.io/educonnect/)!
 
 ### O que é o EduConnect:
 EduConnect é uma plataforma de ensino a distância que tem como proposta unir pessoas que possuem dúvidas ou dificuldades em aprendizagem de algum assunto acadêmico e gostariam de orientação e explicação sobre determinado assunto ou matéria.
@@ -23,7 +23,7 @@ Você quer ajudar a comunidade mas não sabe como fazer a diferença? Aqui o seu
 ### Como funciona:
 1. Faça seu cadastro, escolha o seu perfil de usuário como monitor ou aluno, pesquise o assunto desejado; Exemplo: Matemática, história, inglês, programação, elétrica e etc.
 2. Defina o dia e horário desejado e combine no nosso chat como proceder à aula a ser ministrada pelo monitor.
-3. Caso não encontre o assunto desejado envie para nós sua solicitação em : [atendimento@educonnect.com.br](mailto:atendimento@educonnect.com.br)
+3. Caso não encontre o assunto desejado envie para nós sua solicitação em: [atendimento@educonnect.com.br](mailto:atendimento@educonnect.com.br)
 4. Receba o histórico do chat e avisos por e-mail, conforme sua preferência.  
 5. Tenha a liberdade de utilizar outras plataformas, para auxiliar no ensino conforme definido monitor. Exemplo: chat, e-mail, Google Meet, Loom, WhatsApp, Telegram entre outros.
 
@@ -48,9 +48,9 @@ Educonnect, democratizando a educação e conectando pessoas.
 
 ### Idealizadores:
 
-[Décio Santana de Aguiar](https://github.com/Decioagu)
+Décio Santana de Aguiar: [GitHub](https://github.com/Decioagu) [LinkedIn]()
 
-[Grabriela Gomes Nogueira Sales](https://github.com/gabriela-gnsales)
+Gabriela Gomes Nogueira Sales: [GitHub](https://github.com/gabriela-gnsales) [LinkedIn](https://www.linkedin.com/in/gabriela-gomes-nogueira-sales-196876220/)
 
 [Josué Rodrigo Evangelista Figueirêdo](https://github.com/Josuerodrigojr)
 
