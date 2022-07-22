@@ -2,6 +2,8 @@
 
 > Democratizando a educação e conectando pessoas. Estude gratuitamente!
 
+
+
 ### O que é o EduConnect:
 EduConnect é uma plataforma de ensino a distância que tem como proposta unir pessoas que possuem dúvidas ou dificuldades em aprendizagem de algum assunto acadêmico e gostariam de orientação e explicação sobre determinado assunto ou matéria.
 
@@ -9,7 +11,7 @@ EduConnect é uma plataforma de ensino a distância que tem como proposta unir p
 EduConnect é uma iniciativa com o objetivo de unir pessoas que desejam compartilhar conhecimento com pessoas com dúvidas ou dificuldades de aprendizagem, tudo isso sem fins lucrativos e de forma remota. Ajudado a transformar vidas e incentivando jovens a construir uma sociedade mais justa e igualitária.
 
 ### Aluno: 
-Não sabe nada de uma matéria, pintou uma dúvida e tem vergonha de se expor na sala de aula, não sabe como fazer naquele exercício? Aqui você pode encontrar aquela força que faltava. Tire suas duvidas com um monitor em equipe ou individualmente. Participe, é de graça!
+Não sabe nada de uma matéria, pintou uma dúvida e tem vergonha de se expor na sala de aula, não sabe como fazer naquele exercício? Aqui você pode encontrar aquela força que faltava. Tire suas dúvidas com um monitor em equipe ou individualmente. Participe, é de graça!
 
 ### Monitor:
 Você quer ajudar a comunidade mas não sabe como fazer a diferença? Aqui o seu conhecimento acadêmico, técnico ou certificação podem fazer a diferença. Seja monitor de um aluno ou mais, ajude no engajamento de jovens e interessados num futuro brilhante e mais justo.
