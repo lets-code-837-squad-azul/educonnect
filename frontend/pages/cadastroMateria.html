@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Matéria</title>
+</head>
+<body>
+    <main>
+
+        <h1>Olá, monitor(a) Fulano!</h1>
+
+        <h2>Cadastre a matéria que deseja realizar a monitoria</h2>
+
+        <form class="form" action="">
+
+            <label for="materiaMonitoria"><p>Nome da matéria:</p></label>
+            <select name="select">
+                <option value="linguaPortuguesa" selected required>Língua Portuguesa</option>
+                <option value="linguaInglesa">Língua Inglesa</option>
+                <option value="matematica">Matemática</option>
+                <option value="biologia">Biologia</option>
+                <option value="fisica">Física</option>
+                <option value="quimica">Química</option>
+                <option value="geografia">Geografia</option>
+                <option value="historia">História</option>
+                <option value="filosofia">Filosofia</option>
+                <option value="sociologia">Sociologia</option>
+                <option value="artes">Artes</option>
+                <option value="educacaoFisica">Educação Física</option>
+            </select>
+            <p>
+                Outra: <input name="materiaMonitoria" type="text">
+            </p>
+            
+            <!-- <label for="instituicaoEnsino"><p>Instituição de ensino:</p></label>
+            <input name="instituicaoEnsino" type="text">
+
+            <label for="formacaoAcademica"><p>Formação acadêmica:</p></label>
+            <input name="formacaoAcademica" type="text">
+
+            <p>
+                <input name="concluido" type="radio" value="concluido"> 
+                <label for="formacaoAcademica">Concluído</label>
+                
+                <input name="concluido" type="radio" value="concluido"> 
+                <label for="formacaoAcademica">Cursando</label>
+            </p> -->
+
+            <p>
+                Definina o dia da semana e horário para realizar sua monitoria:
+            </p>
+
+            <!-- <table border="1">
+                <tr>
+                    <th></th>
+                    <th>Domingo</th>
+                    <th>Segunda-feira</th>
+                    <th>Terça-feira</th>
+                    <th>Quarta-feira</th>
+                    <th>Quinta-feira</th>
+                    <th>Sexta-feira</th>
+                    <th>Sábado</th>
+                </tr>
+                <tr>
+                    <td><label for="">06:00</label></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">07:00</label></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">08:00</label></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                    <td><input name="" type="radio" value=""></td>
+                </tr>
+            </table> -->
+
+            <br> <!-- excluir depois o br -->
+
+            <table border="1">
+                <tr>
+                    <th>
+                        Dia da semana
+                    </th>
+                    <th>
+                        Horário início
+                    </th>
+                    <th>
+                        Horário fim
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="select">
+                            <option value="domingo" selected required>Domingo</option>
+                            <option value="segunda">Segunda-feira</option>
+                            <option value="terça">Terça-feira</option>
+                            <option value="quarta">Quarta-feira</option>
+                            <option value="quinta">Quinta-feira</option>
+                            <option value="sexta">Sexta-feira</option>
+                            <option value="sabado">Sábado</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="time" id="hora" name="horaInicio" required>
+                    </td>
+                    <td>
+                        <input type="time" id="hora" name="horaFim" required>
+                    </td>
+                </tr>
+            </table>
+
+            <button>+</button>
+
+            <br> <!-- excluir depois o br -->
+
+            <button>Cadastrar</button>
+
+            <button>Voltar</button>
+
+        </form>
+    </main>    
+</body>
+</html>

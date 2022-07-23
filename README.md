@@ -25,7 +25,7 @@ Você quer contribuir para a democratização da educação e não sabe como? Aq
 4. Receba por e-mail o histórico do seu chat com os monitores e demais notificações de sua preferência.  
 5. Tenha a liberdade de utilizar outras plataformas para auxiliar no ensino, conforme definido em conjunto com o monitor. Exemplo: WhatsApp, Telegram, Google Meet, Microsoft Teams, entre outros.
 
-### Seja um apoiador do EduConect e compartilhe nossas ideias:
+### Seja um apoiador do EduConnect e compartilhe nossas ideias:
 
 Envie este e-mail para um amigo:
 
@@ -34,7 +34,7 @@ Olá, somos o EduConnect!
 
 Se você recebeu esse e-mail é porque algum amigo lembrou de você.
 Venha fazer parte de uma plataforma de ensino a distância, 100% gratuita, que tem como objetivo pomover a democratização da educação.
-Está curioso? Acesse nosso site: <https://lets-code-837-squad-azul.github.io/educonnect/>
+Está curioso? Acesse nosso site: https://lets-code-837-squad-azul.github.io/educonnect/
 
 EduConnect, democratizando a educação e conectando pessoas!
 ```
