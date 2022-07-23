@@ -2,7 +2,7 @@
 
 > Democratizando a educação e conectando pessoas. Estude gratuitamente!
 
-Acesse o site do EduConnect [aqui](https://lets-code-837-squad-azul.github.io/educonnect/)!
+**Acesse o site do EduConnect [aqui](https://lets-code-837-squad-azul.github.io/educonnect/)!**
 
 ### O que é o EduConnect:
 O EduConnect é uma plataforma de ensino que tem como objetivo viabilizar a conexão de pessoas que necessitam de algum apoio em determinado assunto acadêmico com pessoas dispostas a ensiar e que desejam compartilhar seu conhecimento.
@@ -34,7 +34,7 @@ Olá, somos o EduConnect!
 
 Se você recebeu esse e-mail é porque algum amigo lembrou de você.
 Venha fazer parte de uma plataforma de ensino a distância, 100% gratuita, que tem como objetivo pomover a democratização da educação.
-Está curioso? Acesse nosso site: https://lets-code-837-squad-azul.github.io/educonnect/
+Está curioso? Acesse nosso site: <https://lets-code-837-squad-azul.github.io/educonnect/>
 
 EduConnect, democratizando a educação e conectando pessoas!
 ```
