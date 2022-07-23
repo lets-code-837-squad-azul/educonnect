@@ -1,3 +1,21 @@
+input[type=text] {
+    width: 50%;
+}
+
+input[type=email] {
+    width: 50%;
+}
+
+input[type=tel] {
+    width: 50%;
+}
+
+input[type=password] {
+    width: 50%;
+}
+
+
 .form {
-    display: flex;
+    box-sizing: border-box;
+    margin-left: 30%;
 }
