@@ -8,7 +8,9 @@ requireDir('./models');
 //  Iniciando a API
 const app = express();
 app.use(express.json());
-app.use('/api', require('./routes/index'));
+
+//  Fazendo o require das rotas (GERENCIADOR DE ROTAS)
+app.use('/api', require('./routes/index.routes')); //DÉCIO
 
 //  Testando a conexão com o banco de dados
 (async () => {
