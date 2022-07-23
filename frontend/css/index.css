@@ -36,9 +36,17 @@ body {
  
   }
 
-  h1 {
+  h1, h2 {
     text-align: center;
-    font-family: var(--fonte-inicio);
+    font-family: var(--fonte-padrao);
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
   }
 
   input, label, select, p {
@@ -59,16 +67,16 @@ label {
 
 }
 
-  input {
-    border-radius: 10px;
+input {
+  border-radius: 10px;
+  width: 18em;
+  height: 2em;
+  padding-left: 10px;
+}
+
+select {
+    border-radius: 5px;
     width: 18em;
     height: 2em;
     padding-left: 10px;
-  }
-
-  select {
-      border-radius: 5px;
-      width: 13em;
-      height: 2em;
-      padding-left: 10px;
-  }
+}
