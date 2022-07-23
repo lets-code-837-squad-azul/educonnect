@@ -19,24 +19,23 @@
 
         <form class="form" action="">
 
-            <label for="materiaMonitoria"><p>Nome da matéria:</p></label>
-            <select name="select" autofocus>
-                <option value="linguaPortuguesa" selected required>Língua Portuguesa</option>
-                <option value="linguaInglesa">Língua Inglesa</option>
-                <option value="matematica">Matemática</option>
-                <option value="biologia">Biologia</option>
-                <option value="fisica">Física</option>
-                <option value="quimica">Química</option>
-                <option value="geografia">Geografia</option>
-                <option value="historia">História</option>
-                <option value="filosofia">Filosofia</option>
-                <option value="sociologia">Sociologia</option>
-                <option value="artes">Artes</option>
-                <option value="educacaoFisica">Educação Física</option>
+            <select id="materiaMonitoria" name="materiaMonitoria" autofocus>
+                <option value="" disabled selected hidden>Lista de matérias</option>
+                <option value="Língua Portuguesa">Língua Portuguesa</option>
+                <option value="Língua Inglesa">Língua Inglesa</option>
+                <option value="Matemática">Matemática</option>
+                <option value="Biologia">Biologia</option>
+                <option value="Física">Física</option>
+                <option value="Química">Química</option>
+                <option value="Geografia">Geografia</option>
+                <option value="História">História</option>
+                <option value="Filosofia">Filosofia</option>
+                <option value="Sociologia">Sociologia</option>
+                <option value="Artes">Artes</option>
+                <option value="Educção Física">Educação Física</option>
             </select>
-            <p>
-                Outra: <input name="materiaMonitoria" type="text">
-            </p>
+
+            <label>Outra: <input type="text" id="OutraMateriaMonitoria" name="materiaMonitoria" /></label>
             
             <!-- <label for="instituicaoEnsino"><p>Instituição de ensino:</p></label>
             <input name="instituicaoEnsino" type="text">
@@ -52,99 +51,59 @@
                 <label for="formacaoAcademica">Cursando</label>
             </p> -->
 
-            <p>
-                Definina o dia da semana e horário para realizar sua monitoria:
-            </p>
-
-            <!-- <table border="1">
-                <tr>
-                    <th></th>
-                    <th>Domingo</th>
-                    <th>Segunda-feira</th>
-                    <th>Terça-feira</th>
-                    <th>Quarta-feira</th>
-                    <th>Quinta-feira</th>
-                    <th>Sexta-feira</th>
-                    <th>Sábado</th>
-                </tr>
-                <tr>
-                    <td><label for="">06:00</label></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                </tr>
-                <tr>
-                    <td><label for="">07:00</label></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                </tr>
-                <tr>
-                    <td><label for="">08:00</label></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                    <td><input name="" type="radio" value=""></td>
-                </tr>
-            </table> -->
+            <h3>Definina o dia da semana e horário para realizar sua monitoria:</h3>
 
             <br> <!-- excluir depois o br -->
 
-            <table border="1">
-                <tr>
-                    <th>
-                        Dia da semana
-                    </th>
-                    <th>
-                        Horário início
-                    </th>
-                    <th>
-                        Horário fim
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <select name="select">
-                            <option value="domingo" selected required>Domingo</option>
-                            <option value="segunda">Segunda-feira</option>
-                            <option value="terça">Terça-feira</option>
-                            <option value="quarta">Quarta-feira</option>
-                            <option value="quinta">Quinta-feira</option>
-                            <option value="sexta">Sexta-feira</option>
-                            <option value="sabado">Sábado</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="time" id="hora" name="horaInicio" required>
-                    </td>
-                    <td>
-                        <input type="time" id="hora" name="horaFim" required>
-                    </td>
-                </tr>
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Dia da semana</th>
+                        <th>Horário início</th>
+                        <th>Horário fim</th>
+                    </tr>
+                </thead>
+                <tbody id="listaMonitoria">
+                    <tr>
+                        <td>
+                            <select id="diaSemana" name="diaSemana" required>
+                                <option value="" disabled selected hidden>Escolha um dia</option>
+                                <option value="Domingo">Domingo</option>
+                                <option value="Segunda-feira">Segunda-feira</option>
+                                <option value="Terça-feira">Terça-feira</option>
+                                <option value="Quarta-feira">Quarta-feira</option>
+                                <option value="Quinta-feira">Quinta-feira</option>
+                                <option value="Sexta-feira">Sexta-feira</option>
+                                <option value="Sábado">Sábado</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="time" id="horaInicio" name="horaInicio" required>
+                        </td>
+                        <td>
+                            <input type="time" id="horaFim" name="horaFim" required>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
 
-            <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/macos-maximize.png"/></a>
+            <label style="color: red;" for="">Outro modelo de semana (escolher qual deixar): <input type="week" id="horaFim" name="horaFim"></label>
+
+            <abbr title="Adicionar mais um dia e horário"><a onclick="adicionarDiaHora()" href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/macos-maximize.png" alt="Adicionar mais um dia e horário"/></a></abbr>
+
+            <abbr title="Remover um dia e horário"><a onclick="removerDiaHora()" href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"/></a></abbr>
 
             <br> <!-- excluir depois o br -->
 
             <div class="bt-container">
-                <button class="bt-cadastrar">Cadastrar</button>
-                <button class="bt-voltar">Voltar</button>
+                <button type="submit" onclick="cadastrarMateria()" class="bt-cadastrar">Cadastrar</button>
+                <button type="reset" class="bt-voltar">Voltar</button>
             </div>
 
         </form>
     </main>  
+
+    <script src="../js/cadastroMateria.js"></script>
     
 </body>
 </html>

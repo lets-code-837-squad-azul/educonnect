@@ -5,8 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Monitor</title>
+    <link rel="stylesheet" href="./css/reset-min.css">
+    <link rel="stylesheet" href="./css/normalize-min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/components/button.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
 </head>
 <body>
+
+    <main>
+        <h1>Olá, monitor(a) Fulano!</h1>
+
+        <div class="bt-container">
+            <button type="submit" onclick="cadastrarMateria()" class="bt-cadastrar">Cadastrar matéria</button>
+
+            <button type="submit" onclick="editarCadMonitor()" class="bt-editar">Editar cadastro perfil</button>
+    
+            <button class="bt-sair">Sair</button>
+        </div>
+
+        <h2>Aulas agendadas</h2>
+
+        <table border="1">
+            <tr>
+                <th>
+                    Aluno(a)
+                </th>
+                <th>
+                    Dia da semana
+                </th>
+                <th>
+                    Horário início
+                </th>
+                <th>
+                    Horário fim
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <input name="aluno" id="aluno" type="text" disabled>
+                </td>
+                <td>
+                    <input name="diaSemana" id="diaSemana" type="text" disabled>
+                </td>
+                <td>
+                    <input type="time" id="hora" name="horaInicio" disabled>
+                </td>
+                <td>
+                    <input type="time" id="hora" name="horaFim" disabled>
+                </td>
+            </tr>
+        </table>
+
+        <div class="bt-container">
+            <button type="submit" onclick="iniciarChat()" class="bt-chat">Iniciar chat com o(a) aluno(a) </button>
+        </div>
+
+        <h2>Histórico de aulas</h2>
+
+        <div class="column">
+            <div class="card">
+                <label>Aula: <input type="text" id="aula" name="aula" disabled/></label>
+                <label>Matéria: <input type="text" id="materia" name="materia" disabled/></label>
+                <label>Aluno(a): <input type="text" id="aluno" name="aluno" disabled/></label>
+                <label>Data de início: <input type="date" id="dataInicio" name="dataInicio" disabled/></label>
+                <label>Última mensagem: <input type="date" id="ultimaMensagem" name="ultimaMensagem" disabled/></label>
+                <label>Status: <input type="text" id="status" name="status" disabled/></label>
+
+                <div class="bt-container-card">
+                    <button type="submit" onclick="visualizarChat()" class="bt-chat">Chat</button>
+                    <button type="submit" onclick="deletarChat()" class="bt-deletar">Deletar</button>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../js/telaMonitor.js"></script>
     
 </body>
 </html>

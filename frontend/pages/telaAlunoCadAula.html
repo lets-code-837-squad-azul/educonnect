@@ -18,28 +18,28 @@
 
         <form class="form" action="">
 
-            <label for="materiaMonitoria">Filtre por palavra-chave:</label>
+            <label for="">Filtre por palavra-chave:</label>
             <p>
-                <input type="text" id="search-bar" placeholder="Busca" autofocus>
+                <input type="search" id="buscaMateriaAula" placeholder="Busca" autofocus>
                 <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/search--v2.png"/></a>
             </p>
 
             <!-- <label for="materiaAula"><p>Lista de matérias:</p></label> -->
             <p>
-                <select name="select">
-                    <option value="" required>Lista de matérias</option>
-                    <option value="linguaPortuguesa" required>Língua Portuguesa</option>
-                    <option value="linguaInglesa">Língua Inglesa</option>
-                    <option value="matematica">Matemática</option>
-                    <option value="biologia">Biologia</option>
-                    <option value="fisica">Física</option>
-                    <option value="quimica">Química</option>
-                    <option value="geografia">Geografia</option>
-                    <option value="historia">História</option>
-                    <option value="filosofia">Filosofia</option>
-                    <option value="sociologia">Sociologia</option>
-                    <option value="artes">Artes</option>
-                    <option value="educacaoFisica">Educação Física</option>
+                <select id="materiaAula" name="materiaAula">
+                    <option value="" disabled selected hidden>Lista de matérias</option>
+                    <option value="Língua Portuguesa">Língua Portuguesa</option>
+                    <option value="Língua Inglesa">Língua Inglesa</option>
+                    <option value="Matemática">Matemática</option>
+                    <option value="Biologia">Biologia</option>
+                    <option value="Física">Física</option>
+                    <option value="Química">Química</option>
+                    <option value="Geografia">Geografia</option>
+                    <option value="História">História</option>
+                    <option value="Filosofia">Filosofia</option>
+                    <option value="Sociologia">Sociologia</option>
+                    <option value="Artes">Artes</option>
+                    <option value="Educção Física">Educação Física</option>
                     <!-- adicionar matérias cadastradas no banco de dados -->
                 </select>
             </p>
@@ -89,13 +89,15 @@
             <br>
 
             <div class="bt-container">
-                <button class="bt-salvar">Salvar aula</button>
-                <button class="bt-voltar">Voltar</button>
+                <button type="submit" onclick="cadastrarAula()" class="bt-salvar">Salvar aula</button>
+                <button type="reset" class="bt-voltar">Voltar</button>
             </div>        
 
         </form>
 
     </main>
+
+    <script src="../js/telaAlunoCadAula.js"></script>
     
 </body>
 </html>

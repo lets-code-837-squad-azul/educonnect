@@ -49,6 +49,12 @@ body{
     font-size: 1.5em;
   }
 
+  h3 {
+    text-align: justify;
+    font-size: 1em;
+    font-family: var(--fonte-padrao);
+  }
+
   select {
     display: flex;
     justify-content: flex-start;
@@ -56,34 +62,15 @@ body{
 
   input, label, select, p {
     display: flex;
-    /* justify-content: flex-start; */
     text-align: justify;
     font-family: var(--fonte-padrao);
     font-size: 0.8em;
+    margin: 5px;
   }
 
-  /* form, label {
-    font-family: var(--fonte-padrao);
-    font-size: 1.3em;
-    color: rgba(0, 0, 0, 0.87);
-    padding: 5px;
-} */
-
-label {
-  text-align: justify;
-
-}
-
-input {
-  border-radius: 10px;
-  width: 18em;
-  height: 2em;
-  padding-left: 10px;
-}
-
-select {
+  input, select {
     border-radius: 5px;
-    width: 18em;
+    width: 15em;
     height: 2em;
-    padding-left: 10px;
-}
+
+  }

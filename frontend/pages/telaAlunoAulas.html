@@ -49,29 +49,31 @@
         </table>
 
         <div class="bt-container">
-            <button class="bt-chat">Iniciar chat com o(a) monitor(a) </button>
+            <button type="submit" onclick="iniciarChat()" class="bt-chat">Iniciar chat com o(a) monitor(a) </button>
         </div>
 
         <h2>Histórico de aulas</h2>
 
         <div class="column">
             <div class="card">
-                <p>Aula: <input name="aula" type="text" disabled></p>
-                <p>Matéria: <input name="materia" type="text" disabled></p>
-                <p>Monitor(a): <input name="monitor" type="text" disabled></p>
-                <p>Data de início: <input name="dataInicio" type="date" disabled></p>
-                <p>Última mensagem: <input name="ultimaMensagem" type="date" disabled></p>
-                <p>Status: <input name="status" type="text" disabled></p>
+                <label>Aula: <input type="text" id="aula" name="aula" disabled/></label>
+                <label>Matéria: <input type="text" id="materia" name="materia" disabled/></label>
+                <label>Monitor(a): <input type="text" id="monitor" name="monitor" disabled/></label>
+                <label>Data de início: <input type="date" id="dataInicio" name="dataInicio" disabled/></label>
+                <label>Última mensagem: <input type="date" id="ultimaMensagem" name="ultimaMensagem" disabled/></label>
+                <label>Status: <input type="text" id="status" name="status" disabled/></label>
                 
                 <div class="bt-container-card">
-                    <button class="bt-chat">Chat</button>
-                    <button class="bt-deletar">Deletar</button>
+                    <button type="submit" onclick="visualizarChat()" class="bt-chat">Chat</button>
+                    <button type="submit" onclick="deletarChat()" class="bt-deletar">Deletar</button>
                 </div>
 
             </div>
         </div>
 
     </main>
+
+    <script src="../js/telaAlunoAulas.js"></script>
     
 </body>
 </html>
