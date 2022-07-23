@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Aluno Cadastro Aula</title>
+    <link rel="stylesheet" href="./css/reset-min.css">
+    <link rel="stylesheet" href="./css/normalize-min.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/components/button.css">
 </head>
@@ -17,9 +19,11 @@
         <form class="form" action="">
 
             <label for="materiaMonitoria">Filtre por palavra-chave:</label>
-            <input type="text" id="search-bar" placeholder="Busca">
-            <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/search--v2.png"/></a>
-            
+            <p>
+                <input type="text" id="search-bar" placeholder="Busca" autofocus>
+                <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/search--v2.png"/></a>
+            </p>
+
             <!-- <label for="materiaAula"><p>Lista de matérias:</p></label> -->
             <p>
                 <select name="select">
@@ -63,16 +67,16 @@
                         <input name="" type="radio" value="">
                     </td>
                     <td>
-                        Fulano
+                        <input name="monitor" id="monitor" type="text" disabled>
                     </td>
                     <td>
-                        Dia
+                        <input name="diaSemana" id="diaSemana" type="text" disabled>
                     </td>
                     <td>
-                        <input type="time" id="hora" name="horaInicio" required>
+                        <input type="time" id="hora" name="horaInicio" disabled>
                     </td>
                     <td>
-                        <input type="time" id="hora" name="horaFim" required>
+                        <input type="time" id="hora" name="horaFim" disabled>
                     </td>
                 </tr>
             </table>

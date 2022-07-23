@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Aluno Aulas</title>
+    <link rel="stylesheet" href="./css/reset-min.css">
+    <link rel="stylesheet" href="./css/normalize-min.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/components/cards.css">
     <link rel="stylesheet" href="../css/components/button.css">
@@ -32,16 +34,16 @@
             </tr>
             <tr>
                 <td>
-                    Fulano
+                    <input name="monitor" id="monitor" type="text" disabled>
                 </td>
                 <td>
-                    Dia
+                    <input name="diaSemana" id="diaSemana" type="text" disabled>
                 </td>
                 <td>
-                    <input type="time" id="hora" name="horaInicio" required>
+                    <input type="time" id="hora" name="horaInicio" disabled>
                 </td>
                 <td>
-                    <input type="time" id="hora" name="horaFim" required>
+                    <input type="time" id="hora" name="horaFim" disabled>
                 </td>
             </tr>
         </table>
@@ -54,33 +56,20 @@
 
         <div class="column">
             <div class="card">
-                <p>Aula: <input name="" type="text"></p>
-                <p>Matéria: <input name="" type="text"></p>
-                <p>Monitor(a): <input name="" type="text"></p>
-                <p>Data de início: <input name="" type="date"></p>
-                <p>Última mensagem: <input name="" type="text"></p>
-                <p>Status: <input name="" type="text"></p>
-            </div>
+                <p>Aula: <input name="aula" type="text" disabled></p>
+                <p>Matéria: <input name="materia" type="text" disabled></p>
+                <p>Monitor(a): <input name="monitor" type="text" disabled></p>
+                <p>Data de início: <input name="dataInicio" type="date" disabled></p>
+                <p>Última mensagem: <input name="ultimaMensagem" type="date" disabled></p>
+                <p>Status: <input name="status" type="text" disabled></p>
+                
+                <div class="bt-container-card">
+                    <button class="bt-chat">Chat</button>
+                    <button class="bt-deletar">Deletar</button>
+                </div>
 
-            <div class="card">
-                <p>Aula: <input name="" type="text"></p>
-                <p>Matéria: <input name="" type="text"></p>
-                <p>Monitor(a): <input name="" type="text"></p>
-                <p>Data de início: <input name="" type="date"></p>
-                <p>Última mensagem: <input name="" type="text"></p>
-                <p>Status: <input name="" type="text"></p>
-              </div>
-       
-       
-            <div class="card">
-                <p>Aula: <input name="" type="text"></p>
-                <p>Matéria: <input name="" type="text"></p>
-                <p>Monitor(a): <input name="" type="text"></p>
-                <p>Data de início: <input name="" type="date"></p>
-                <p>Última mensagem: <input name="" type="text"></p>
-                <p>Status: <input name="" type="text"></p>
             </div>
-          </div>
+        </div>
 
     </main>
     

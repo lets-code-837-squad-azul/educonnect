@@ -18,7 +18,7 @@
     padding: 0px;
 } */
 
-body {
+body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,14 @@ body {
     font-size: 1.5em;
   }
 
+  select {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   input, label, select, p {
+    display: flex;
+    /* justify-content: flex-start; */
     text-align: justify;
     font-family: var(--fonte-padrao);
     font-size: 0.8em;

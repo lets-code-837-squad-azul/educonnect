@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Aula Monitor</title>
+    <link rel="stylesheet" href="./css/reset-min.css">
+    <link rel="stylesheet" href="./css/normalize-min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/components/button.css">
+    <link rel="stylesheet" href="../css/components/chat.css">
+</head>
+<body>
+    <main>
+        <h1>Olá, monitor(a) Fulano!</h1>
+
+        <h2>Converse com seu(sua) aluno(a) para definerem como as aulas serão realizadas</h2>
+    
+        <p>Aula: <input name="aula" type="text" disabled></p>
+        <p>Matéria: <input name="materia" type="text" disabled></p>
+        <p>Aluno(a): <input name="monitor" type="text" disabled></p>
+
+        </div class="container-chat">
+
+        <ol class="chat"> 
+            <li class="other">
+                <div class="msg">
+                    <label for="nome">Nome</label>
+                    <textarea id="mensagem" name="mensagem" disabled></textarea>
+                    <time>hr da msg</time>
+                </div>
+            </li>
+
+            <li class="self">
+                <div class="msg">
+                    <label for="nome">Nome</label>
+                    <textarea id="mensagem" name="mensagem" disabled></textarea>
+                    <time>hr da msg</time>
+                </div>
+            </li>
+        </ol>
+
+        <div class="textarea">
+            <input type="text" placeholder="Escreva aqui!" autofocus/>
+            <button class="bt-enviar">Enviar</button>
+        </div>
+
+        <button class="bt-voltar">Voltar</button>
+
+    </main>
+
+    <script src="./js/index.js"></script>
+
+    
+</body>
+</html>
