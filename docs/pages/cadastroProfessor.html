@@ -49,52 +49,53 @@
             <ul type="none">
                 <h4>Etnia:</h4>
                 <li>
-                    <input name="etnia" type="radio" value="amarela">
+                    <input name="etnia" type="radio" value="amarela" checked={selected == 'amarela'}>
                     <label for="amarela">Amarela <br></label>
-                    <input name="etnia" type="radio"  value="branca">
+                    <input name="etnia" type="radio"  value="branca" checked={selected == 'branca'}>
                     <label for="branca">Branca <br></label>
-                    <input name="etnia" type="radio" value="indigena">
+                    <input name="etnia" type="radio" value="indigena" checked={selected == 'indigena'}>
                     <label for="indigena">Indigena <br></label>
-                    <input name="etnia" type="radio" value="parda">
+                    <input name="etnia" type="radio" value="parda" checked={selected == 'parda'}>
                     <label for="parda">Parda <br></label>
-                    <input name="etnia" type="radio" value="preta">
+                    <input name="etnia" type="radio" value="preta" checked={selected == 'preta'}>
                     <label for="preta">Preta <br></label>
-                    <input name="etnia" type="radio" value="nResponder">
+                    <input name="etnia" type="radio" value="nResponder" checked={selected == 'nResponder'}>
                     <label for="nresponder">Prefiro não responder <br></label>
                 </li>
                 <h4>Gênero:</h4>
                 <li>
-                    <input name="genero" type="radio" value="homemCis">
+                    <input name="genero" type="radio" value="homemCis" checked={selected == 'homemCis'}>
                     <label for="">Homem Cis <br></label>
-                    <input name="genero" type="radio" value="mulherCis">
+                    <input name="genero" type="radio" value="mulherCis" checked={selected == 'mulherCis'}>
                     <label for="">Mulher Cis <br></label>
-                    <input name="genero" type="radio" value="homemTrans">
+                    <input name="genero" type="radio" value="homemTrans" checked={selected == 'homemTrans'}>
                     <label for="">Homem Trans <br></label>
-                    <input name="genero" type="radio" value="mulherTrans">
+                    <input name="genero" type="radio" value="mulherTrans" checked={selected == 'mulherTrans'}>
                     <label for="">Mulher Trans <br></label>
-                    <input name="genero" type="radio" value="nResponder">
+                    <input name="genero" type="radio" value="nResponder" checked={selected == 'nResponder'}>
                     <label for="">Prefiro não responder <br></label>
-                    <input name="genero" type="radio">
+                    <input name="genero" type="radio" value="outro" checked={selected == 'outro'}>
                     <label for="">Outro </label>
                 </li>
             </ul>
             <ul type="none">
                 <h4>Escolaridade:</h4>
                 <li>
-                    <input name="escolaridade" type="radio" value="fundamentalIncompleto">
+                    <input name="escolaridade" type="radio" value="fundamentalIncompleto" checked={selected == 'fundamentalIncompleto'}>
                     <label for="escolaridade">Ensino fundamental incompleto <br></label>
-                    <input name="escolaridade" type="radio" value="fundamentalCompleto">
+                    <input name="escolaridade" type="radio" value="fundamentalCompleto" checked={selected == 'fundamentalCompleto'}>
                     <label for="escolaridade">Ensino fundamental completo <br></label>
-                    <input name="escolaridade" type="radio" value="medioIncompleto">
+                    <input name="escolaridade" type="radio" value="medioIncompleto" checked={selected == 'mediaIncompleto'}>
                     <label for="escolaridade">Ensino médio incompleto <br></label>
-                    <input name="escolaridade" type="radio" value="medioCompleto">
+                    <input name="escolaridade" type="radio" value="medioCompleto" checked={selected == 'medioCompleto'}>
                     <label for="escolaridade">Ensino médio completo <br></label>
-                    <input name="escolaridade" type="radio" value="superiorIncompleto">
+                    <input name="escolaridade" type="radio" value="superiorIncompleto" checked={selected == 'superiorIncompleto'}>
                     <label for="escolaridade">Ensino superior incompleto <br></label>
-                    <input name="escolaridade" type="radio" value="superiorCompleto">
+                    <input name="escolaridade" type="radio" value="superiorCompleto" checked={selected == 'superiorCompleto'}>
                     <label for="escolaridade">Ensino superior completo <br></label>
-                    <input name="escolaridade" type="radio" value="especializacao">
+                    <input name="escolaridade" type="radio" value="especializacao" checked={selected == 'especilizacao'}>
                     <label for="escolaridade">Especialização (pós, mestrado ou doutorado) <br></label>
+                    <input type="text">
                 </li>
             </ul>
         </p>
