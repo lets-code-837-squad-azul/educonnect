@@ -1,0 +1,25 @@
+input[type=text] {
+    width: 60%;
+}
+
+input[type=email] {
+    width: 60%;
+}
+
+input[type=tel] {
+    width: 60%;
+}
+
+input[type=password] {
+    width: 60%;
+}
+
+
+.form {
+    box-sizing: border-box;
+    margin-left: 25%;
+}
+
+.cadButton {
+    text-align: center;
+}
