@@ -1,26 +1,16 @@
 //  Arquivo para iniciar o servidor
 
 const express = require('express');
-const requireDir = require('require-dir');
-const database = require('./db');
-requireDir('./models');
+const conectar_db = require('./database/conexao');
 
 //  Iniciando a API
 const app = express();
 app.use(express.json());
 
 //  Fazendo o require das rotas (GERENCIADOR DE ROTAS)
-app.use('/api', require('./routes/index.routes')); //DÉCIO
+app.use('/api', require('./routes/index'));
 
 //  Testando a conexão com o banco de dados
-(async () => {
-    try {
-        await database.sync( { alter: true, logging: false } );
-        console.log('Conexão com o banco de dados realizada com sucesso!');
-    }
-    catch (error) {
-        console.log('Erro ao conectar com o banco de dados: ' + error);
-    }
-})();
+(async () => { await conectar_db(); })();
 
 module.exports = app;

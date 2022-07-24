@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const database = require('../db');
+const database = require('../database/db');
 
 const Monitor = database.define('Monitor', {
     id: {
@@ -9,40 +9,45 @@ const Monitor = database.define('Monitor', {
     },
     nome: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: false,
     },
     email: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: false,
     },
     senha: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: false,
     },
     telefone: {
         type: DataTypes.STRING,
-        allowNull: true
     },
     cpf: {
-        type: DataTypes.INTEGER,
-        allowNull: true
+        type: DataTypes.STRING,
+        allowNull: false,
     },
     data_de_nascimento: {
-        type: DataTypes.DATE,
-        allowNull: false
+        type: DataTypes.DATEONLY,
     },
     escolaridade: {
         type: DataTypes.STRING,
-        allowNull: false
     },
     etnia: {
         type: DataTypes.STRING,
-        allowNull: false
     },
     genero: {
         type: DataTypes.STRING,
-        allowNull: false
     },
+    horario_disponivel_inicio: {
+        type: DataTypes.TIME,
+    },
+    horario_disponivel_final: {
+        type: DataTypes.TIME,
+    },
+    endereco_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    }
 }, { tableName: 'monitor' });
 
 module.exports = Monitor;
