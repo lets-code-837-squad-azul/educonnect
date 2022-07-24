@@ -23,6 +23,13 @@ body{
   margin: auto;
 }
 
+iframe{
+  position: static;
+    width: 600px;
+    height: 210px;
+    margin: auto;
+}
+
 table {
   /* margin:auto; */
   text-align: center;
