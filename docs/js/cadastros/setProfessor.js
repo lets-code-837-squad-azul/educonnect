@@ -22,9 +22,9 @@ const email = document.getElementByName('email').value
 
 const senha = document.getElementByName('senha').value
 
-const telefone = parseInt(document.getElementByName('telefone').value)
+const telefone = document.getElementByName('telefone').value
 
-const cpf = parseInt(document.getElementByName('cpf').value)
+const cpf = document.getElementByName('cpf')
 
 const nascimento = document.getElementByName('nascimento').value
 
