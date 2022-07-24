@@ -3,7 +3,9 @@ html{
     
 }
 
-
+.flex{
+    display: flex;
+}
 
 .semdecoracao{
     text-decoration: none;
@@ -117,15 +119,6 @@ main{
     
 }
 
-.imagem_fundo2{
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-
-
-}
 
 main nav{
     grid-row: 2/3;
@@ -154,6 +147,14 @@ main nav a{
     text-decoration: none;
     color: #f7f7f7;
 
+}
+
+.loginEntrar{
+    flex-direction: column;
+    align-content: space-between;
+    justify-self: center;
+    margin-top: 10%;
+    grid-row: 2/3;
 }
 
 main nav div{
