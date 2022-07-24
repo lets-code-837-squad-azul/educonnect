@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&family=Expletus+Sans&family=PT+Sans&family=Quicksand:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+:root {
+    --cor1: #f7f7f7;
+    --cor2: #1c8a4dc7;
+
+    --fonte-inicio:'Averia Libre', cursive;
+    --fonte-padrao: 'Quicksand', sans-serif;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: blue;
+    color: white;
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+
+p, li {
+    font-family: var(--fonte-padrao);
+    font-size: 0.5em;
+    list-style:none;
+}
+
+
