@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&family=Expletus+Sans&family=PT+Sans&family=Quicksand:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root {
     --cor1: #f7f7f7;
     --cor2: #1c8a4dc7;
     --cor3: #073f20f3;
 
-    --font-inicio:'Averia Libre', cursive;
+    --fonte-inicio:'Averia Libre', cursive;
     --fonte-padrao: 'Quicksand', sans-serif;
 }
 
@@ -72,5 +72,4 @@ body{
     border-radius: 5px;
     width: 15em;
     height: 2em;
-
   }
