@@ -57,12 +57,13 @@
 
             <br> <!-- excluir depois o br -->
 
-            <table border="1" width="100%">
+            <table id="tabelaDiaMonitoria" border="1" width="100%">
                 <thead>
                     <tr>
                         <th>Dia da semana</th>
                         <th>Horário início</th>
                         <th>Horário fim</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody id="listaMonitoria">
@@ -85,15 +86,23 @@
                         <td>
                             <input type="time" id="horaFim" name="horaFim" required>
                         </td>
+                        <td id="tabela_linha_1">
+                            <abbr title="Remover"><input class="input-mais-menos" type="image" onclick="removerDiaHora('tabela_linha_1')" src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"></abbr>
+                            <!-- <input type="button" value="Remover" onclick="removerDiaHora('tabela_linha_1')"> -->
+                        </td>
                     </tr>
                 </tbody>
             </table>
 
-            <label style="color: red;" for="">Outro modelo de semana (escolher qual deixar): <input type="week" id="horaFim" name="horaFim"></label>
+            <!-- <input type="button" value="Inserir" onClick="adicionarDiaHora()">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/macos-maximize.png" alt="Adicionar mais um dia e horário"/>
+            </input> -->
 
-            <abbr title="Adicionar mais um dia e horário"><a onclick="adicionarDiaHora()" href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/macos-maximize.png" alt="Adicionar mais um dia e horário"/></a></abbr>
+            <abbr title="Adicionar mais um dia e horário"><input class="input-mais-menos" type="image" onClick="adicionarDiaHora()" src="https://img.icons8.com/ios-glyphs/30/000000/macos-maximize.png" alt="Adicionar mais um dia e horário"/></abbr>
 
-            <abbr title="Remover um dia e horário"><a onclick="removerDiaHora()" href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"/></a></abbr>
+            <!-- <abbr title="Adicionar mais um dia e horário"><a onclick="adicionarDiaHora()" href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/macos-maximize.png" alt="Adicionar mais um dia e horário"/></a></abbr> -->
+
+            <!-- <abbr title="Remover um dia e horário"><a onclick="removerDiaHora()" href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"/></a></abbr> -->
 
             <br> <!-- excluir depois o br -->
 
