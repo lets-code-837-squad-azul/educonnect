@@ -9,6 +9,13 @@ button {
   background-color: black;
 }
 
+button:hover {
+    background-color: white;
+    color:black;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
 .bt-container-card {
     display: flex;
     justify-content: space-between;
