@@ -13,19 +13,23 @@
     --fonte-padrao: 'Quicksand', sans-serif;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body{
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--cor1);
 }
 
 iframe{
   position: static;
-    width: 800px;
-    height: 200px;
-    border: none;
+  width: 800px;
+  height: 200px;
+  border: none;
 }
 
 table {

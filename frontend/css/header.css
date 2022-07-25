@@ -5,8 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root {
-    --cor1: #f7f7f7;
+    --cor1: blue;
     --cor2: #1c8a4dc7;
+    --cor3: #ffffff;
 
     --fonte-inicio:'Averia Libre', cursive;
     --fonte-padrao: 'Quicksand', sans-serif;
@@ -17,8 +18,8 @@ header {
   padding: 10px;
   width: 700px;
   margin: auto;
-  background: blue;
-  color: white;
+  background: var(--cor1);
+  color: var(--cor3);
   text-align: center;
 }
 
