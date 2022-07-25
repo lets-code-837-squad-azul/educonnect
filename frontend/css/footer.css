@@ -5,8 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root {
-    --cor1: #f7f7f7;
-    --cor2: #1c8a4dc7;
+    --cor1: #423ADB;
+    --cor2: #ffffff;
+    --cor3: #0000ff;
+    --cor4: #000000;
 
     --fonte-inicio:'Averia Libre', cursive;
     --fonte-padrao: 'Quicksand', sans-serif;
@@ -30,8 +32,8 @@ footer {
   position: fixed;
   display: grid;
   grid-template-columns: 30% 35% 35%;
-  background: blue;
-  color: white;
+  background: var(--cor1);
+  color: var(--cor2);
   width: 100%;
   /* height: 100%; */
   justify-content: center;
@@ -76,15 +78,15 @@ li {
   align-items: center;
   vertical-align: top; */
   text-align: left; 
-  color: black;
+  color: var(--cor4);
 }
 
 .parte1 a {
-  color: white;
+  color: var(--cor2);
   text-decoration: none;
 }
 
 .parte1 a:hover {
   text-decoration: underline;
-  color: rgba(0, 0, 255, 0.829);
+  color: var(--cor3);
 }
