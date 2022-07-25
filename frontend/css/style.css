@@ -17,7 +17,7 @@ html{
 
 body{
     display: grid;
-    grid-template-rows: 100% 100% 100% 100%;
+    grid-template-rows: 100% 100% 150% 140%;
     height: 100%;
     margin:0%;
     text-align: justify;
@@ -130,18 +130,7 @@ main nav{
     margin-right: auto; 
 }
 
-.botao{
-    background-color: rgba(93, 107, 231, 0.7);
-    border-width: 1;
-    border-style:groove;
-    border-color:#dbc81c;
-    height: 30px;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto; 
-    
 
-}
 
 main nav a{
     text-decoration: none;
@@ -169,7 +158,7 @@ main nav div{
 aside{  
     display: grid;
     grid-row:3/4;
-    grid-template-rows: 50% 1fr;
+    grid-template-rows: 30% 1fr;
     grid-template-columns: 15% 1fr 15%;
     background-repeat: no-repeat;
     background-position: center;
@@ -246,42 +235,3 @@ footer nav{
 	flex-direction: row;
 }
 
-.BUTTON_ALF {
-    background: #D0C31E;
-    background-image: -webkit-linear-gradient(top, #D0C31E, #F6E73D);
-    background-image: -moz-linear-gradient(top, #D0C31E, #F6E73D);
-    background-image: -ms-linear-gradient(top, #D0C31E, #F6E73D);
-    background-image: -o-linear-gradient(top, #D0C31E, #F6E73D);
-    background-image: -webkit-gradient(to bottom, #D0C31E, #F6E73D);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    color: #FFFFFF;
-    font-family: Brush Script MT;
-    font-size: 12px;
-    font-weight: 100;
-    padding: 9px;
-    -webkit-box-shadow: 1px 1px 20px 0 #0059A0;
-    -moz-box-shadow: 1px 1px 20px 0 #0059A0;
-    box-shadow: 1px 1px 20px 0 #0059A0;
-    text-shadow: 1px 1px 20px #FFFFFF;
-    border: solid #337FED 1px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
- }
- 
- .BUTTON_ALF:hover {
-    border: solid #337FED 1px;
-    background: #1E62D0;
-    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    text-decoration: none;
- }
