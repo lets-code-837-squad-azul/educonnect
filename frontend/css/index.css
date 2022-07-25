@@ -16,16 +16,36 @@
 body{
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   background-color: var(--cor1);
 }
 
-iframe{
+.form{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 800px;
+  background-color: aqua;
+}
+
+.iframeheader{
   position: static;
-    width: 800px;
-    height: 200px;
-    border: none;
+  width: 800px;
+  height: 200px;
+  border: none;
+  background-color: aqua;
+}
+
+.iframefooter{
+  position: static;
+  width: 800px;
+  height: 350px;
+  border: none;
+  background-color: rgb(0, 255, 42);
+}
+
+.centralizar{
+  display: flex;
+  justify-content: center;
 }
 
 table {

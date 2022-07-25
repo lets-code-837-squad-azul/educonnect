@@ -12,15 +12,6 @@
     --fonte-padrao: 'Quicksand', sans-serif;
 }
 
-.container {
-  position: static;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
-
 footer {
   position: static;
   padding: 10px;
@@ -28,7 +19,6 @@ footer {
   margin: auto;
   background: blue;
   color: white;
-
 }
 
 p, li {

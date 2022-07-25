@@ -17,7 +17,7 @@
 //     const listaMonitoria = document.getElementById("listaMonitoria");
 
 //     const diaMonitoria = {
-//         id: id, 
+//         id: id,
 //         materiaMonitoria: materiaMonitoria.value,
 //         diaSemana: diaSemana.value,
 //         horaInicio: horaInicio.value,
@@ -48,7 +48,7 @@
 // }
 
 let conta=0;
-
+/*
 function adicionarDiaHora() {
 
     conta++;
@@ -80,6 +80,27 @@ function adicionarDiaHora() {
     document.getElementById("tabelaDiaMonitoria").innerHTML += parte1 + parte2 + parte3 + parte4 + parte5;
     document.getElementById("tabelaDiaMonitoria").innerHTML += "</td></tr>";
 
+}
+ */
+let id = 1;
+const listaDiaHorario = []
+
+function adicionarDiaHora(){
+  const diaSemana = document.getElementById("diaSemana").value;
+  const horaInicio = document.getElementById("horaInicio").value;
+  const horaFim = document.getElementById("horaFim").value;
+  const deletar = document.getElementById("deletar").value;
+
+  const listaMonitor = {
+    id: id++,
+    diaSemana: diaSemana,
+    horaInicio: horaInicio,
+    horaFim: horaFim,
+    deletar: deletar
+  };
+
+  listaDiaHorario.push(listaMonitor);
+  mostraDiaHorario()
 }
 
 function removerDiaHora(id) {
