@@ -10,6 +10,30 @@ const createEstado = async (req, res) => {
     res.status(response.statusCode).json(response.data);
 }
 
+//  Retorna todos os estados (GET)
+const getEstados = async (req, res) => {
+    const response = await EstadosService.getEstados();
+    res.status(response.statusCode).json(response.data);
+}
+
+//  Atualiza um estado (PATCH)
+const updateEstado = async (req, res) => {
+    const id = req.params.id;
+    const estado = req.body;
+    const response = await EstadosService.updateEstado(id, estado);
+    res.status(response.statusCode).json(response.data);
+}
+
+//  Deleta um estado (DELETE)
+const deleteEstado = async (req, res) => {
+    const id = req.params.id;
+    const response = await EstadosService.deleteEstado(id);
+    res.status(response.statusCode).json(response.data);
+}
+
 module.exports = {
     createEstado,
+    getEstados,
+    updateEstado,
+    deleteEstado,
 }

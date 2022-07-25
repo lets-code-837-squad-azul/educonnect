@@ -5,5 +5,8 @@ const express = require('express');
 const router = express.Router();
 
 router.post('/', EstadosController.createEstado);
+router.get('/', EstadosController.getEstados);
+router.patch('/:id', EstadosController.updateEstado);
+router.delete('/:id', EstadosController.deleteEstado);
 
 module.exports = router;

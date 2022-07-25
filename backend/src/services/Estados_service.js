@@ -38,6 +38,96 @@ const createEstado = async (estado) => {
     }
 }
 
+//  Retorna todos os estados
+const getEstados = async () => {
+    try {
+        const estados = await EstadosRepository.getEstados();
+        return {
+            statusCode: 200,
+            data: {
+                message: 'Estados retornados com sucesso',
+                estados: estados
+            }
+        }
+    }
+    catch (erro) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao retornar estados',
+                error: erro
+            }
+        }
+    }
+}
+
+//  Atualiza um estado
+const updateEstado = async (id, estado) => {
+    try {
+        const estado_atualizado = await EstadosRepository.updateEstado(id, estado);
+        if (estado_atualizado == 1) {   //  1 é a quantidade de linhas afetadas
+            return {
+                statusCode: 200,
+                data: {
+                    message: 'Estado atualizado com sucesso',
+                }
+            }
+        }
+        else {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Estado não encontrado'
+                }
+            }
+        }
+    }
+    catch (erro) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao atualizar estado',
+                error: erro
+            }
+        }
+    }
+}
+
+//  Deleta um estado
+const deleteEstado = async (id) => {
+    try {
+        const estado_deletado = await EstadosRepository.deleteEstado(id);
+        if (estado_deletado) {
+            return {
+                statusCode: 200,
+                data: {
+                    message: 'Estado deletado com sucesso',
+                }
+            }
+        }
+        else {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Estado não encontrado'
+                }
+            }
+        }
+    }
+    catch (erro) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao deletar estado',
+                error: erro
+            }
+        }
+    }
+}
+
 module.exports = {
     createEstado,
+    getEstados,
+    updateEstado,
+    deleteEstado,
 }

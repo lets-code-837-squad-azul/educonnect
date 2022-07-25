@@ -8,6 +8,31 @@ const createEstado = async (estado) => {
     return res;
 }
 
+//  Retorna todos os estados
+const getEstados = async () => {
+    const res = await Estado.findAll( { attributes: ['id', 'nome'] } ); //  attributes define quais colunas serão retornadas
+    return res;
+}
+
+//  Atualiza um estado
+const updateEstado = async (id, estado) => {
+    const res = await Estado.update(estado, {
+        where: { id: id }
+    });
+    return res;
+}
+
+//  Deleta um estado
+const deleteEstado = async (id) => {
+    const res = await Estado.destroy({
+        where: { id: id }
+    });
+    return res;
+}
+
 module.exports = {
     createEstado,
+    getEstados,
+    updateEstado,
+    deleteEstado,
 }
