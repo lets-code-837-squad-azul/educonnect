@@ -5,11 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root {
-    --cor1: #423ADB;
-    --cor2: #ffffff;
+  --cor1: #032CA6;
+  --cor2: #304F8C;
+  --cor3: #8C824D;
+  --cor4: #F2B90F;
+  --cor5: #8C6B08;
 
-    --fonte-inicio:'Averia Libre', cursive;
-    --fonte-padrao: 'Quicksand', sans-serif;
+  --fonte-inicio:'Averia Libre', cursive;
+  --fonte-padrao: 'Quicksand', sans-serif;
 }
 
 header {
@@ -18,28 +21,35 @@ header {
   width: 700px;
   margin: auto;
   background: var(--cor1);
-  color: var(--cor2);
+  color: var(--cor4);
   text-align: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-h1 {
-  font-family: var(--fonte-inicio);
-  font-size: 2.0em;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
+.parte1 {
+  grid-column: 1;
 }
 
-/* h1:hover {
-  font-size: 2.2em;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
-} */
+.parte2 {
+  grid-column: 2;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
 
 h2 {
+  grid-column: 2;
   font-family: var(--fonte-inicio);
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
+  padding: 5px;
 }
 
 h2:hover {
-  font-size: 1.3em;
+  font-size: 1.6em;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
 }

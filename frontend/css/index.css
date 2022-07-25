@@ -5,8 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root {
-  --cor1: #423ADB;
-  --cor2: #FF6A2B;
+  --cor1: #032CA6;
+  --cor2: #304F8C;
+  --cor3: #8C824D;
+  --cor4: #F2B90F;
+  --cor5: #8C6B08;
 
   --fonte-inicio:'Averia Libre', cursive;
   --fonte-padrao: 'Quicksand', sans-serif;
@@ -47,7 +50,7 @@ h1, h2 {
 h1 {
   font-size: 1.5em;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.164);
-  color: var(--cor2);
+  color: var(--cor1);
 }
 
 h2 {
