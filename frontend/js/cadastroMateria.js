@@ -47,15 +47,14 @@
 //     horaFim.value = '';
 // }
 
+const diasMonitoria = [];
 let conta=0;
 
 function adicionarDiaHora() {
 
-    conta++;
+    console.log("Botão mais");
 
-    // let parte1 = "<tr><td>Teste " + conta + "</td>";
-    // let parte2 = "<td  id='tabela_linha_" + conta + "'><input type='button' ";
-    // let parte3 = "value='Remover' onClick=\"javascript:removeLinha('tabela_linha_"+conta+"')\"></input>";
+    conta++;
 
     let parte1 = `<tr>
             <td>
@@ -79,6 +78,35 @@ function adicionarDiaHora() {
 
     document.getElementById("tabelaDiaMonitoria").innerHTML += parte1 + parte2 + parte3 + parte4 + parte5;
     document.getElementById("tabelaDiaMonitoria").innerHTML += "</td></tr>";
+
+    const materiaMonitoria = document.getElementById("materiaMonitoria").value;
+    const OutraMateriaMonitoria = document.getElementById("OutraMateriaMonitoria").value;
+
+    console.log("materiaMonitoria:", materiaMonitoria);
+    console.log("OutraMateriaMonitoria:", OutraMateriaMonitoria);
+
+    let idMonitoria = diasMonitoria.length + 1;
+    let diaSemana = document.getElementById("diaSemana");
+    let horaInicio = document.getElementById("horaInicio");
+    let horaFim = document.getElementById("horaFim");
+    let listaMonitoria = document.getElementById("listaMonitoria");
+
+    let diaMonitoria = {
+        idMonitoria: idMonitoria, 
+        materiaMonitoria: materiaMonitoria.value,
+        diaSemana: diaSemana.value,
+        horaInicio: horaInicio.value,
+        horaFim: horaFim.value,
+    };
+
+    console.log(materiaMonitoria.value);
+    // console.log(idMonitoria, materiaMonitoria.value, diaSemana.value, horaInicio.value, horaFim.value);
+
+    // console.log("diaMonitoria:", diaMonitoria);
+
+    // diasMonitoria.push(diaMonitoria);
+
+    // console.log("diasMonitoria:", diasMonitoria);
 
 }
 
