@@ -33,7 +33,6 @@ footer {
   background: var(--cor1);
   color: var(--cor2);
   width: 100%;
-  /* height: 100%; */
   justify-content: center;
   text-align:justify;
   font-family: var(--fonte-padrao);
@@ -51,7 +50,6 @@ footer {
 
 .parte3 {
   grid-column: 3;
-  /* padding-top: 29px; */
   padding-top: 36px;
 }
 
@@ -76,7 +74,6 @@ p {
 
 .titulo-li {
   padding-bottom: 5px;
-  /* padding-left: 15px; */
 }
 
 li {
@@ -86,20 +83,11 @@ li {
   align-items: center;
 }
 
-.nome {
-  /* display:inline-block;
-  align-items: center;
-  vertical-align: top; */
-  text-align: left; 
-  color: var(--cor4);
-}
-
 .parte1 a {
-  color: var(--cor4);
   text-decoration: none;
+  color: var(--cor2);
 }
 
 .parte1 a:hover {
   text-decoration: underline;
-  color: var(--cor5);
 }
