@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site</title>
+    <link rel="stylesheet" href="../css/components/button.css">
+    <link rel="stylesheet" href="../css/components/text.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="Imagem/favicon.ico" type="image/x-icon">
+
 </head>
 <body>
 
@@ -28,7 +30,7 @@
 
 
 
-<main class="imagem_fundo2">
+<main>
     <nav>
         <h2 class="color centro">Recuperar a senha</h2>
 
@@ -39,14 +41,14 @@
               
             </tr>
             <tr>
-                <td><input type="text" name="Email" size="50"  id="email"> <br /></td>
+                <td><input type="text" name="Email" size="45"  id="email"> <br /></td>
             </tr>
            
 
            </table>
     <div>
-        <button onclick="enviar()" class="centro BUTTON_ALF">  Enviar </button>
-        <a href="../pages/home.html"><button target="_self" class="centro BUTTON_ALF" >   Voltar </button></a>
+        <button onclick="enviar()" class="bt-voltar">  Enviar </button>
+        <a href="../pages/home.html"><button target="_self" class="bt-enviar" >   Voltar </button></a>
     </div>
     <div>
     <p id="resposta"></p>
