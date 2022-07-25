@@ -27,21 +27,6 @@
   padding: 0px;
 }
 
-/* footer {
-  bottom: 0;
-  position: fixed;
-  display: grid;
-  grid-template-columns: 30% 35% 35%;
-  background: var(--cor1);
-  color: var(--cor2);
-  width: 100%;
-  /* height: 100%;
-  justify-content: center;
-  text-align:justify;
-  font-family: var(--fonte-padrao);
-  font-size: 0.7em;
-} */
-
 footer {
   bottom: 0;
   position: fixed;
