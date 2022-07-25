@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Aluno Cadastro Aula</title>
+    <link rel="stylesheet" href="./css/reset-min.css">
+    <link rel="stylesheet" href="./css/normalize-min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/components/button.css">
+</head>
+<body>
+    <main>
+
+        <iframe src="header.html" frameborder="0"></iframe>
+        
+        <h1>Olá, aluno(a) Fulano!</h1>
+
+        <h2>Escolha sua aula</h2>
+
+        <form class="form" action="">
+
+            <label for="">Filtre por palavra-chave:</label>
+            <p>
+                <input type="search" id="buscaMateriaAula" placeholder="Busca" autofocus>
+                <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/search--v2.png"/></a>
+            </p>
+
+            <!-- <label for="materiaAula"><p>Lista de matérias:</p></label> -->
+            <p>
+                <select id="materiaAula" name="materiaAula">
+                    <option value="" disabled selected hidden>Lista de matérias</option>
+                    <option value="Língua Portuguesa">Língua Portuguesa</option>
+                    <option value="Língua Inglesa">Língua Inglesa</option>
+                    <option value="Matemática">Matemática</option>
+                    <option value="Biologia">Biologia</option>
+                    <option value="Física">Física</option>
+                    <option value="Química">Química</option>
+                    <option value="Geografia">Geografia</option>
+                    <option value="História">História</option>
+                    <option value="Filosofia">Filosofia</option>
+                    <option value="Sociologia">Sociologia</option>
+                    <option value="Artes">Artes</option>
+                    <option value="Educção Física">Educação Física</option>
+                    <!-- adicionar matérias cadastradas no banco de dados -->
+                </select>
+            </p>
+
+            <p>Escolha um dos monitores disponíveis:</p>
+
+            <table border="1">
+                <tr>
+                    <th></th>
+                    <th>
+                        Monitor(a)
+                    </th>
+                    <th>
+                        Dia da semana
+                    </th>
+                    <th>
+                        Horário início
+                    </th>
+                    <th>
+                        Horário fim
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="" type="radio" value="">
+                    </td>
+                    <td>
+                        <input name="monitor" id="monitor" type="text" disabled>
+                    </td>
+                    <td>
+                        <input name="diaSemana" id="diaSemana" type="text" disabled>
+                    </td>
+                    <td>
+                        <input type="time" id="hora" name="horaInicio" disabled>
+                    </td>
+                    <td>
+                        <input type="time" id="hora" name="horaFim" disabled>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+            <label style="color: red;" for="">Outro modelo de semana (escolher qual deixar): <input type="week" id="horaFim" name="horaFim"></label>
+
+            <!-- <label for="data">Calendário</label>
+            <input type="date" id="data" name="dataAula"> -->
+
+            <br>
+
+            <div class="bt-container">
+                <button type="submit" onclick="cadastrarAula()" class="bt-salvar">Salvar aula</button>
+                <button type="reset" class="bt-voltar">Voltar</button>
+            </div>        
+
+        </form>
+
+        <iframe src="footer.html" frameborder="0"></iframe>
+
+    </main>
+
+    <script src="../js/telaAlunoCadAula.js"></script>
+    
+</body>
+</html>
