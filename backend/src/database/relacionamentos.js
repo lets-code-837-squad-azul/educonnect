@@ -1,10 +1,10 @@
 //  Arquivo para gerenciar os relacionamentos entre as tabelas do banco de dados
 
 const Aluno = require('../models/Aluno');
-const Aluno_Aula = require('../models/Aluno_Aula');
 const Aula = require('../models/Aula');
 const Estado = require('../models/Estado');
 const Monitor = require('../models/Monitor');
+const Disciplina = require('../models/Disciplina');
 
 module.exports = () => {
     //  1 Estado para N Alunos
@@ -19,12 +19,11 @@ module.exports = () => {
     Monitor.hasMany(Aula, { foreignKey: 'monitor_id' });
     Aula.belongsTo(Monitor, { foreignKey: 'monitor_id' });
 
-    //  N Alunos para N Aulas
-    //  Essa relação cria uma nova tabela Aluno_Aula
-    Aluno.belongsToMany(Aula, { through: Aluno_Aula, foreignKey: 'aluno_id' });
-    Aula.belongsToMany(Aluno, { through: Aluno_Aula, foreignKey: 'aula_id' });
+    //  1 Aluno para N Aulas
+    Aluno.hasMany(Aula, { foreignKey: 'aluno_id' });
+    Aula.belongsTo(Aluno, { foreignKey: 'aluno_id' });
 
-    //  1 Aula para N Aluno_Aulas
-    Aluno_Aula.hasMany(Aula, { foreignKey: 'aluno_aula_id' });
-    Aula.belongsTo(Aluno_Aula, { foreignKey: 'aluno_aula_id' });
+    //  1 Disciplina para N Aulas
+    Disciplina.hasMany(Aula, { foreignKey: 'disciplina_id' });
+    Aula.belongsTo(Disciplina, { foreignKey: 'disciplina_id' });
 }
