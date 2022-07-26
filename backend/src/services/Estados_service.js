@@ -42,11 +42,21 @@ const createEstado = async (estado) => {
 const getEstados = async () => {
     try {
         const estados = await EstadosRepository.getEstados();
-        return {
-            statusCode: 200,
-            data: {
-                message: 'Estados retornados com sucesso',
-                estados: estados
+        if (estados.length > 0) {
+            return {
+                statusCode: 200,
+                data: {
+                    message: 'Estados retornados com sucesso',
+                    estados: estados
+                }
+            }
+        }
+        else {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Nenhum estado encontrado'
+                }
             }
         }
     }
