@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&family=Expletus+Sans&family=PT+Sans&family=Quicksand:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+:root {
+  --cor1: #032CA6;
+  --cor2: #304f8c31;
+  --cor3: #8C824D;
+  --cor4: #F2B90F;
+  --cor5: #8C6B08;
+
+  --fonte-inicio:'Averia Libre', cursive;
+  --fonte-padrao: 'Quicksand', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 800px;
+    background-color: var(--cor2);
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: var(--fonte-padrao);
+}
+  
+h1 {
+    font-size: 2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.164);
+    color: var(--cor1);
+    padding: 10px;
+}
+  
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+input, label {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+}
+
+.input-texto {
+    font-size: 0.8em;
+    border-radius: 5px;
+    width: 15em;
+    height: 2em;
+    margin: 10px;
+}
+
+input[type=text] {
+    width: 60%;
+}
+
+input[type=email] {
+    width: 60%;
+}
+
+input[type=tel] {
+    width: 60%;
+}
+
+input[type=password] {
+    width: 60%;
+}
+
+input[type=date] {
+    width:20%
+}
+
+/* @media (max-width: 700px) {
+    .form {
+        margin-left: 5%;
+    }
+
+    input[type=date] {
+        width: 30%;
+    }
+} */

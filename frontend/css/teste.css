@@ -1,0 +1,31 @@
+body {
+    display: grid;
+    grid-template-row: 25% 50% 25%;
+}
+
+.container1 {
+  grid-row: 1;
+  position: static;
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container2 {
+  grid-row: 2;
+  background-color:red;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container3 {
+    grid-row: 3;
+    position: static;
+    background-color:yellow;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }

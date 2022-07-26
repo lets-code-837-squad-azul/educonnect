@@ -9,10 +9,17 @@
 }
 
 p, li, ol, ul, table, tr, td, a{
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
     text-align: justify;
     font-size: 18px; 
+}
+
+h2 {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: justify;
+
 }
 
 p{

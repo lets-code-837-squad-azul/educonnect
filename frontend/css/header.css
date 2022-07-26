@@ -5,23 +5,51 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root {
-    --cor1: #f7f7f7;
-    --cor2: #1c8a4dc7;
+  --cor1: #032CA6;
+  --cor2: #304F8C;
+  --cor3: #8C824D;
+  --cor4: #F2B90F;
+  --cor5: #8C6B08;
 
-    --fonte-inicio:'Averia Libre', cursive;
-    --fonte-padrao: 'Quicksand', sans-serif;
+  --fonte-inicio:'Averia Libre', cursive;
+  --fonte-padrao: 'Quicksand', sans-serif;
 }
 
 header {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    position: fixed;
-    width: 100%;
-    height: 90%;
-    top: 0;
-    left: 0;
-    background-image: url('../Imagem/Educonnect.png');
-    color: white;
-    text-align: center;
+  position: static;
+  padding: 5px;
+  width: 700px;
+  margin: auto;
+  background: var(--cor1);
+  color: var(--cor4);
+  text-align: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
+.parte1 {
+  grid-column: 1;
+}
+
+.parte2 {
+  grid-column: 2;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+h2 {
+  grid-column: 2;
+  font-family: var(--fonte-inicio);
+  font-size: 1.5em;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
+  padding: 5px;
+}
+
+h2:hover {
+  font-size: 1.6em;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
+}
