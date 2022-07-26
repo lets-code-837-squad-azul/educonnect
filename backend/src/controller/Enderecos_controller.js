@@ -6,13 +6,13 @@ const EnderecoService = require('../services/Enderecos_service');
 const createEndereco = async (req, res) => {
     const endereco = req.body;
     const response = await EnderecoService.createEndereco(endereco);
-    res.status(response.statusCode).json(response.data);
+    return res.status(response.statusCode).json(response.data);
 }
 
 //  Retorna todos os endereços (GET)
 const getEnderecos = async (req, res) => {
     const response = await EnderecoService.getEnderecos();
-    res.status(response.statusCode).json(response.data);
+    return res.status(response.statusCode).json(response.data);
 }
 
 //  Atualiza um endereço (PATCH)
@@ -20,14 +20,14 @@ const updateEndereco = async (req, res) => {
     const id = req.params.id;
     const endereco = req.body;
     const response = await EnderecoService.updateEndereco(id, endereco);
-    res.status(response.statusCode).json(response.data);
+    return res.status(response.statusCode).json(response.data);
 }
 
 //  Deleta um endereço (DELETE)
 const deleteEndereco = async (req, res) => {
     const id = req.params.id;
     const response = await EnderecoService.deleteEndereco(id);
-    res.status(response.statusCode).json(response.data);
+    return res.status(response.statusCode).json(response.data);
 }
 
 module.exports = {
