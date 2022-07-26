@@ -4,57 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Matéria</title>
+    <title>Monitor - Cadastro Matéria</title>
     <link rel="stylesheet" href="./css/reset-min.css">
-    <link rel="stylesheet" href="./css/normalize-min.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/components/button.css">
 </head>
 <body>
 
     <main>
-        <iframe src="header.html"></iframe>
-        <h1>Olá, monitor(a) Fulano!</h1>
+        <!-- <iframe src="header.html"></iframe> -->
 
-        <h2>Cadastre a matéria que deseja realizar a monitoria</h2>
+        <h1>Olá, monitor Fulano!</h1>
 
-        <form class="form" action="">
+        <h2>Cadastre a matéria que deseja realizar a monitoria:</h2>
 
-            <select id="materiaMonitoria" name="materiaMonitoria" autofocus>
-                <option value="" disabled selected hidden>Lista de matérias</option>
-                <option value="Língua Portuguesa">Língua Portuguesa</option>
-                <option value="Língua Inglesa">Língua Inglesa</option>
-                <option value="Matemática">Matemática</option>
-                <option value="Biologia">Biologia</option>
-                <option value="Física">Física</option>
-                <option value="Química">Química</option>
-                <option value="Geografia">Geografia</option>
-                <option value="História">História</option>
-                <option value="Filosofia">Filosofia</option>
-                <option value="Sociologia">Sociologia</option>
-                <option value="Artes">Artes</option>
-                <option value="Educção Física">Educação Física</option>
-            </select>
+            <div class="materia">
+                <select id="materiaMonitoria" name="materiaMonitoria" autofocus>
+                    <option value="" disabled selected hidden>Lista de matérias</option>
+                    <option value="Língua Portuguesa">Língua Portuguesa</option>
+                    <option value="Língua Inglesa">Língua Inglesa</option>
+                    <option value="Matemática">Matemática</option>
+                    <option value="Biologia">Biologia</option>
+                    <option value="Física">Física</option>
+                    <option value="Química">Química</option>
+                    <option value="Geografia">Geografia</option>
+                    <option value="História">História</option>
+                    <option value="Filosofia">Filosofia</option>
+                    <option value="Sociologia">Sociologia</option>
+                    <option value="Artes">Artes</option>
+                    <option value="Educção Física">Educação Física</option>
+                </select>
+                <label>Outra:</label>
+                <input type="text" id="OutraMateriaMonitoria" name="materiaMonitoria"/>
+            </div>
 
-            <label>Outra: <input type="text" id="OutraMateriaMonitoria" name="materiaMonitoria" /></label>
-
-            <!-- <label for="instituicaoEnsino"><p>Instituição de ensino:</p></label>
-            <input name="instituicaoEnsino" type="text">
-
-            <label for="formacaoAcademica"><p>Formação acadêmica:</p></label>
-            <input name="formacaoAcademica" type="text">
-
-            <p>
-                <input name="concluido" type="radio" value="concluido">
-                <label for="formacaoAcademica">Concluído</label>
-
-                <input name="concluido" type="radio" value="concluido">
-                <label for="formacaoAcademica">Cursando</label>
-            </p> -->
-
-            <h3>Defina o dia da semana e horário para realizar sua monitoria:</h3>
-
-            <br> <!-- excluir depois o br -->
+            <h2>Defina o dia da semana e horário para realizar sua monitoria:</h2>
 
             <table id="tabelaDiaMonitoria" border="0" width="100%">
                 <thead>
@@ -93,9 +77,9 @@
                 </tbody>
             </table>
 
-            <!-- <input type="button" value="Inserir" onClick="adicionarDiaHora()">
-                <img src="https://img.icons8.com/ios-glyphs/30/000000/macos-maximize.png" alt="Adicionar mais um dia e horário"/>
-            </input> -->
+            <!-- <input id="inserir" type="submit" value="Inserir" onClick="adicionarDiaHora()"></input> -->
+
+            <!-- <button onclick="adicionarDiaHora()" type="submit" id="inserir">Inserir!</button> -->
 
             <abbr title="Adicionar mais um dia e horário"><input class="input-mais-menos" type="image" onClick="adicionarDiaHora()" src="https://img.icons8.com/ios-glyphs/30/000000/macos-maximize.png" alt="Adicionar mais um dia e horário"/></abbr>
 
@@ -105,15 +89,13 @@
 
             <br> <!-- excluir depois o br -->
 
-            <div class="bt-container">
-                <button type="submit" onclick="cadastrarMateria()" class="bt-cadastrar">Cadastrar</button>
-                <button type="reset" class="bt-voltar">Voltar</button>
+            <div class="bt-centralizado-linha">
+                <a href="../pages/tela-monitor-aulas.html"><button type="submit" onclick="cadastrarMateria()" class="bt-cadastrar">Cadastrar</button></a>
+                <a href="../pages/login-entrar.html"><button type="reset" class="bt-voltar">Voltar</button></a>
             </div>
 
-        </form>
-        <iframe src="footer.html"></iframe>
+        <!-- <iframe src="footer.html"></iframe> -->
     </main>
-
 
     <script src="../js/cadastroMateria.js"></script>
 

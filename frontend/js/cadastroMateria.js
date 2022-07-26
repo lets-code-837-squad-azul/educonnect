@@ -47,10 +47,18 @@
 //     horaFim.value = '';
 // }
 
+// document.getElementById("inserir").addEventListener("adicionarDiaHora", function(event){
+//     event.preventDefault()
+//   });
+
+// document.getElementById("inserir").addEventListener("submit", function(event) { event.preventDefault() });
+
 const diasMonitoria = [];
 let conta=0;
 
 function adicionarDiaHora() {
+
+    // e.preventDefault();
 
     console.log("Botão mais");
 
@@ -90,23 +98,6 @@ function adicionarDiaHora() {
     let horaInicio = document.getElementById("horaInicio");
     let horaFim = document.getElementById("horaFim");
     let listaMonitoria = document.getElementById("listaMonitoria");
-
-    let diaMonitoria = {
-        idMonitoria: idMonitoria, 
-        materiaMonitoria: materiaMonitoria.value,
-        diaSemana: diaSemana.value,
-        horaInicio: horaInicio.value,
-        horaFim: horaFim.value,
-    };
-
-    console.log(materiaMonitoria.value);
-    // console.log(idMonitoria, materiaMonitoria.value, diaSemana.value, horaInicio.value, horaFim.value);
-
-    // console.log("diaMonitoria:", diaMonitoria);
-
-    // diasMonitoria.push(diaMonitoria);
-
-    // console.log("diasMonitoria:", diasMonitoria);
 
 }
 

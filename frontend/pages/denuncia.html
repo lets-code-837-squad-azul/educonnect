@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia</title>
+    <link rel="stylesheet" href="./css/reset-min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/components/button.css">
+</head>
+<body>
+
+    <main>
+
+        <h1>Denúncia</h1>
+
+        <h3>Caso você tenha se sentido desrespeitado por algum motivo, entre em contato conosco para registrar sua denúncia. 
+        <br>
+        Lembre-se, cada detalhe é importante. Cite nome e e-mail da pessoa, bem como seu perfil de usuário (aluno ou monitor).</h3>
+
+        <form action="mailto:josuerodrigo.jr80@gmail.com" method="POST" enctype="text/plain">
+            
+            <label for="name">Seu nome:</label>
+            <input name="name" type="text" autofocus/>
+
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea name="mensagem" rows="10" cols="100"></textarea>
+
+        </form>
+        <button type="submit">Enviar</button>
+        <a href="../pages/login-entrar.html"><button target="_self" class="bt-voltar">Voltar</button></a>
+
+    </main>
+
+<p id="mensagem"></p>
+
+<script src="../js/denuncia.js"></script>
+
+</body>
+</html>
