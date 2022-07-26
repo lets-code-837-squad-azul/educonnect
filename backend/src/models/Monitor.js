@@ -44,7 +44,7 @@ const Monitor = database.define('Monitor', {
     horario_disponivel_final: {
         type: DataTypes.TIME,
     },
-    endereco_id: {
+    estado_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
     }

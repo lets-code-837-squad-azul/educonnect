@@ -38,7 +38,7 @@ const Aluno = database.define('Aluno', {
     genero: {
         type: DataTypes.STRING,
     },
-    endereco_id: {
+    estado_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
     }
