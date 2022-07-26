@@ -1,4 +1,4 @@
-//  Arquivo para sincronizar o banco de dados
+//  Arquivo para sincronizar e conectar ao banco de dados
 
 const database = require('./db');
 const aplicar_relacionamentos = require('./relacionamentos');
@@ -6,7 +6,8 @@ const aplicar_relacionamentos = require('./relacionamentos');
 module.exports = async () => {
     try {
         aplicar_relacionamentos();
-        await database.sync({ alter: true, logging: false });
+        // await database.sync({ alter: true, logging: false });    //  Atualiza o banco de dados de acordo com as models
+        await database.authenticate();  //  Autentica o banco de dados
         return console.log('Conexão com o banco de dados realizada com sucesso!');
     }
     catch (error) {

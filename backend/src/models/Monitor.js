@@ -49,6 +49,6 @@ const Monitor = database.define('Monitor', {
         type: DataTypes.INTEGER,
         allowNull: false,
     }
-}, { tableName: 'monitor' });
+}, { tableName: 'monitores' });
 
 module.exports = Monitor;

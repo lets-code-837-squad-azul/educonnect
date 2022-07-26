@@ -43,6 +43,6 @@ const Aluno = database.define('Aluno', {
         type: DataTypes.INTEGER,
         allowNull: false,
     }
-}, { tableName: 'aluno' });
+}, { tableName: 'alunos' });
 
 module.exports = Aluno;

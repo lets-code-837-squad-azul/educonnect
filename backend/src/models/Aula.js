@@ -29,6 +29,6 @@ const Aula = database.define('Aula', {
         type: DataTypes.INTEGER,
         allowNull: false,
     }
-}, { tableName: 'aula' });
+}, { tableName: 'aulas' });
 
 module.exports = Aula;

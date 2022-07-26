@@ -15,6 +15,6 @@ const Aluno_Aula = database.define('Aluno_Aula', {
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-}, { tableName: 'aluno_aula' });
+}, { tableName: 'aluno_aulas' });
 
 module.exports = Aluno_Aula;
