@@ -21,6 +21,7 @@ const Monitor = database.define('Monitor', {
     },
     telefone: {
         type: DataTypes.STRING,
+        allowNull: false
     },
     cpf: {
         type: DataTypes.STRING,

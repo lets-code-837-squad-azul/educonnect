@@ -21,6 +21,7 @@ const Aluno = database.define('Aluno', {
     },
     telefone: {
         type: DataTypes.STRING,
+        allowNull: false
     },
     cpf: {
         type: DataTypes.STRING,
