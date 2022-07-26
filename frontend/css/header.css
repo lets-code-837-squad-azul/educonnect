@@ -15,27 +15,40 @@
   --fonte-padrao: 'Quicksand', sans-serif;
 }
 
-header {
-  position: static;
-  padding: 5px;
-  width: 700px;
-  margin: auto;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin: auto; */
   background: var(--cor1);
   color: var(--cor4);
-  text-align: center;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  /* height: 100%; */
+  /* width: 100%; */
+} 
+
+header {
+  /* position: static; */
+  /* padding: 5px; */
+  /* width: 700px; */
+  /* margin: auto; */
+  /* background: var(--cor1); */
+  /* color: var(--cor4); */
+  /* text-align: center; */
+  /* display: grid; */
+  /* grid-template-columns: 50% 50%; */
 }
 
-.parte1 {
+/* .parte1 {
   grid-column: 1;
 }
 
 .parte2 {
   grid-column: 2;
-}
+} */
 
-img {
+ img {
   display: block;
   margin: auto;
   width: 50%;
