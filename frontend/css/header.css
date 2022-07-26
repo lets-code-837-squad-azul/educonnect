@@ -7,7 +7,7 @@
 :root {
     --cor1: #f7f7f7;
     --cor2: #1c8a4dc7;
-    --mcor: rgb(255, 185, 15);
+    --mcor: rgb(255, 235, 108);
 
 
     --fonte-inicio:'Averia Libre', cursive;
@@ -22,7 +22,8 @@ header {
     height: 4.3rem;
     top: 0;
     left: 0;
-    background: linear-gradient(rgb(45, 123, 158),rgb(12, 122, 178) );    color: white;
+    background: linear-gradient(rgb(45, 123, 158),rgb(12, 122, 178) );
+    color: white;
     border-bottom-left-radius: 0.1em;
     border-bottom-right-radius: 0.1em;
 }
@@ -68,10 +69,18 @@ h2 {
 }
 
 .nav nav p a {
-    color:var(--mcor);
+    font-size: 1.2em;
+    color: rgb(250, 220, 25);
+    text-shadow: -1px -1px 1px #000000;
+}
+
+.nav nav p a:hover {
+    text-shadow: 1px 1px 1px #000000;
 }
 
 .edu img {
-    max-width: 8.75rem;
-    margin-top: 0.5rem;
+    max-width: 3.7rem;
+    margin-top: 0.9rem;
+    margin-left: 6rem;
 }
+
