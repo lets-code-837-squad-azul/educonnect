@@ -7,7 +7,7 @@ const Aula = database.define('Aula', {
         primaryKey: true,
         autoIncrement: true
     },
-    diciplina: {
+    disciplina: {
         type: DataTypes.STRING,
         allowNull: false,
     },
@@ -27,7 +27,6 @@ const Aula = database.define('Aula', {
     },
     aluno_aula_id: {
         type: DataTypes.INTEGER,
-        allowNull: false,
     }
 }, { tableName: 'aulas' });
 
