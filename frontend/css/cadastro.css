@@ -21,7 +21,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 800px;
+    /* width: 800px; */
+    /* width: 100%; */
     background-color: var(--cor2);
 }
 
@@ -45,17 +46,45 @@ h2 {
 input, label {
     font-family: var(--fonte-padrao);
     font-size: 1em;
+    padding-left: 10px;
 }
 
 .input-texto {
     font-size: 0.8em;
     border-radius: 5px;
-    width: 15em;
     height: 2em;
     margin: 10px;
+    width: 100%;
 }
 
-input[type=text] {
+#input-texto {
+    font-size: 0.8em;
+    border-radius: 5px;
+    height: 2em;
+    margin: 10px;
+    width: 100%;
+}
+
+.centralizado-linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#email {
+    width: 53px;
+    padding: 0px;
+}
+
+#data-nascimento {
+    width: 161px;
+    padding: 0px;
+}
+
+/* input[type=text] {
     width: 60%;
 }
 
@@ -73,7 +102,7 @@ input[type=password] {
 
 input[type=date] {
     width:20%
-}
+} */
 
 /* @media (max-width: 700px) {
     .form {
