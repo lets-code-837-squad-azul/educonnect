@@ -84,6 +84,11 @@ input, label {
     padding: 0px;
 }
 
+/* .required:after {
+    content:" *"; 
+    color: #ff0000;
+} */
+
 /* input[type=text] {
     width: 60%;
 }
