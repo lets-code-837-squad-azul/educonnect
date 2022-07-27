@@ -27,17 +27,17 @@
 
 footer {
   bottom: 0;
-  position: fixed;
+  position:sticky;
   display: grid;
   grid-template-columns: 30% 10% 25% 10% 25%;
-  background: var(--cor1);
-  color: var(--cor2);
+  background: linear-gradient(rgb(45, 123, 158),rgb(12, 122, 178) );
   width: 100vw;
   /* width: 100%; */
   justify-content: center;
   text-align:justify;
   font-family: var(--fonte-padrao);
   font-size: 0.7em;
+  margin-top: 21.15%;
 }
 
 .parte1 {

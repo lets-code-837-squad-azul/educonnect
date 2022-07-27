@@ -127,6 +127,7 @@ function removerDiaHora(id) {
     console.log("Botão menos");
 
     teste = document.getElementById(id);
+    console.log(teste)
     teste.parentNode.parentNode.removeChild(teste.parentNode);
 
 }
