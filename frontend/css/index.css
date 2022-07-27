@@ -22,9 +22,13 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 800px;
+  /* width: 800px; */
   background-color: var(--cor2);
 } 
+
+main{
+  padding-top: 60px;
+}
 
 /* iframe{
   position: static;
