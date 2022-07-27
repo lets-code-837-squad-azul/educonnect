@@ -75,7 +75,6 @@ function removerDiaHora(id) {
        </tr> `;
      }).join("") + disponibilidade
 
-
 }
 
 
