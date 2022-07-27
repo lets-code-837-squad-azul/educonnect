@@ -68,6 +68,72 @@ const getMonitores = async () => {
     }
 }
 
+//  Retorna um monitor pelo Email
+const getMonitorByEmail = async (email) => {
+    try {
+        const monitor = await Monitor_repository.getMonitorByEmail(email);
+        if (monitor) {
+            return {
+                statusCode: 200,
+                data: {
+                    message: 'Monitor retornado com sucesso por email',
+                    monitor: monitor
+                }
+            }
+        }
+        else {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Monitor não encontrado'
+                }
+            }
+        }
+    }
+    catch (erro) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao retornar monitor',
+                error: erro
+            }
+        }
+    }
+}
+
+//  Retorna um monitor pelo CPF
+const getMonitorByCpf = async (cpf) => {
+    try {
+        const monitor = await Monitor_repository.getMonitorByCpf(cpf);
+        if (monitor) {
+            return {
+                statusCode: 200,
+                data: {
+                    message: 'Monitor retornado com sucesso por CPF',
+                    monitor: monitor
+                }
+            }
+        }
+        else {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Monitor não encontrado'
+                }
+            }
+        }
+    }
+    catch (erro) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao retornar monitor',
+                error: erro
+            }
+        }
+    }
+}
+
 //  Atualizar um monitor
 const updateMonitor = async (id, monitor) => {
     try {
@@ -137,4 +203,6 @@ module.exports = {
     getMonitores,
     updateMonitor,
     deleteMonitor,
+    getMonitorByEmail,
+    getMonitorByCpf,
 }

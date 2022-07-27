@@ -13,6 +13,20 @@ const getMonitores = async (req, res) => {
     return res.status(response.statusCode).json(response.data);
 }
 
+//  Retorna um monitor pelo Email
+const getMonitorByEmail = async (req, res) => {
+    const email = req.params.email;
+    const response = await Monitor_service.getMonitorByEmail(email);
+    return res.status(response.statusCode).json(response.data);
+}
+
+//  Retorna um monitor pelo CPF
+const getMonitorByCpf = async (req, res) => {
+    const cpf = req.params.cpf;
+    const response = await Monitor_service.getMonitorByCpf(cpf);
+    return res.status(response.statusCode).json(response.data);
+}
+
 //  Atualizar um monitor
 const updateMonitor = async (req, res) => {
     const id = req.params.id;
@@ -33,4 +47,6 @@ module.exports = {
     getMonitores,
     updateMonitor,
     deleteMonitor,
+    getMonitorByEmail,
+    getMonitorByCpf,
 }

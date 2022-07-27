@@ -68,6 +68,72 @@ const getAlunos = async () => {
     }
 }
 
+//  Retorna um aluno pelo Email
+const getAlunoByEmail = async (email) => {
+    try {
+        const aluno = await Alunos_repository.getAlunoByEmail(email);
+        if (aluno) {
+            return {
+                statusCode: 200,
+                data: {
+                    message: 'Aluno retornado com sucesso por email',
+                    aluno: aluno
+                }
+            }
+        }
+        else {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Aluno não encontrado'
+                }
+            }
+        }
+    }
+    catch (erro) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao retornar aluno',
+                error: erro
+            }
+        }
+    }
+}
+
+//  Reotorna o aluno pelo CPF
+const getAlunoByCpf = async (cpf) => {
+    try {
+        const aluno = await Alunos_repository.getAlunoByCpf(cpf);
+        if (aluno) {
+            return {
+                statusCode: 200,
+                data: {
+                    message: 'Aluno retornado com sucesso por CPF',
+                    aluno: aluno
+                }
+            }
+        }
+        else {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Aluno não encontrado'
+                }
+            }
+        }
+    }
+    catch (erro) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao retornar aluno',
+                error: erro
+            }
+        }
+    }
+}
+
 //  Atualizar um aluno
 const updateAluno = async (id, aluno) => {
     try {
@@ -137,4 +203,6 @@ module.exports = {
     getAlunos,
     updateAluno,
     deleteAluno,
+    getAlunoByEmail,
+    getAlunoByCpf,
 }

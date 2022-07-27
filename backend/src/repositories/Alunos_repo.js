@@ -13,6 +13,24 @@ const getAlunos = async () => {
     return await Aluno.findAll();
 }
 
+//  Retorna um aluno pelo email
+const getAlunoByEmail = async (email) => {
+    return await Aluno.findOne({
+        where: {
+            email: email
+        }
+    });
+}
+
+//  Retorna um aluno pelo cpf
+const getAlunoByCpf = async (cpf) => {
+    return await Aluno.findOne({
+        where: {
+            cpf: cpf
+        }
+    });
+}
+
 // deleta cadastro de usuário no banco de dados pelo "id" (DELETE)
 const deleteAluno = async (id) => {
     return await Aluno.destroy({ where: { id: id } });
@@ -28,4 +46,6 @@ module.exports = {
     getAlunos,
     deleteAluno,
     updateAluno,
+    getAlunoByEmail,
+    getAlunoByCpf,
 }

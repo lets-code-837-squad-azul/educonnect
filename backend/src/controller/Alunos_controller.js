@@ -13,6 +13,20 @@ const getAlunos = async (req, res) => {
     return res.status(response.statusCode).json(response.data);
 }
 
+//  Retorna um aluno pelo Email
+const getAlunoByEmail = async (req, res) => {
+    const email = req.params.email;
+    const response = await Alunos_service.getAlunoByEmail(email);
+    return res.status(response.statusCode).json(response.data);
+}
+
+//  Retorna um aluno pelo CPF
+const getAlunoByCpf = async (req, res) => {
+    const cpf = req.params.cpf;
+    const response = await Alunos_service.getAlunoByCpf(cpf);
+    return res.status(response.statusCode).json(response.data);
+}
+
 //  Atualizar um aluno
 const updateAluno = async (req, res) => {
     const id = req.params.id;
@@ -33,4 +47,6 @@ module.exports = {
     getAlunos,
     updateAluno,
     deleteAluno,
+    getAlunoByEmail,
+    getAlunoByCpf,
 }
