@@ -37,7 +37,9 @@ body {
     font-family: var(--fonte-padrao);
 }
 
-
+input, label{
+    margin-left: 10px;
+}
 
 .imagem_fundo {
     background-image: url(".././img/EduConnectOriginal.png");

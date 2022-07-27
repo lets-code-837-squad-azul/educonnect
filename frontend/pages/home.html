@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./css/reset-min.css">
     <link rel="stylesheet" href="../css/components/button.css">
     <link rel="stylesheet" href="../css/components/text.css">
-
     <link rel="stylesheet" href="../css/home.css">
+    
     
     
 
@@ -25,25 +25,19 @@
         <nav>
             <h2 class="color centro">Login</h2>
 
-            <table>
-                <tr>
-                <td class="color">CPF:</td>
-                
-                </tr>
-                <tr>
-                    <td><input type="number" name="CPF" size="40" id="CPF"> <br /></td>
-                </tr>
-                
-                <tr>
-                    
-                <td class="color">Senha:</td>
-                
-                </tr>
-                <tr>
-                <td><input type="password" name="Senha" size="20" id="Senha"> <br /></td>
-            </tr>
+            <form >
+                <div>
+                    <label for="cpf" class="color">CPF:</label><br>
+                    <input type="number" name="CPF" size="40" id="CPF">
+                </div>
+                <div>
+                    <label for="Senha" class="color">Senha:</label><br>
+                    <input type="password" name="Senha" size="20" id="Senha">
+                </div>
+            </form>
 
-            </table>
+
+
         <div>
             <a href="./login-entrar.html"><button target="_self" onclick="entrar()" class="bt-entrar">Entrar</button></a>
             <a href="./login-cadastrar.html"><button target="_self" onclick="cadastrar()" class="bt-cadastrar">Cadastrar</button> </a>
