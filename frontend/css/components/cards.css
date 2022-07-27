@@ -25,3 +25,8 @@
   flex-direction: row;
   align-items: center;
 }
+
+.card p {
+  padding-left: 10px;
+  margin: 0px;
+}

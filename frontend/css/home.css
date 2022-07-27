@@ -19,9 +19,7 @@ html {
     height: 100%;
 }
 
-.flex {
-    display: flex;
-}
+
 
 .semdecoracao {
     text-decoration: none;
@@ -32,38 +30,25 @@ html {
 }
 
 body {
-    display: grid;
-    grid-template-rows: 100% 100% 150% 140%;
+    flex-direction: column;
     height: 100%;
     margin:0%;
     text-align: justify;
     font-family: var(--fonte-padrao);
 }
 
-header {
-    display: grid;
-    grid-template-rows: 10% 90% ;
-    grid-row: 1/2;
-}
+
 
 .imagem_fundo {
     background-image: url(".././img/EduConnectOriginal.png");
     background-repeat: no-repeat;
     background-position: center;
     max-width: 100%;
+    max-height: 100%;
+    
 }
 
-header div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-left: 20px;
-    background-color: rgba(93, 107, 231);
-    grid-row: 1/2;    
-}
+
 
 .color {
     color: whitesmoke;
@@ -74,47 +59,19 @@ header div {
     padding-top: 10px;
 }
 
-header nav {
-    grid-row: 2/3;
-}
 
-header nav h2,h1 {
-    font-family: var(--fonte-padrao);
-    color: #FFF;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
-    text-align: center;
-    font-size: 40px;
-}
-
-header nav p {
-    margin-top: 230px;
-    margin-right: 10px;
-    font-family: var(--fonte-padrao);
-    color: #FFF;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
-    text-align:right;
-    font-size: 12px;
-}
 
 .letrahome {
     margin-top: 100px;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-row:2/3;
     padding-top: 20px;
     height: 100%;
     background-color:  #f7f7f7; 
 }
 
 main nav {
-    grid-row: 2/3;
-    grid-column: 2/3;
     background-color: rgba(93, 107, 231);
     height: 400px;
     width: 400px;
@@ -132,22 +89,17 @@ main nav a {
     align-content: space-between;
     justify-self: center;
     margin-top: 10%;
-    grid-row: 2/3;
+
 }
 
 main nav div {
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 10%;
-    grid-row: 2/3;
+
 }
 
 aside {  
-    display: grid;
-    grid-row:3/4;
-    grid-template-rows: 30% 1fr;
-    grid-template-columns: 15% 1fr 15%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -155,36 +107,22 @@ aside {
 }
 
 aside div {
-    grid-row: 1/2;
-    grid-column: 2/3;
+ 
     color: white;
     background-color:rgba(0, 0, 0, 0.5);
     
 }
 
-aside span{
-    grid-row: 2/3;
-    grid-column: 2/3;
+aside span section{
+    max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+    justify-content: space-around;
+
 }
 
-footer {
-    display: grid;
-    grid-row:4/5;
-    grid-template-columns: 15% 1fr 15%;
-    grid-template-rows: 70% 1fr;
-    background-color: rgb(255, 255, 255);
-}
 
-footer div {
-    grid-column: 2/3;
-    grid-row: 1/2
-}
 
-footer nav {
-    margin-left: 10px;
-    grid-column: 1/4;
-    grid-row: 2/3
-}
 
 .texto {
     line-height: 1.6;
@@ -197,17 +135,52 @@ footer nav {
 .container {
 	margin: 0 auto;
 	display: flex;
+
 }
 
 .item {
 	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
 	flex: 1;
 	margin: 5px;
-	background: #dbc81c;
 	text-align: center;
 	font-size: 1.5em;
+    background-color: rgba(93, 107, 231);
 }
 
 .row {
 	flex-direction: row;
+}
+
+.edu {
+    padding-left: 10%;
+    margin: -0.5em
+}
+
+.nav {
+    padding-left: 45%;
+    margin-top: 0.5%;
+}
+
+.nav nav p {
+    word-spacing: 2em;
+    font-family: var(--fonte-inicio);
+    color: rgb(255, 235, 108);
+
+}
+
+.nav nav p a {
+    font-size: 1.2em;
+    color: rgb(250, 220, 25);
+    text-shadow: -1px -1px 1px #000000;
+}
+
+.nav nav p a:hover {
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.edu img {
+    max-width: 3.7rem;
+    margin-top: 0.9rem;
+    margin-left: 6rem;
+    border-radius: 5%;
 }

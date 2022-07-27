@@ -32,7 +32,7 @@ h1, h2 {
   
 h1 {
     font-size: 2em;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.164);
+    text-shadow: 2px 2px 0px #0000002a;
     color: var(--cor1);
     padding: 10px;
 }

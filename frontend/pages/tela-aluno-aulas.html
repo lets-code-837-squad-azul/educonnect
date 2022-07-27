@@ -27,7 +27,7 @@
 
         <h2>Aulas agendadas</h2>
 
-        <table border="0">
+        <!-- <table border="0">
             <tr>
                 <th>
                     Monitor
@@ -56,31 +56,39 @@
                     <input type="time" id="hora" name="horaFim" disabled>
                 </td>
             </tr>
-        </table>
+        </table> -->
 
-        <div class="bt-centralizado-linha">
+        <!-- <div class="bt-centralizado-linha">
             <p>Entre em contato com seu monitor:</p>
             <a href=""><img src="https://img.icons8.com/material-outlined/35/000000/whatsapp--v1.png" alt="WhatsApp"></a>
             &ensp;
             <a href=""><img src="https://img.icons8.com/material-outlined/35/000000/new-post.png" alt="Email"></a>
-        </div>
+        </div> -->
 
-        <div class="bt-centralizado-linha">
-            <p>Caso necessite resgitrar uma denúncia, clique&ensp;<a href="../pages/denuncia.html">aqui</a>.</p>
-        </div>
-
-        <h2>Histórico de aulas</h2>
+        <!-- <h2>Histórico de aulas</h2> -->
 
         <div class="column">
             <div class="card">
-                <label>Aula: <input type="text" id="aula" name="aula" disabled/></label>
-                <label>Matéria: <input type="text" id="materia" name="materia" disabled/></label>
-                <label>Monitor: <input type="text" id="monitor" name="monitor" disabled/></label>
-                <label>Data de início: <input type="date" id="dataInicio" name="dataInicio" disabled/></label>
-                <label>Última mensagem: <input type="date" id="ultimaMensagem" name="ultimaMensagem" disabled/></label>
-                <label>Status: <input type="text" id="status" name="status" disabled/></label>
-                <button type="reset" onclick="deletarChat()" class="bt-deletar">Deletar</button>
+                <label>Aula:<input type="text" id="aula" name="aula" disabled/></label>
+                <label>Matéria:<input type="text" id="materia" name="materia" disabled/></label>
+                <label>Monitor:<input type="text" id="monitor" name="monitor" disabled/></label>
+                <label>Data de início:<input type="date" id="dataInicio" name="dataInicio" disabled/></label>
+                <!-- <label>Última mensagem: <input type="date" id="ultimaMensagem" name="ultimaMensagem" disabled/></label> -->
+                <label>Status:<input type="text" id="status" name="status" disabled/></label>
+                <p>Entre em contato com seu monitor:</p>
+                &ensp;                   
+                <a href=""><img src="https://img.icons8.com/material-outlined/35/000000/whatsapp--v1.png" alt="WhatsApp"></a>
+                &ensp;
+                <a href=""><img src="https://img.icons8.com/fluency-systems-regular/38/000000/ringer-volume.png" alt="Ligação"></a>
+                &ensp;
+                <a href=""><img src="https://img.icons8.com/material-outlined/35/000000/new-post.png" alt="Email"></a>                    
+                <br>
+                <button type="submit" onclick="deletarChat()" class="bt-deletar">Deletar</button>
             </div>
+        </div>
+        <br>
+        <div class="bt-centralizado-linha">
+            <p>Caso necessite resgitrar uma denúncia, clique&ensp;<a href="../pages/denuncia.html">aqui</a>.</p>
         </div>
 
         <!-- <iframe src="footer.html" frameborder="0"></iframe> -->
