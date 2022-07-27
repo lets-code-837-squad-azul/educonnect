@@ -14,6 +14,7 @@ const Monitor = database.define('Monitor', {
     email: {
         type: DataTypes.STRING,
         allowNull: false,
+        unique: true,
     },
     senha: {
         type: DataTypes.STRING,
@@ -26,6 +27,7 @@ const Monitor = database.define('Monitor', {
     cpf: {
         type: DataTypes.STRING,
         allowNull: false,
+        unique: true,
     },
     data_de_nascimento: {
         type: DataTypes.DATEONLY,
