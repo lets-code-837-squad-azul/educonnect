@@ -6,7 +6,7 @@ require('dotenv').config();
 const port = process.env.PORT;
 try {
     app.listen(port, () => {
-        console.log('Servidor rodando em http://localhost:' + port);
+        console.log('Servidor rodando em https://educonnect-lets-code-837.herokuapp.com:' + port);
     });
 }
 catch (error) {
