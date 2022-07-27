@@ -1,17 +1,16 @@
 class MyHeader extends HTMLElement {
     connectedCallback(){
-        this.innerHTML = `<header>
-
-        <div>
-            <section class="container flex">
-                <div class="item"><a class="color semdecoracao" href="#Sobre">Sobre</a></div>
-                <div class="item"><a class="color semdecoracao" href="#quemPodeParticipar">Quem pode participar</a> 
-                </div>
-                <div class="item"><a class="color semdecoracao" href="#comoFunciona">Como funciona</a></div>
-                <div class="item"><a class="color semdecoracao" href="#sejaUmApoiador">Seja um apoiador</a></div>
-            </section>
+        this.innerHTML = `<header>    
+        <div class="edu">
+            <a href="./home.html"><img src="../img/EduconnectMiniV2.png" alt=""></a>
+            <!-- <h1 class="nome"><a href="./home.html">EduConnect</a></h1> -->
         </div>
+        <div class="nav">
+            <nav>
 
+            </nav>
+        </div>
+        
     </header>`
     }
 }

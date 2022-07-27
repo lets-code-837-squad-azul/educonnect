@@ -99,6 +99,10 @@ textarea {
   margin: 10px;
 }
 
+main{
+  padding-top: 60px;
+}
+
 /* .input-materia {
   display: block;
 
@@ -123,3 +127,4 @@ textarea {
 .cadastrar-materia label {
   padding: 5px 5px 0px 20px;
 }
+

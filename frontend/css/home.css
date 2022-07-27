@@ -37,10 +37,7 @@ body {
     font-family: var(--fonte-padrao);
 }
 
-header {
-    height: 100%;
 
-}
 
 .imagem_fundo {
     background-image: url(".././img/EduConnectOriginal.png");
@@ -53,23 +50,6 @@ header {
 
 
 
-header div {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-left: 20px;
-    background-color: rgba(93, 107, 231);
-  
-}
-
-header span{
-    max-height: 100%;
-    width: 100%;
-    background-image: url('../img/EduConnectOriginal.png');
-}
-
 .color {
     color: whitesmoke;
 }
@@ -80,25 +60,6 @@ header span{
 }
 
 
-header nav h2,h1 {
-    font-family: var(--fonte-padrao);
-    color: #FFF;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
-    text-align: center;
-    font-size: 40px;
-}
-
-header nav p {
-    margin-top: 230px;
-    margin-right: 10px;
-    font-family: var(--fonte-padrao);
-    color: #FFF;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
-    text-align:right;
-    font-size: 12px;
-}
 
 .letrahome {
     margin-top: 100px;
@@ -162,15 +123,6 @@ aside span section{
 
 
 
-footer {
-   
-    background-color: rgb(255, 255, 255);
-}
-
-
-footer nav {
-    margin-left: 10px;
-}
 
 .texto {
     line-height: 1.6;
@@ -197,4 +149,38 @@ footer nav {
 
 .row {
 	flex-direction: row;
+}
+
+.edu {
+    padding-left: 10%;
+    margin: -0.5em
+}
+
+.nav {
+    padding-left: 45%;
+    margin-top: 0.5%;
+}
+
+.nav nav p {
+    word-spacing: 2em;
+    font-family: var(--fonte-inicio);
+    color: rgb(255, 235, 108);
+
+}
+
+.nav nav p a {
+    font-size: 1.2em;
+    color: rgb(250, 220, 25);
+    text-shadow: -1px -1px 1px #000000;
+}
+
+.nav nav p a:hover {
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.edu img {
+    max-width: 3.7rem;
+    margin-top: 0.9rem;
+    margin-left: 6rem;
+    border-radius: 5%;
 }

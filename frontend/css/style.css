@@ -112,7 +112,7 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-row:2/3;
-    padding-top: 20px;
+    padding-top: 80px;
     height: 100%;
     background-color:  #f7f7f7;
    

@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Monitor</title>
     <link rel="stylesheet" href="./css/reset-min.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/components/button.css">
     <link rel="stylesheet" href="../css/cadastro.css">
+    <script type="module" src="../js/header.js"></script>
 </head>
 <body>
+
+    <my-header></my-header>
     
     <main>
 
@@ -41,6 +45,10 @@
         
             <label for="cpf">CPF:</label>
             <input class="input-texto" name="cpf" type="tel" pattern="[0-9]{11}" required>
+
+            <br>
+                <label for="estado">Estado:</label>
+                <input class="input-texto" id="estado" name="estado" type="name"required>
 
             <br>
         
