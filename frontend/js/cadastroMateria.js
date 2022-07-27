@@ -95,21 +95,19 @@ function adicionarDiaHora() {
 
     const listaMonitoria = document.getElementById("listaMonitoria");
 
-    listaMonitoria.innerHTML = diasMonitoria.map(function(horario) {
+    listaMonitoria.innerHTML = diasMonitoria.map(function(horario, indice) {
        return `<tr>
        <td>${horario.diaDaSemana}</td>
         <td>${horario.horaInicio}</td>
         <td>${horario.horaFinal}</td>
+        <td>${indice}</td>
         <td id='tabela_linha_'><abbr title="Remover"><input class="input-mais-menos" type='image' src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"
         onClick=\"removerDiaHora('tabela_linha_')\"></input></abbr></td>
       </tr> `;
     }).join("") + disponibilidade
-
     
 
-
-
-
+    
 
   
 
@@ -123,12 +121,26 @@ function adicionarDiaHora() {
 
 }
 
-function removerDiaHora(id) {
-    console.log("Botão menos");
+function removerDiaHora(id) {    
 
-    teste = document.getElementById(id);
-    console.log(teste)
-    teste.parentNode.parentNode.removeChild(teste.parentNode);
+    diasMonitoria.pop()
+    console.log(diasMonitoria,'indice')
+    // listaMonitoria = document.getElementById(id);
+
+    // listaMonitoria.parentNode.parentNode.removeChild(listaMonitoria.parentNode);
+    // console.log(listaMonitoria.parentNode)
+
+    listaMonitoria.innerHTML = diasMonitoria.map(function(horario, indice) {
+        return `<tr>
+        <td>${horario.diaDaSemana}</td>
+         <td>${horario.horaInicio}</td>
+         <td>${horario.horaFinal}</td>
+         <td>${indice}</td>
+         <td id='tabela_linha_'><abbr title="Remover"><input class="input-mais-menos" type='image' src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"
+         onClick=\"removerDiaHora('tabela_linha_')\"></input></abbr></td>
+       </tr> `;
+     }).join("") + disponibilidade
+ 
 
 }
 
