@@ -24,7 +24,7 @@
                 <nav>
                     <p>
                         <a href="./home.html">Início</a>
-                        <a href="./loged.html">Cadastro</a>
+                        <a href="./redirecionar.html">Cadastro</a>
                         <a href="./home" onclick="sair()">Sair</a>
                     </p>
                 </nav>
@@ -51,11 +51,11 @@
                 </li>
                 <li>
                     <label for="telefone"><h4>Telefone:</h4></label>
-                    <input id="telefone" name="telefone" type="tel" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+                    <input id="telefone" name="telefone" type="tel" pattern="[0-9]{11}" required>
                 </li>
                 <li>
                     <label for="cpf"><h4>CPF:</h4></label>
-                    <input id="cpf" name="cpf" type="tel" pattern="[0-9]{11}" required>
+                    <input id="cpf" name="cpf" type="tel" pattern="[0-9]{11}">
                 </li>
                 <li>
                     <label for="nascimento"><h4>Data de Nascimento:</h4></label>
@@ -117,7 +117,7 @@
             </ul>
         </p>
         <div class="cadButton">
-            <a href="./Loged.html"><button>Salvar</button></a>
+            <a href="./redirecionar.html" onclick="setAluno()"><button>Salvar</button></a>
             <a href=""><button>Voltar</button></a>
         </div>
     </form>
