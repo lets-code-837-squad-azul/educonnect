@@ -33,7 +33,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-
 }
 
 .bt-centralizado-coluna button {
@@ -46,28 +45,3 @@ button:hover {
     flex-direction: row;
     justify-content: center;
 }
-
-/* .bt-cadastrar {
-    background-image: linear-gradient(to right, #0000ff,  #000094);
-}
-    
-.bt-salvar, .bt-enviar {
-    background-image: linear-gradient(to right, #04e23c,  #038f26);
-} */
-
-/* .bt-editar {
-    background-image: linear-gradient(to right, #ffff00,  #a5a501);
-}
-
-.bt-sair {
-    background-image: linear-gradient(to right, #ffff00,  #a5a501);
-}
-
-.bt-aluno {
-    background-image: linear-gradient(to right, #ffff00,  #a5a501); 
-}
-
-.bt-monitor {
-    background-image: linear-gradient(to right, #ffff00,  #a5a501);
-} */
-

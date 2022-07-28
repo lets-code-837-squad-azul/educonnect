@@ -21,8 +21,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
-    /* width: 800px; */
-    /* width: 100%; */
     background-color: var(--cor2);
 }
 
@@ -83,38 +81,3 @@ input, label {
     width: 161px;
     padding: 0px;
 }
-
-/* .required:after {
-    content:" *"; 
-    color: #ff0000;
-} */
-
-/* input[type=text] {
-    width: 60%;
-}
-
-input[type=email] {
-    width: 60%;
-}
-
-input[type=tel] {
-    width: 60%;
-}
-
-input[type=password] {
-    width: 60%;
-}
-
-input[type=date] {
-    width:20%
-} */
-
-/* @media (max-width: 700px) {
-    .form {
-        margin-left: 5%;
-    }
-
-    input[type=date] {
-        width: 30%;
-    }
-} */

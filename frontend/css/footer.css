@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root {
-  --cor1: #032ca6e3;
+  --cor1: #032CA6;
   --cor2: #304f8c31;
   --cor3: #8C824D;
   --cor4: #F2B90F;
@@ -21,15 +21,14 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content:space-around;
-  /* justify-content: center; */
+  position: absolute;
   align-items: center;
   margin: auto;
   padding-bottom: 10px;
-  /* position:absolute; */
   width: 100%;
   bottom: 0;
   left: 0;
-  background: blue;
+  background-color: var(--cor1);
   font-family: var(--fonte-padrao);
   font-size: 0.7em;
 }
@@ -41,6 +40,7 @@ footer {
 
 .img-apoio-inst {
   height: 40px;
+  border-radius: 1em;
 }
 
 .nome {
@@ -57,62 +57,3 @@ footer {
   text-align: center;
   padding: 0px;
 }
-
-/* .display-grid {
-  display: grid;
-  grid-template-columns: 30% 10% 25% 10% 25%;
-}
-
-parte1 {
-  grid-column: 1;
-  background-color: red;
-}
-
-.display-grid parte2 {
-  grid-column: 2;
-  padding-top: 18px;
-}
-
-.display-grid parte3 {
-  grid-column: 3;
-  padding-top: 36px;
-}
-
-.display-grid quebra{
-  line-height: 33px;
-}
-
-.parte4 {
-  grid-column: 4;
-  padding-top: 10px;
-}
-
-.parte5 {
-  grid-column: 5;
-  padding-top: 10px;
-}
-
-p {
-  padding: 15px;
-  text-align: justify;
-}
-
-.titulo-li {
-  padding-bottom: 5px;
-}
-
-li {
-  list-style: none;
-  padding-bottom: 2px;
-  padding-left: 15px;
-  align-items: center;
-}
-
-.parte1 a {
-  text-decoration: none;
-  color: var(--cor2);
-}
-
-.parte1 a:hover {
-  text-decoration: underline;
-} */
