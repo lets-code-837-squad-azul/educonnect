@@ -17,21 +17,31 @@
 
     <main>
 
-        <p>Olá, <span id="mensagem"></span></p>
+        <p>Olá, <span id="nome"></span></p>
 
-        <h2>Entrar como:</h2>
-        
+        <h1>Entrar como:</h1>
+
         <div class="bt-centralizado-coluna">
-            <a><button target="_self" class="bt-aluno" href="../pages/tela-aluno-cadastro-aula.html">Aluno</button></a>
+          <div id="esconder_aluno">
+            <a href="../pages/tela-aluno-aulas.html"><button target="_self" class="bt-avançar">Aluno</button></a>
             <br>
-            <a href="./tela-monitor-cadastro-materia.html"><button target="_self" class="bt-monitor">Monitor</button></a>
+          </div>
+
+          <div id="esconder_monitor">
+            <a href="./tela-monitor-aulas.html"><button target="_self" class="bt-avançar">Monitor</button></a>
             <br>
-            <a href="../index.html"><button target="_self" class="bt-voltar">Sair</button></a>
+          </div>
+
+            <a href="../index.html"><button target="_self" class="bt-voltar">Voltar</button></a>
         </div>
 
+        
     </main>
 
 <script src="../js/login-entrar.js"></script>
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="pt-br">

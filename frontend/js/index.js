@@ -10,15 +10,14 @@ function entrar(){
     .then(response => response.json())
     .then((data )=> {
 
-      console.log(typeof(data.aluno.nome))
+      sessionStorage.setItem('aluno', data.eh_aluno)
+      sessionStorage.setItem('monitor', data.eh_monitor)
 
-      sessionStorage.setItem('nome', data.aluno.nome);
 
-      console.log(typeof(sessionStorage.getItem('nome')))
-    
 
 
       if (data.eh_aluno || data.eh_monitor) {
+        sessionStorage.setItem('nome', data.aluno.nome)
         location.replace("../pages/login-entrar.html")
       } else {
         document.querySelector("#mensagem").innerHTML = data.message;

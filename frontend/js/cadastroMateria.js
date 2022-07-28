@@ -14,10 +14,7 @@ const disponibilidade = `<tr>
         <option value="Sábado">Sábado</option>
     </select>
 </td>
-<td><input type="time" id="horaInicio" name="horaInicio" required></td>
-           <td><input type="time" id="horaFim" name="horaFim" required></td>
-<td id='tabela_linha_'><abbr title="Remover"><input class="input-mais-menos" type='image' src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"
-onClick=\"removerDiaHora('tabela_linha_')\"></input></abbr>`;
+<td><input type="time" id="horaInicio" name="horaInicio" required></td>`;
 
 
 
