@@ -27,7 +27,10 @@ const Aula = database.define('Aula', {
     },
     aluno_id: {
         type: DataTypes.INTEGER,
-    }
+    },
+    dia_da_semana: {
+        type: DataTypes.STRING,
+    },
 }, { tableName: 'aulas' });
 
 module.exports = Aula;

@@ -4,7 +4,7 @@ const Sandbox_ctrl = require('../controller/Sandbox_ctrl');
 const express = require('express');
 const router = express.Router();
 
-router.post('/', Sandbox_ctrl.createTodosEstados);
+router.post('/estados', Sandbox_ctrl.createTodosEstados);
+router.post('/disciplinas', Sandbox_ctrl.createTodasDisciplinas);
 
 module.exports = router;
-

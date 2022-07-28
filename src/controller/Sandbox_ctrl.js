@@ -9,6 +9,14 @@ const createTodosEstados = async (req, res) => {
     return res.status(response.statusCode).json(response.data);
 }
 
+//  Criar todas as disciplinas (POST)
+const createTodasDisciplinas = async (req, res) => {
+    const disciplinas = req.body;
+    const response = await Sandbox_srv.createTodasDisciplinas(disciplinas);
+    return res.status(response.statusCode).json(response.data);
+}
+
 module.exports = {
     createTodosEstados,
+    createTodasDisciplinas,
 }
