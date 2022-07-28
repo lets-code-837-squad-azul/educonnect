@@ -7,17 +7,14 @@ function entrar(){
 
     fetch(`${ULR}/login?cpf=${cpf}&senha=${senha}`)
     .then(response => response.json())
-    .then(data => {
+    .then((data, statusCode) => {
       console.log(data);
+      if (data.eh_aluno || data.eh_monitor) {
+        location.replace("./login-entrar.html")
+      }
     })
 
 
-    /* if(teste.indexOf(true)==-1){
-      console.log("Falso");
-        document.querySelector("#erro").innerHTML = "Não foi identificado a senha ou o CPF de algum usuário!"
-    } else{
-      console.log("Verdadeiro");
-        document.querySelector("#erro").innerHTML ="";
-    } */
+
 
 }
