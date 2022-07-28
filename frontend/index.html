@@ -2,18 +2,185 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduConnect</title>
-    <link rel="stylesheet" href="./css/reset-min.css">
-    <link rel="stylesheet" href="./css/normalize-min.css">
-    <!-- <link rel="stylesheet" href="../css/index.css"> -->
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/components/button.css">
+    <link rel="stylesheet" href="./css/components/text.css">
+    <link rel="stylesheet" href="./css/index.css">
+    
+    
+  
+
 </head>
-<body>
+<body class="container">
 
-    <iframe src="./pages/header.html" frameborder="0"></iframe>
+    
+   
+<header>
+    <div>
+        <span>
+            <a class="color semdecoracao" href="#Sobre">Sobre</a>
+        </span>
+        <span>
+            <a class="color semdecoracao" href="#quemPodeParticipar">Quem pode participar</a> 
+        </span>
+        <span>
+         <a class="color semdecoracao" href="#comoFunciona">Como funciona</a>   
+        </span>
+        
+        <span>
+           <a class="color semdecoracao" href="#sejaUmApoiador">Seja um apoiador</a>
+        </span>
+    
 
-    <iframe src="./pages/footer.html" frameborder="0"></iframe>
+    </div>
+    <img src="./img/EduConnectOriginal.png">
+    
+</header>
 
-    <!-- <script src="./js/index.js"></script> -->
+    
+
+    <main>
+
+        <nav>
+            <h2 class="color centro">Login</h2>
+
+            <form >
+                <div>
+                    <label for="cpf" class="color">CPF:</label><br>
+                    <input type="number" name="CPF" size="40" id="CPF">
+                </div>
+                <div>
+                    <label for="Senha" class="color">Senha:</label><br>
+                    <input type="password" name="Senha" size="20" id="Senha">
+                </div>
+            </form>
+
+
+
+        <div>
+            <a href="./pages/login-cadastrar.html"><button target="_self" onclick="entrar()" class="bt-entrar">Entrar</button></a>
+            <a href="./pages/login-cadastrar.html"><button target="_self" onclick="cadastrar()" class="bt-cadastrar">Cadastrar</button> </a>
+        </div>
+        <div>
+        <p id="erro"></p>
+        </div>
+
+        <a href="./pages/esqueci-senha.html" class="color semdecoracao center">Esqueceu a senha?</a>
+
+        </nav>
+
+    </main>
+
+    <br>
+
+    <aside>
+
+    <div>
+        <h1 id="Sobre">Sobre</h1>
+        <h2>
+            O EduConnect é uma plataforma de ensino que tem como objetivos:    </h2>
+            <il>
+            <li>Viabilizar a conexão de pessoas que necessitam de auxílio em assuntos acadêmicos, com pessoas dispostas a ensinar;</li> 
+            <li>Agrupar monitores dispostos a ensinar de forma gratuita;</li>
+
+            <li>Gerar conexões sem fins lucrativos e de forma remota, ajudando a transformar vidas e construir uma sociedade mais justa e igualitária.</li>
+    </il>
+
+    </div>
+
+
+    <span>
+        <h2>Quem pode participar?</h2>
+
+        <section class="container row">
+            <div class="item"><h2 class="center">Alunos</h2>
+
+            <h4 class="left"> Pré-requisito: <strong>Vontade de aprender!!</strong></h4>
+
+            <h4 class="left">Se você:</h4>
+            <ul>
+                <li>Tem dúvidas sobre um conteúdo.</li>
+                <li>Não sabe resolver aquele exercício.</li>
+            </ul>
+
+            <h4>Aqui você pode encontrar a ajuda que precisa. </h4>
+
+    <p>Tire suas dúvidas com um monitor, de forma individual ou em grupo, de forma <strong>Gratuita!!</strong></p> 
+        
+            </div>
+            <div class="item"><h2  class="center">Monitores</h2>
+
+
+            <h4 class="left"> Pré-requisito: <strong>Vontade de ensinar!!</strong></h4>
+
+            <h4 class="left">Se você:</h4>
+            <ul>
+                <li>Quer contribuir para a democratização da educação.</li>
+                <li>Ajudar uma nova geração de estudantes.</li>
+            </ul>
+
+            <h4>Aqui o seu conhecimento pode fazer a diferença!</h4>
+
+    <p>Seja monitor de um aluno ou um grupo de alunos, ajude no engajamento de jovens e interessados para um futuro <strong>brilhante</strong>.</strong></p> 
+            
+            </div>
+
+        </section>
+    </span>
+
+    </aside>
+
+    
+<footer>
+    <div>
+    <h1 id="comoFunciona">Como funciona</h1>
+    <p>
+        
+Faça seu cadastro e escolha o seu perfil de usuário como monitor ou aluno:
+
+<h2>Como monitor:</h2>
+
+<ul>
+    <li>Defina os dias da semana e os horários que estará disponível para dar monitoria</li>
+    <li>Defina as matérias que poderá dar monitoria</li>
+    <li>Aguarde um aluno entrar em contato com você</li>
+    </ul>
+
+    <h2>Como aluno:</h2>
+    <ul>
+    <li>Pesquise o assunto que deseja ter monitoria</li>
+    <li>Encontre o monitor que mais se adeque a seu horário</li>
+    <li>Marque uma aula com ele no nosso chat de forma offline</li>
+</ul>   
+
+<h2>Caso não encontrem o assunto desejado:</h2>
+<p>Envie para nós sua solicitação em: educonnectajuda@gmail.com, definindo se você é monitor ou aluno e específique a matéria que deseja ser acrescentada.</p>
+<h2>Quando receber uma mensagem:</h2>
+
+<p>Será notificado por e-mail as conversas do chat e avisos.</p>
+
+<h2>Não se limitem:</h2>
+
+    <p>Tenham a liberdade de utilizar outras plataformas para auxiliar no ensino conforme definido pelo aluno e/ou orientador. Exemplos: e-mail, Meet, Loom, WhatsApp, Telegram e outros.
+    </p>
+    </div>
+
+    
+
+
+</footer>
+
+
+
+
+    
+
+
+   
+
+<script src="./js/index.js"></script>
+
 </body>
-</html>
+</html> 

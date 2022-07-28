@@ -13,12 +13,21 @@ p, li, ol, ul, table, tr, td, a{
     padding-left: 30px;
     text-align: justify;
     font-size: 18px; 
+    
 }
 
 h2 {
     padding-right: 10px;
     padding-left: 10px;
     text-align: justify;
+
+}
+
+h1 {
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: justify;
+    
 
 }
 

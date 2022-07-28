@@ -83,7 +83,7 @@ onClick=\"removerDiaHora('tabela_linha_')\"></input></abbr>`;
 function adicionarDiaHora() {
     let diaDaSemana = document.getElementById('diaSemana');
     let horaInicio = document.getElementById("horaInicio");
-    let horaFinal = document.getElementById("horaFim");
+    let horaFinal = document.getElementById("horaFim"); 
 
     const horario = {
         diaDaSemana: diaDaSemana.value,
