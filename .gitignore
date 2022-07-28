@@ -68,10 +68,6 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env
-.env.test
-
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
@@ -102,3 +98,8 @@ dist
 
 # TernJS port file
 .tern-port
+backend/src/controller/Sandbox_ctrl.js
+backend/src/repositories/Sandbox_rp.js
+backend/src/routes/Sandbox_rt.js
+backend/src/services/Sandbox_srv.js
+.env
