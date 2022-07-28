@@ -80,6 +80,8 @@ select {
 textarea {
   border-radius: 5px;
   margin: 10px;
+  /* rows: 10; */
+  /* columns: 100; */
 }
 
 table {
@@ -117,3 +119,11 @@ table {
 .cadastrar-materia label {
   padding: 5px 5px 0px 20px;
 }
+
+/* .denuncia {
+  width: 100px;
+}
+
+@media (max-width = 100px) {
+
+} */

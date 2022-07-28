@@ -26,7 +26,6 @@ body {
 
 h1, h2 {
     text-align: center;
-    font-family: var(--fonte-padrao);
 }
   
 h1 {
@@ -34,11 +33,13 @@ h1 {
     text-shadow: 2px 2px 0px #0000002a;
     color: var(--cor1);
     padding: 10px;
+    font-family: var(--fonte-inicio);
 }
   
 h2 {
     font-size: 1.5em;
     padding-bottom: 10px;
+    font-family: var(--fonte-padrao);
 }
 
 input, label {

@@ -17,13 +17,17 @@
   --fonte-padrao: 'Quicksand', sans-serif;
 }
 
+/* colocar position: absolute; apenas nas páginas que são curtas */
+
 footer {
   display: flex;
   flex-direction: row;
   justify-content:space-around;
-  position: absolute;
+  /* position: absolute; */
+  /* position: relative; */
   align-items: center;
   margin: auto;
+  margin-top: 20px;
   padding-bottom: 10px;
   width: 100%;
   bottom: 0;
@@ -31,6 +35,10 @@ footer {
   background-color: var(--cor1);
   font-family: var(--fonte-padrao);
   font-size: 0.7em;
+}
+
+.footer-absolute {
+  position: absolute;
 }
 
 .parte1-img {
@@ -48,6 +56,12 @@ footer {
   align-items: center;
 }
 
+.nome-dif {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
 .divisao {
   padding: 0px 10px 0px 10px;
 }
@@ -56,4 +70,8 @@ footer {
   color: var(--cor7);
   text-align: center;
   padding: 0px;
+}
+
+.copyright {
+  margin-top: 100px;
 }
