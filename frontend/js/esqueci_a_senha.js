@@ -21,6 +21,6 @@ function enviar(){
 
 
 
-    //Depois temos que conectar com o banco para saber a existencia do email, mas vou colocar logo os if
+
     
  }

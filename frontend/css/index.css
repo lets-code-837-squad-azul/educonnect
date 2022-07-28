@@ -95,10 +95,11 @@ main {
 
 main nav {
     background-color: rgba(93, 107, 231);
-    height: 400px;
+    height: 500px;
     width: 400px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+    border-radius: 10px; 
 }
 
 main nav a {
@@ -241,4 +242,8 @@ input[type=password] {
     margin-top: 0.9rem;
     margin-left: 6rem;
     border-radius: 5%;
+}
+
+.mensagem{
+    color: red;
 }
