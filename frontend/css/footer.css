@@ -5,80 +5,65 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root {
-  --cor1: #032CA6;
-  --cor2: #d4d4d4;
+  --cor1: #032ca6e3;
+  --cor2: #304f8c31;
+  --cor3: #8C824D;
+  --cor4: #F2B90F;
+  --cor5: #8C6B08;
+  --cor6: #303030;
+  --cor7: #d4d4d4;
 
   --fonte-inicio:'Averia Libre', cursive;
   --fonte-padrao: 'Quicksand', sans-serif;
 }
 
-/* .container {
-  position: static;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* * {
-  margin: 0px;
-  padding: 0px;
-} */
-
-  /* height: 150px; */
-
 footer {
   display: flex;
   flex-direction: row;
-  position:absolute;
+  justify-content:space-around;
+  /* justify-content: center; */
+  align-items: center;
+  margin: auto;
+  padding-bottom: 10px;
+  /* position:absolute; */
   width: 100%;
   bottom: 0;
   left: 0;
-  background: var(--cor1);
-  color: var(--cor2);
-  text-align:justify;
+  background: blue;
   font-family: var(--fonte-padrao);
   font-size: 0.7em;
+}
+
+.parte1-img {
+  display: flex;
   justify-content: center;
+}
+
+.img-apoio-inst {
+  height: 40px;
+}
+
+.nome {
+  display: flex;
   align-items: center;
-  margin: auto;
+}
+
+.divisao {
+  padding: 0px 10px 0px 10px;
+}
+
+.divisao p {
+  color: var(--cor7);
+  text-align: center;
+  padding: 0px;
 }
 
 /* .display-grid {
   display: grid;
   grid-template-columns: 30% 10% 25% 10% 25%;
-} */
-/* 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+}
 
-  top: 20px;
-
-  display: grid;
-  grid-template-columns: 30% 10% 25% 10% 25%;
-  background: var(--cor1);
-  color: var(--cor2);
-} */
-
-/* footer {
-  bottom: 0;
-  position:static;
-  /* position: fixed; 
-  display: grid;
-  grid-template-columns: 30% 10% 25% 10% 25%;
-  background: var(--cor1);
-  color: var(--cor2);
-  width: 100vw;
-  /* width: 100%; 
-  justify-content: center;
-  text-align:justify;
-  font-family: var(--fonte-padrao);
-  font-size: 0.7em;
-} */
-
-/* parte1 {
+parte1 {
   grid-column: 1;
   background-color: red;
 }

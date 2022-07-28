@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root {
-  --cor1: #032CA6;
+  --cor1: #032ca6e3;
   --cor2: #304F8C;
   --cor3: #8C824D;
   --cor4: #F2B90F;
@@ -23,7 +23,8 @@ header {
   height: 4.3rem;
   top: 0;
   left: 0;
-  background: linear-gradient(rgb(45, 123, 158),rgb(12, 122, 178) );
+  background: var(--cor1);
+  /* background: linear-gradient(rgb(45, 123, 158),rgb(12, 122, 178) ); */
   color: white;
   border-bottom-left-radius: 0.1em;
   border-bottom-right-radius: 0.1em;

@@ -6,7 +6,7 @@
 
 :root {
   --cor1: #032CA6;
-  --cor2: #304f8c31;
+  --cor2: #4673cc;
   --cor3: #8C824D;
   --cor4: #F2B90F;
   --cor5: #8C6B08;
@@ -20,14 +20,28 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   align-items: center;
   margin: auto;
   /* width: 800px; */
-  background-color: var(--cor2);
+
+  background: blue;
+
 } 
 
 main{
   padding-top: 60px;
+  background-color: #b9c3e2;
+  width: 100%;
+  /* height: 450px; */
+  
+  /* height: 100vh; */
+  /* vertical-align: middle; */
+  /* display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  align-items: center;
+  height: 500px; */
 }
 
 /* iframe{

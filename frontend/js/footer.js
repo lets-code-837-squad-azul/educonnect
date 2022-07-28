@@ -1,8 +1,76 @@
 class MyFooter extends HTMLElement {
-    connectedCallback(){
+    connectedCallback() {
         this.innerHTML = ` <footer>
 
-        <div class="display-grid">
+        <div class="divisao">
+            <p>Apoio institucional:</p>
+
+            <div class="parte1-img">
+                <a target="_blank" href="https://www.ifood.com.br"><img class="img-apoio-inst" src="../img/LogoIfood.png" alt="Logo iFood"></a>
+                &ensp;
+                <a target="_blank" href="https://letscode.com.br"><img class="img-apoio-inst" src="../img/LogoLetsCode.jpg" alt="Logo Let's Code"></a>
+            </div>
+        </div>
+
+        <div class="divisao">
+            <p>Idealizadores:</p>
+
+            <div class="nome">
+                <p>Décio Santana de Aguiar</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/decioaguiar/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/Decioagu"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a>  
+            </div>
+
+            <div class="nome">
+                <p>Gabriela Gomes Nogueira Sales</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/gabriela-gomes-nogueira-sales-196876220/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/gabriela-gnsales"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a> 
+            </div>
+        </div>
+
+        <div class="divisao">
+            <p>Idealizadores:</p>
+
+            <div class="nome">
+                <p>Décio Santana de Aguiar</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/decioaguiar/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/Decioagu"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a>  
+            </div>
+
+            <div class="nome">
+                <p>Décio Santana de Aguiar</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/decioaguiar/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/Decioagu"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a>  
+            </div>
+        </div>
+
+        <div class="divisao">
+            <p>Idealizadores:</p>
+
+            <div class="nome">
+                <p>Décio Santana de Aguiar</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/decioaguiar/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/Decioagu"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a>  
+            </div>
+
+            <div class="nome">
+                <p>&copy; Copyright EduConnect - 2022</p>
+            </div>
+        </div>
+
+  </footer>`
+    }
+}
+
+customElements.define('my-footer', MyFooter)
+
+/*
+          <br>
+            <p>&copy; Copyright EduConnect - 2022</p>
+
+class="copyright"
+
+<div class="display-grid">
             
             <div class="parte1">
                 <!-- <img src="" alt="Logo do EduConnect"> -->
@@ -43,10 +111,6 @@ class MyFooter extends HTMLElement {
                     <li class="quebra">Pedro Mariano de Souza</li>
                 </ol>
             </div>
-        </div>
+        </div> 
         
-  </footer>`
-    }
-}
-
-customElements.define('my-footer', MyFooter)
+        */
