@@ -4,11 +4,11 @@ const Aula_repository = require('../repositories/Aula_repo');
 const createAula = async (aula) => {
 
     //  Verificar se as informações da aula foram preenchidas
-    if (!aula.disciplina || !aula.monitor_id || !aula.status) {
+    if (!aula.disciplina_id || !aula.monitor_id || !aula.status) {
         return {
             statusCode: 400,
             data: {
-                message: 'Os campos disciplina, monitor_id e status são obrigatórios'
+                message: 'Os campos disciplina_id, monitor_id e status são obrigatórios'
             }
         }
     }
