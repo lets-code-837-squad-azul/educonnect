@@ -14,6 +14,12 @@ const getEstados = async () => {
     return res;
 }
 
+//  Retorna um estado pelo id
+const getEstadoById = async (id) => {
+    const res = await Estado.findByPk(id);
+    return res;
+}
+
 //  Atualiza um estado
 const updateEstado = async (id, estado) => {
     const res = await Estado.update(estado, {
@@ -35,4 +41,5 @@ module.exports = {
     getEstados,
     updateEstado,
     deleteEstado,
+    getEstadoById,
 }
