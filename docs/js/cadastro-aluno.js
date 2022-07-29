@@ -1,3 +1,5 @@
+
+
 const URL = 'https://educonnect-lets-code-837.herokuapp.com/api';
 
 function cadastrarAluno() {
@@ -12,6 +14,8 @@ function cadastrarAluno() {
   const etnia = document.getElementById('etnia').value;
   const genero = document.getElementById('genero').value;
   const escolaridade = document.getElementById('escolaridade').value;
+
+
 
 fetch(`${URL}/alunos/`,{method:"POST", body:JSON.stringify({
     nome: nome,
@@ -31,3 +35,4 @@ fetch(`${URL}/alunos/`,{method:"POST", body:JSON.stringify({
 .then(response => response.json())
 .then(data => console.log(data))
 }
+

@@ -225,3 +225,4 @@ fetch(`${URL}/alunos/`,{method:"POST", body:JSON.stringify({
 .then(response => response.json())
 .then(data => console.log(data))
 }
+
