@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor - Cadastro Matéria</title>
+    <link rel="stylesheet" href="./css/reset-min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/components/button.css">
+    <link rel="stylesheet" href="../css/footer.css"> 
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src=".././img/LogoEduConnect.png" alt="Logo EduConnect">
+        </div>
+
+        <div>
+            <h1>EduConnect</h1>
+            <h2>Democratizando a educação e conectando pessoas!</h2>
+            <h2>Estude gratuitamente!</h2>
+        </div>
+
+    </header>
+
+    <main>
+
+        <h1>Olá, monitor do EduConnect!</h1>
+
+        <h2>Cadastre a matéria que deseja realizar a monitoria:</h2>
+
+        <div class="materia">
+            <select id="materiaMonitoria" name="materiaMonitoria" autofocus>
+                <option value="" disabled selected hidden>Lista de disciplinas</option>
+                <option value="1">Língua Portuguesa</option>
+                <option value="2">Língua Inglesa</option>
+                <option value="3">Matemática</option>
+                <option value="4">Biologia</option>
+                <option value="5">Física</option>
+                <option value="6">Química</option>
+                <option value="7">Geografia</option>
+                <option value="8">História</option>
+                <option value="9">Filosofia</option>
+                <option value="10">Sociologia</option>
+                <option value="11">Artes</option>
+                <option value="12">Educação Física</option>
+            </select>
+        </div>
+
+        <h2>Defina o dia da semana e horário para realizar sua monitoria:</h2>
+
+        <table id="tabelaDiaMonitoria" border="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Dia da semana</th>
+                    <th>Horário início</th>
+                    <th>Horário fim</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="listaMonitoria">
+                <tr>
+                    <td>
+                        <select id="diaSemana" name="diaSemana" required>
+                            <option value="" disabled selected hidden>Escolha um dia</option>
+                            <option value="Domingo">Domingo</option>
+                            <option value="Segunda-feira">Segunda-feira</option>
+                            <option value="Terça-feira">Terça-feira</option>
+                            <option value="Quarta-feira">Quarta-feira</option>
+                            <option value="Quinta-feira">Quinta-feira</option>
+                            <option value="Sexta-feira">Sexta-feira</option>
+                            <option value="Sábado">Sábado</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="time" id="horaInicio" name="horaInicio" required>
+                    </td>
+                    <td>
+                        <input type="time" id="horaFim" name="horaFim" required>
+                    </td>
+                    <td id="tabela_linha_1">
+                        <abbr title="Remover"><input class="input-mais-menos" type="image" onclick="removerDiaHora('tabela_linha_1')" src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"></abbr>
+                        <!-- <input type="button" value="Remover" onclick="removerDiaHora('tabela_linha_1')"> -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- <input id="inserir" type="submit" value="Inserir" onClick="adicionarDiaHora()"></input> -->
+
+        <!-- <button onclick="adicionarDiaHora()" type="submit" id="inserir">Inserir!</button> -->
+
+        <abbr title="Adicionar mais um dia e horário"><input class="input-mais-menos" type="image" onClick="adicionarDiaHora()" src="https://img.icons8.com/ios-glyphs/30/000000/macos-maximize.png" alt="Adicionar mais um dia e horário"/></abbr>
+
+        <!-- <abbr title="Adicionar mais um dia e horário"><a onclick="adicionarDiaHora()" href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/macos-maximize.png" alt="Adicionar mais um dia e horário"/></a></abbr> -->
+
+        <!-- <abbr title="Remover um dia e horário"><a onclick="removerDiaHora()" href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"/></a></abbr> -->
+
+        <br> <!-- excluir depois o br -->
+
+        <div class="bt-centralizado-linha">
+            <a href="../pages/tela-monitor-aulas.html"><button type="submit" onclick="cadastrarMateria()" class="bt-avançar">Cadastrar</button></a>
+            <a href="../pages/login-entrar.html"><button type="reset" class="bt-voltar">Voltar</button></a>
+        </div>
+        
+    </main>
+
+    <footer class="footer-relative">
+
+        <div class="divisao">
+            <p>Apoio institucional:</p>
+
+            <div class="parte1-img">
+                <a target="_blank" href="https://www.ifood.com.br"><img class="img-apoio-inst" src="../img/LogoIfood.png" alt="Logo iFood"></a>
+                &ensp;
+                <a target="_blank" href="https://letscode.com.br"><img class="img-apoio-inst" src="../img/LogoLetsCode.jpg" alt="Logo Let's Code"></a>
+            </div>
+        </div>
+
+        <div class="divisao">
+            <p>Idealizadores:</p>
+
+            <div class="nome">
+                <p>Décio Santana de Aguiar</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/decioaguiar/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/Decioagu"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a>  
+            </div>
+
+            <div class="nome">
+                <p>Gabriela Gomes Nogueira Sales</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/gabriela-gomes-nogueira-sales-196876220/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/gabriela-gnsales"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a> 
+            </div>
+        </div>
+
+        <div class="divisao">
+
+            <div class="nome-dif">
+                <p>Josué Rodrigo E. Figueirêdo</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/josue-figueiredo/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/Josuerodrigojr"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a>  
+            </div>
+
+            <div class="nome">
+                <p>Matheus Carneiro Feitosa</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/m-carneir0/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/mcarneir0"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a>  
+            </div>
+
+            <div class="nome">
+                <p>Pedro Mariano de Souza</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/pedro-mariano-de-souza-968932148/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/pedro-workspace"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a>  
+            </div>
+        </div>
+
+        <div class="divisao">
+            <div class="copyright">
+                <p>&copy; Copyright EduConnect - 2022</p>
+            </div>
+        </div>
+
+     </footer>
+
+    <script src="../js/cadastro-materia.js"></script>
+
+</body>
+</html>

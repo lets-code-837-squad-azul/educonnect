@@ -1,0 +1,37 @@
+.card {
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 20px 10px 10px 10px;
+  transition: all 0.3s ease-out;
+  border-left: 3px solid #032CA6;
+  background-color: #fffefe70;
+  width: 400px;
+  height: auto;
+  margin: auto;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.card input {
+  margin: 0px 0px 0px 5px;
+  width: 100%;
+}
+
+.card label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card p {
+  padding-left: 10px;
+  margin: 0px;
+}
+
+#data-inicio {
+  width: 161px;
+  padding: 0px;
+}
