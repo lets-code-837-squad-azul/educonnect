@@ -27,6 +27,13 @@ const getAlunoByCpf = async (req, res) => {
     return res.status(response.statusCode).json(response.data);
 }
 
+//  Retorna um aluno pelo ID
+const getAlunoById = async (req, res) => {
+    const id = req.params.id;
+    const response = await Alunos_service.getAlunoById(id);
+    return res.status(response.statusCode).json(response.data);
+}
+
 //  Atualizar um aluno
 const updateAluno = async (req, res) => {
     const id = req.params.id;
@@ -49,4 +56,5 @@ module.exports = {
     deleteAluno,
     getAlunoByEmail,
     getAlunoByCpf,
+    getAlunoById,
 }
