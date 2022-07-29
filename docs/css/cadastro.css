@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-.form {
-    display: flex;
-=======
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&family=Expletus+Sans&family=PT+Sans&family=Quicksand:wght@700&display=swap');
@@ -95,5 +91,4 @@ select {
 #data-nascimento-css {
     width: 161px;
     padding: 0px;
->>>>>>> 20d5f0d936f402931dfe94c5508b1954862e547a
 }
