@@ -46,10 +46,6 @@ body {
     color: var(--cor5);
 }
 
-img {
-    width: 100%;
-}
-
 .parte2 {
     background-image: url("../img/EduConnect2.png");
     height: 600px;

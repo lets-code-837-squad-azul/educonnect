@@ -31,8 +31,18 @@
   margin: 0px;
 }
 
-#data-inicio {
-  width: 163px;
+#dia-semana {
+  width: 187px;
+  padding: 0px;
+}
+
+#hora-inicio {
+  width: 157px;
+  padding: 0px;
+}
+
+#hora-fim {
+  width: 130px;
   padding: 0px;
 }
 
