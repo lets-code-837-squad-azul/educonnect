@@ -33,6 +33,7 @@ header h1 {
 header h2 {
   font-size: 1em;
   color: var(--cor4);
+  padding: 3px;
 }
 
 header h1:hover {
