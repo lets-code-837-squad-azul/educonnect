@@ -72,27 +72,21 @@ function cadastrarMateria() {
     console.log( `materiaMonitoria: ${materiaMonitoria.value}`);
     console.log("diasMonitoria ", diasMonitoria);
 
-    for(let i =0; i<materiaMonitoria.length ;i++){
-        
-    }
 
-
-
+for(let i=0; i<diasMonitoria.length; i++){
     fetch(`${URL}/aulas`,{method:"POST", body:JSON.stringify({
-        disciplina_id: materiaMonitoria.value,
+        disciplina_id: 1,
         monitor_id: 1,
         status: "true",
-        diasMonitoria.map({diaDaSemana, horaFinal, horaInicio}, index)=> {
-            hora_inicio: diasMonitoria[index].horaInicio,
-            hora_fim: diasMonitoria[index].horaFinal,
-        dia_da_semana: diasMonitoria[index].diaDaSemana
-        }
-
-       
+        hora_inicio: diasMonitoria[i].horaInicio,
+        hora_fim: diasMonitoria[i].horaFinal,
+        dia_da_semana: diasMonitoria[i].value
     }),headers: {
         "Content-type": "application/json; charset=UTF-8"
     }
 }).then(response => response.json()).then(data => console.log(data))
+}
+
 }
 
 /* const ULR = ""
