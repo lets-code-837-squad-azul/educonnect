@@ -1,21 +1,28 @@
 const URL = 'https://educonnect-lets-code-837.herokuapp.com/api';
 const contador=0
-let registroDeAulas = [];
+
 let aulas = []
 
-function registrarAula(){
+function mostrarAulas(){
+    let registroDeAulas = [];
     fetch(`${URL}/aulas/`).then(response => response.json()).then(data=>{
 
+        console.log(typeof(String(data.aulas[13].disciplina_id)))
+        console.log(typeof(document.getElementById("materiaMonitoria").value))
 
-        console.log(data.aulas.length)
+
+
         for(let i =0; i<data.aulas.length; i++){
+            if(String(data.aulas[i].disciplina_id) === document.getElementById("materiaMonitoria").value){
+                console.log("entrou no if", data.aulas[i].disciplina_id)
         aulas = {
-            monitor: data.aulas[i].monitor_id,
+            monitor: sessionStorage.getItem('nome'),
             dia_da_semana: data.aulas[i].dia_da_semana,
             horario_inicial: data.aulas[i].hora_inicio,
             horario_final: data.aulas[i].hora_fim
         }
-        registroDeAulas.push(aulas);
+        registroDeAulas.push(aulas)
+    }
 }
 
 console.log("registro de aulas",registroDeAulas)
@@ -42,46 +49,32 @@ console.log("registro de aulas",registroDeAulas)
         <input value="${aula.horario_final}" disabled></input>
         </td>
     </tr>`
-});
+}).join("");
 
     
     
     }) 
 }
 
-registrarAula()
+
+
+function buscarAula(){
+    console.log("teste")
+}
 
 function cadastrarAula() {
 
-    console.log(data.aulas)
-    
-    console.log("Botão salvar aula");
+    var select = document.getElementById("materiaMonitoria");
 
-        disponibilidade.innerHTML = registroDeAulas.map(function(aula, index){
-        return `<tr>
-        <td class="input-materia">
-            <input class="input-materia" name="selecao-monitor" type="radio" value="">
-        </td>
-        <td>
-            <input value="${aula.monitor}" disabled></input>
-        </td>
-        <td>
-        <input value="${aula.dia_da_semana}" disabled></input>
-        </td>
-        <td>
-        <input value="${aula.horario_inicial}" disabled></input>
-        
-        </td>
-        <td>
-        <input value="${aula.horario_final}" disabled></input>
-        </td>
-    </tr>`
-}).join("");
+    console.log('select', select.value)
+    
+    // console.log("Botão salvar aula");
 
+
+    // const materiaAula = document.getElementById("materiaAula").value;
     
-    
-    console.log("buscaMateriaAula:", buscaMateriaAula);
-    console.log("materiaAula:", materiaAula);    
+
+    // console.log("materiaAula:", materiaAula);    
 
 }
 

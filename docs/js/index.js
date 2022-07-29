@@ -7,6 +7,7 @@ function entrar(){
     fetch(`${URL}/login?cpf=${cpf}&senha=${senha}`)
     .then(response => response.json())
     .then((data )=> {
+      console.log(data)
       sessionStorage.setItem('aluno', data.eh_aluno)
       sessionStorage.setItem('monitor', data.eh_monitor)
 
@@ -15,9 +16,7 @@ function entrar(){
           sessionStorage.setItem('nome', data.monitor.nome)
           sessionStorage.setItem("monitor_id", data.monitor.id)
 
-        }
-
-        if(data.eh_aluno){
+        } else{
           sessionStorage.setItem('nome', data.aluno.nome)
           sessionStorage.setItem("aluno_id", data.aluno.id)
 
