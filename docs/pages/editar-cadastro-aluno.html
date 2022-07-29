@@ -29,14 +29,15 @@
     <main>
 
         <div class="cadastro">
-            <h1>Olá, aluno do EduConnect!</h1>
+            <!-- <h1>Olá, aluno do EduConnect!</h1> -->
+            <h1>Olá, aluno <span id="nome"></span>!</h1>
             <h2>Edite seu cadastro:</h2>
             <div class="centralizado-linha">
                 <label for="nome">Nome:</label>
                 <input class="input-texto" id="nome" type="text" value="{nome}" autofocus>
             </div>
             <div class="centralizado-linha">
-                <label for="email"><p id="email1">E-mail:</p></label>
+                <label for="email"><p id="email-css">E-mail:</p></label>
                 <input class="input-texto" id="email" type="email" value="{email}">
             </div>
             <div class="centralizado-linha">
@@ -53,8 +54,8 @@
                 <input class="input-texto" id="cpf" type="tel" value="{cpf}" pattern="[0-9]{11}">
             </div>
             <div class="centralizado-linha">
-                <label for="nascimento"><p id="data-nascimento">Data de nascimento:</p></label>
-                <input class="input-texto" type="date" value="{nascimento}">
+                <label for="nascimento"><p id="data-nascimento-css">Data de nascimento:</p></label>
+                <input class="input-texto" id="data-nascimento" type="date" value="{nascimento}">
             </div>
             <div class="centralizado-linha">
                 <label for="etnia">Etnia:</label>

@@ -31,7 +31,6 @@ footer {
   left: 0;
   background-color: var(--cor1);
   font-family: var(--fonte-padrao);
-  font-size: 0.7em;
 }
 
 .footer-absolute {
@@ -69,7 +68,7 @@ footer {
 
 .divisao p {
   color: var(--cor7);
-  text-align: center;
+  font-size: 0.7em;
   padding: 0px;
 }
 

@@ -5,243 +5,212 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root {
-  --cor1: #032CA6;
-  --cor2: #304F8C;
-  --cor3: #8C824D;
-  --cor4: #F2B90F;
-  --cor5: #8C6B08;
+    --cor1: #032CA6;
+    --cor2: #c3d7ff;
+    --cor3: #8C824D;
+    --cor4: #F2B90F;
+    --cor5: #c7980de1;
+    --cor6: #303030;
+    --cor7: #d4d4d4;
 
   --fonte-inicio:'Averia Libre', cursive;
   --fonte-padrao: 'Quicksand', sans-serif;
 }
 
-html {
-    height: 100%;
-}
-
-.semdecoracao {
-    text-decoration: none;
-}
-
-.planodefundo {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 body {
-    flex-direction: column;
+    margin: auto;
     height: 100%;
-    margin:0%;
-    text-align: justify;
-    font-family: var(--fonte-padrao);
-    
-}
-
-input, label{
-    margin-left: 10px;
-}
-
-.imagem_fundo {
-    background-image: url(".././img/EduConnectOriginal.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 100%;
-    max-height: 100%;
-    
-}
-
-
-
-.color {
-    color: whitesmoke;
-}
-
-.centro {
-    text-align: center;
-    padding-top: 10px;
-}
-
-
-
-.letrahome {
-    margin-top: 100px;
-}
-
-img{
-  background-attachment: fixed;
-  width: 100%;
-}
-
-
-
-header div{
-  display: flex;
-  background-color: rgba(93, 107, 231);
     width: 100%;
-    height: 50px;
+    background-color: var(--cor2);
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor1);
+}
+
+.parte1 {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-around;
-    
-
- 
+    font-size: 1.2em;
+    background-color: var(--cor1);
 }
 
-main {
-    padding-top: 20px;
-    height: 100%;
-    background-color:  #f7f7f7; 
-}
-
-main nav {
-    background-color: rgba(93, 107, 231);
-    height: 500px;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px; 
-}
-
-main nav a {
+.parte1 a {
+    color: var(--cor4);
+    padding: 20px 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
     text-decoration: none;
-    color: #f7f7f7;
+    text-align: center;
 }
 
-.loginEntrar {
+.parte1 a:hover {
+    color: var(--cor5);
+}
+
+img {
+    width: 100%;
+}
+
+.parte2 {
+    background-image: url("../img/EduConnect2.png");
+    height: 600px;
+    width: 100%;
+}
+
+.parte2 h1 {
+    display: flex;
     flex-direction: column;
-    align-content: space-between;
-    justify-self: center;
-    margin-top: 10%;
-
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    width: 600px;
 }
 
-main nav div {
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10%;
-
+.parte2 h1:hover {
+    font-size: 2.6em;
 }
 
-aside {  
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #000;
+.parte2-frase {
+    padding-top: 10%;
+    padding-left: 30%;
 }
 
-aside div{
- 
-    color: white;
-    background-color:rgba(0, 0, 0, 0.5);
-    
+.parte3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    background-color: var(--cor2);
 }
 
-aside span {
- 
-  color: white;
-  background-color:rgba(0, 0, 0, 0.5);
-  
+h1 {
+    font-family: var(--fonte-inicio);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.164);
+    color: var(--cor1);
+    padding: 30px 10px 20px 10px;
+    margin: 0px;
+    text-align: center;
 }
 
-aside span section{
-    max-width: 1200px;
-	margin: 0 auto;
-	display: flex;
-    justify-content: space-around;
-
+h2, p, ul, li {
+    font-family: var(--fonte-padrao);
+    color: var(--cor6);
+    margin: 0;
 }
 
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0px 10px 15px 10px;
+}
+
+p, li {
+    font-size: 1.1em;
+    text-align: left;
+    padding: 0px 10px 5px 0px;
+}
 
 input, label {
-  font-family: var(--fonte-padrao);
-  font-size: 1em;
-}
-
-.input-texto {
-  font-size: 0.8em;
-  border-radius: 5px;
-  width: 15em;
-  height: 2em;
-  margin: 10px;
-}
-
-input[type=number] {
-  width: 60%;
-}
-
-input[type=email] {
-  width: 60%;
-}
-
-input[type=tel] {
-  width: 60%;
-}
-
-input[type=password] {
-  width: 60%;
-}
-
-
-
-.texto {
-    line-height: 1.6;
-    font-size: 16px;
-    margin: 15px;
-    text-indent: 40px;
+    display: flex;
     text-align: justify;
+    /* font-family: var(--fonte-padrao); */
+    font-size: 1.3em;
+    color: var(--cor6);
 }
 
-.container {
-	margin: 0 auto;
-	display: flex;
-
+input {
+    height: 1.5em;
+    padding-left: 10px;
+    border: 1.5px solid;
+    border-radius: 5px;
+    border-color: var(--cor6);
 }
 
-.item {
-	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
-	flex: 1;
-	margin: 10px;
-	text-align: center;
-	font-size: 1.5em;
-    background-color: rgba(93, 107, 231);
+label {
+    padding: 10px 0px 5px 0px;
 }
 
-.row {
-	flex-direction: row;
+a {
+    text-decoration: none;
+    color: var(--cor1);
 }
 
-.edu {
-    padding-left: 10%;
-    margin: -0.5em
+.card {
+    justify-content: center;
+    width: 500px;
+    background-color: var(--cor5);
+    padding: 10px 10px 10px 20px;
+    border-radius: 30px 0px;
 }
 
-.nav {
-    padding-left: 45%;
-    margin-top: 0.5%;
+.card-email {
+    justify-content: center;
+    width: 500px;
+    background-color: #032ca6d5;
+    padding: 10px 10px 10px 20px;
+    border-radius: 0px 30px;
+    margin-top: 10px;
 }
 
-.nav nav p {
-    word-spacing: 2em;
-    font-family: var(--fonte-inicio);
-    color: rgb(255, 235, 108);
-
+.card-email p {
+    color: var(--cor7);
+    font-size: 0.9em;
 }
 
-.nav nav p a {
-    font-size: 1.2em;
-    color: rgb(250, 220, 25);
-    text-shadow: -1px -1px 1px #000000;
+.card-email a {
+    color: var(--cor7);
+    text-decoration: underline;
 }
 
-.nav nav p a:hover {
-    text-shadow: 1px 1px 1px #000000;
-}
-
-.edu img {
-    max-width: 3.7rem;
-    margin-top: 0.9rem;
-    margin-left: 6rem;
-    border-radius: 5%;
-}
-
-.mensagem{
-    color: red;
-}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+  }
+  
+  .parte1-img {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .img-apoio-inst {
+    height: 40px;
+    border-radius: 1em;
+  }
+  
+  .nome {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nome-dif {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+  }
+  
+  .divisao {
+    padding: 0px 5px 0px 5px;
+  }
+  
+  .divisao p {
+    color: var(--cor7);
+    font-size: 0.7em;
+    padding: 0px;
+  }
+  
+  .copyright {
+    margin-top: 80px;
+    padding-bottom: 10px;
+  }
