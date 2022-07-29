@@ -9,6 +9,7 @@ routerAluno.post('/', Alunos_controller.createAluno);
 routerAluno.get('/', Alunos_controller.getAlunos);
 routerAluno.get('/email/:email', Alunos_controller.getAlunoByEmail);
 routerAluno.get('/cpf/:cpf', Alunos_controller.getAlunoByCpf);
+routerAluno.get('/:id', Alunos_controller.getAlunoById);
 routerAluno.delete('/:id', Alunos_controller.deleteAluno);
 routerAluno.patch('/:id', Alunos_controller.updateAluno);
 

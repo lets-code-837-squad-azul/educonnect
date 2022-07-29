@@ -12,6 +12,12 @@ const getAulas = async () => {
     return res;
 }
 
+//  Retornar uma aula pelo id
+const getAulaById = async (id) => {
+    const res = await Aula.findByPk(id);
+    return res;
+}
+
 //  Atuallizar uma aula
 const updateAula = async (id, aula) => {
     const res = await Aula.update(aula, {
@@ -37,4 +43,5 @@ module.exports = {
     getAulas,
     updateAula,
     deleteAula,
+    getAulaById,
 }

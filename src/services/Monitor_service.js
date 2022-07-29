@@ -134,6 +134,39 @@ const getMonitorByCpf = async (cpf) => {
     }
 }
 
+//  Retorna um monitor pelo ID
+const getMonitorById = async (id) => {
+    try {
+        const monitor = await Monitor_repository.getMonitorById(id);
+        if (monitor) {
+            return {
+                statusCode: 200,
+                data: {
+                    message: 'Monitor retornado com sucesso por ID',
+                    monitor: monitor
+                }
+            }
+        }
+        else {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Monitor não encontrado'
+                }
+            }
+        }
+    }
+    catch (erro) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao retornar monitor por ID',
+                error: erro
+            }
+        }
+    }
+}
+
 //  Atualizar um monitor
 const updateMonitor = async (id, monitor) => {
     try {
@@ -205,4 +238,5 @@ module.exports = {
     deleteMonitor,
     getMonitorByEmail,
     getMonitorByCpf,
+    getMonitorById,
 }

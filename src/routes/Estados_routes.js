@@ -6,6 +6,7 @@ const router = express.Router();
 
 router.post('/', EstadosController.createEstado);
 router.get('/', EstadosController.getEstados);
+router.get('/:id', EstadosController.getEstadoById);
 router.patch('/:id', EstadosController.updateEstado);
 router.delete('/:id', EstadosController.deleteEstado);
 

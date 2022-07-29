@@ -134,6 +134,39 @@ const getAlunoByCpf = async (cpf) => {
     }
 }
 
+//  Retorna o aluno pelo ID
+const getAlunoById = async (id) => {
+    try {
+        const aluno = await Alunos_repository.getAlunoById(id);
+        if (aluno) {
+            return {
+                statusCode: 200,
+                data: {
+                    message: 'Aluno retornado com sucesso por ID',
+                    aluno: aluno
+                }
+            }
+        }
+        else {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Aluno não encontrado'
+                }
+            }
+        }
+    }
+    catch (erro) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao retornar aluno por ID',
+                error: erro
+            }
+        }
+    }
+}
+
 //  Atualizar um aluno
 const updateAluno = async (id, aluno) => {
     try {
@@ -205,4 +238,5 @@ module.exports = {
     deleteAluno,
     getAlunoByEmail,
     getAlunoByCpf,
+    getAlunoById,
 }

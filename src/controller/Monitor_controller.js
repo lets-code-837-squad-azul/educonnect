@@ -27,6 +27,13 @@ const getMonitorByCpf = async (req, res) => {
     return res.status(response.statusCode).json(response.data);
 }
 
+//  Retorna um monitor pelo id
+const getMonitorById = async (req, res) => {
+    const id = req.params.id;
+    const response = await Monitor_service.getMonitorById(id);
+    return res.status(response.statusCode).json(response.data);
+}
+
 //  Atualizar um monitor
 const updateMonitor = async (req, res) => {
     const id = req.params.id;
@@ -49,4 +56,5 @@ module.exports = {
     deleteMonitor,
     getMonitorByEmail,
     getMonitorByCpf,
+    getMonitorById,
 }
