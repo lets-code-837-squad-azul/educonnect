@@ -31,6 +31,9 @@ const Aula = database.define('Aula', {
     dia_da_semana: {
         type: DataTypes.STRING,
     },
+    avaliacao: {
+        type: DataTypes.SMALLINT,
+    },
 }, { tableName: 'aulas' });
 
 module.exports = Aula;
