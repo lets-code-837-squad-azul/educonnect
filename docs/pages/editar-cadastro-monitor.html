@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Cadastro - Monitor</title>
+    <link rel="stylesheet" href="./css/reset-min.css">
+    <link rel="stylesheet" href="../css/components/button.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css"> 
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src=".././img/LogoEduConnect.png" alt="Logo EduConnect">
+        </div>
+
+        <div>
+            <h1>EduConnect</h1>
+            <h2>Democratizando a educação e conectando pessoas!</h2>
+            <h2>Estude gratuitamente!</h2>
+        </div>
+
+    </header>
+      
+    <main>
+
+        <div class="cadastro">
+            <!-- <h1>Olá, monitor do EduConnect!</h1> -->
+            <h1>Olá, monitor <span id="nome"></span>!</h1>
+            <h2>Edite seu cadastro:</h2>
+            
+            <div class="centralizado-linha">
+                <label for="nome">Nome:</label>
+                <input class="input-texto" id="nome" type="text" value="{nome}" autofocus>
+            </div>
+            <div class="centralizado-linha">
+                <label for="email"><p id="email-css">E-mail:</p></label>
+                <input class="input-texto" id="email" type="email" value="{email}">
+            </div>
+            <div class="centralizado-linha">
+                <label for="senha">Senha:</label>
+                <input class="input-texto" id="senha" type="password">
+            </div>
+            
+            <div class="centralizado-linha">
+                <label for="telefone">Telefone:</label>
+                <input id="input-texto" id="telefone" type="tel" value="{telefone}" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+            </div>
+            <div class="centralizado-linha">
+                <label for="cpf">CPF:</label>
+                <input class="input-texto" id="cpf" type="tel" value="{cpf}" pattern="[0-9]{11}">
+            </div>
+            <div class="centralizado-linha">
+                <label for="nascimento"><p id="data-nascimento-css">Data de nascimento:</p></label>
+                <input class="input-texto" id="data-nascimento" type="date" value="{nascimento}">
+            </div>
+            <div class="centralizado-linha">
+                <label for="etnia">Etnia:</label>
+                <select id="etnia" name="etnia">
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="Amarela">Amarela</option>
+                    <option value="Branca">Branca</option>
+                    <option value="Indígena">Indígena</option>
+                    <option value="Parda">Parda</option>
+                    <option value="Preta">Preta</option>
+                    <option value="Prefiro não responder">Prefiro não responder</option>
+                </select>
+            </div>
+            <div class="centralizado-linha">
+                <label for="etnia">Gênero:</label>
+                <select id="etnia" name="etnia">
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="Homem cis">Homem cis</option>
+                    <option value="Mulher cis">Mulher cis</option>
+                    <option value="Homem trans">Homem trans</option>
+                    <option value="Mulher trans">Mulher trans</option>
+                    <option value="Prefiro não responder">Prefiro não responder</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+            <div class="centralizado-linha">
+                <label for="etnia">Escolaridade:</label>
+                <select id="etnia" name="etnia">
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="Ensino fundamental incompleto">Ensino fundamental incompleto</option>
+                    <option value="Ensino fundamental completo">Ensino fundamental completo</option>
+                    <option value="Ensino médio incompleto">Ensino médio incompleto</option>
+                    <option value="Ensino médio completo">Ensino médio completo</option>
+                    <option value="Ensino superior incompleto">Ensino superior incompleto</option>
+                    <option value="Ensino superior completo">Ensino superior completo</option>
+                    <option value="Pós-graduação (especialização, mestrado ou doutorado)">Pós-graduação (especialização, mestrado ou doutorado)</option>
+                </select>
+            </div>
+            <br>
+            <a href="../pages/tela-monitor-aulas.html"><button type="submit" class="bt-avançar">Salvar</button></a>
+            <a href=""><button type="reset" class="bt-deletar">Deletar</button></a>
+            <a href="../pages/tela-monitor-aulas.html"><button type="button" class="bt-voltar">Voltar</button></a>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="divisao">
+            <p>Apoio institucional:</p>
+
+            <div class="parte1-img">
+                <a target="_blank" href="https://www.ifood.com.br"><img class="img-apoio-inst" src="../img/LogoIfood.png" alt="Logo iFood"></a>
+                &ensp;
+                <a target="_blank" href="https://letscode.com.br"><img class="img-apoio-inst" src="../img/LogoLetsCode.jpg" alt="Logo Let's Code"></a>
+            </div>
+        </div>
+
+        <div class="divisao">
+            <p>Idealizadores:</p>
+
+            <div class="nome">
+                <p>Décio Santana de Aguiar</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/decioaguiar/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/Decioagu"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a>  
+            </div>
+
+            <div class="nome">
+                <p>Gabriela Gomes Nogueira Sales</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/gabriela-gomes-nogueira-sales-196876220/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/gabriela-gnsales"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a> 
+            </div>
+        </div>
+
+        <div class="divisao">
+
+            <div class="nome-dif">
+                <p>Josué Rodrigo E. Figueirêdo</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/josue-figueiredo/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/Josuerodrigojr"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a>  
+            </div>
+
+            <div class="nome">
+                <p>Matheus Carneiro Feitosa</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/m-carneir0/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/mcarneir0"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a>  
+            </div>
+
+            <div class="nome">
+                <p>Pedro Mariano de Souza</p>
+                &ensp;
+                <a target="_blank" href="https://www.linkedin.com/in/pedro-mariano-de-souza-968932148/"><img src="https://img.icons8.com/ios-glyphs/25/000000/linkedin-circled--v1.png"/></a> <a target="_blank" href="https://github.com/pedro-workspace"><img src="https://img.icons8.com/ios-glyphs/25/000000/github.png"/></a>  
+            </div>
+        </div>
+
+        <div class="divisao">
+            <div class="copyright">
+                <p>&copy; Copyright EduConnect - 2022</p>
+            </div>
+        </div>
+
+     </footer>
+    
+</body>
+</html>

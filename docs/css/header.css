@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  top: 0;
+  padding: 5px;
+  background-color: var(--cor1);
+}
+
+header img {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  border-radius: 1em;
+  margin-left: 40px;
+}
+
+header h1, h2 {
+  font-family: var(--fonte-inicio);
+  color: var(--cor4);
+  margin-right: 30px;
+  margin: 0px;
+  padding: 5px;
+}
+
+header h1 {
+  font-size: 1.5em;
+}
+
+header h2 {
+  font-size: 1em;
+  color: var(--cor4);
+}
+
+header h1:hover {
+  font-size: 1.6em;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
+}
+
+header h2:hover {
+  font-size: 1.1em;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
+}
