@@ -6,7 +6,7 @@
 
 :root {
   --cor1: #032CA6;
-  --cor2: #304f8c31;
+  --cor2: #4673cc4b;
   --cor3: #8C824D;
   --cor4: #F2B90F;
   --cor5: #8C6B08;
@@ -16,21 +16,18 @@
   --fonte-inicio:'Averia Libre', cursive;
   --fonte-padrao: 'Quicksand', sans-serif;
 }
-
 /* colocar position: absolute; apenas nas páginas que são curtas */
 
 footer {
   display: flex;
   flex-direction: row;
   justify-content:space-around;
-  /* position: absolute; */
-  /* position: relative; */
   align-items: center;
   margin: auto;
   margin-top: 20px;
-  padding-bottom: 10px;
   width: 100%;
-  bottom: 0;
+  height: auto;
+  bottom: 0px;
   left: 0;
   background-color: var(--cor1);
   font-family: var(--fonte-padrao);
@@ -39,6 +36,10 @@ footer {
 
 .footer-absolute {
   position: absolute;
+}
+
+.footer-relative {
+  position: relative;
 }
 
 .parte1-img {
@@ -59,11 +60,11 @@ footer {
 .nome-dif {
   display: flex;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .divisao {
-  padding: 0px 10px 0px 10px;
+  padding: 0px 5px 0px 5px;
 }
 
 .divisao p {
@@ -73,5 +74,5 @@ footer {
 }
 
 .copyright {
-  margin-top: 100px;
+  margin-top: 80px;
 }

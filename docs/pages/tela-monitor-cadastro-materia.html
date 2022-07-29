@@ -6,12 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monitor - Cadastro Matéria</title>
     <link rel="stylesheet" href="./css/reset-min.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/components/button.css">
-    <!-- <link rel="stylesheet" href="../css/header.css"> -->
     <link rel="stylesheet" href="../css/footer.css"> 
 </head>
 <body>
+
+    <header>
+        <div>
+            <img src=".././img/LogoEduConnect.png" alt="Logo EduConnect">
+        </div>
+
+        <div>
+            <h1>EduConnect</h1>
+            <h2>Democratizando a educação e conectando pessoas!</h2>
+            <h2>Estude gratuitamente!</h2>
+        </div>
+
+    </header>
 
     <main>
 
@@ -21,22 +34,20 @@
 
         <div class="materia">
             <select id="materiaMonitoria" name="materiaMonitoria" autofocus>
-                <option value="" disabled selected hidden>Lista de matérias</option>
-                <option value="Língua Portuguesa">Língua Portuguesa</option>
-                <option value="Língua Inglesa">Língua Inglesa</option>
-                <option value="Matemática">Matemática</option>
-                <option value="Biologia">Biologia</option>
-                <option value="Física">Física</option>
-                <option value="Química">Química</option>
-                <option value="Geografia">Geografia</option>
-                <option value="História">História</option>
-                <option value="Filosofia">Filosofia</option>
-                <option value="Sociologia">Sociologia</option>
-                <option value="Artes">Artes</option>
-                <option value="Educção Física">Educação Física</option>
+                <option value="" disabled selected hidden>Lista de disciplinas</option>
+                <option value="1">Língua Portuguesa</option>
+                <option value="2">Língua Inglesa</option>
+                <option value="3">Matemática</option>
+                <option value="4">Biologia</option>
+                <option value="5">Física</option>
+                <option value="6">Química</option>
+                <option value="7">Geografia</option>
+                <option value="8">História</option>
+                <option value="9">Filosofia</option>
+                <option value="10">Sociologia</option>
+                <option value="11">Artes</option>
+                <option value="12">Educação Física</option>
             </select>
-            <label>Outra:</label>
-            <input type="text" id="OutraMateriaMonitoria" name="materiaMonitoria"/>
         </div>
 
         <h2>Defina o dia da semana e horário para realizar sua monitoria:</h2>
@@ -97,7 +108,7 @@
         
     </main>
 
-    <footer class="footer-absolute">
+    <footer class="footer-relative">
 
         <div class="divisao">
             <p>Apoio institucional:</p>

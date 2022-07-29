@@ -11,6 +11,7 @@
   --cor4: #F2B90F;
   --cor5: #8C6B08;
   --cor6: #303030;
+  --cor7: #d4d4d4;
 
   --fonte-inicio:'Averia Libre', cursive;
   --fonte-padrao: 'Quicksand', sans-serif;
@@ -23,6 +24,7 @@ body {
   align-items: center;
   margin: auto;
   background-color: var(--cor2);
+  /* background-color:yellow; */
 }
 
 h1 {
@@ -80,8 +82,8 @@ select {
 textarea {
   border-radius: 5px;
   margin: 10px;
-  /* rows: 10; */
-  /* columns: 100; */
+  width: 80%;
+  height: 100px;
 }
 
 table {
@@ -119,11 +121,3 @@ table {
 .cadastrar-materia label {
   padding: 5px 5px 0px 20px;
 }
-
-/* .denuncia {
-  width: 100px;
-}
-
-@media (max-width = 100px) {
-
-} */

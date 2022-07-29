@@ -8,15 +8,53 @@
     <link rel="stylesheet" href="./css/reset-min.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/components/button.css">
-    <!-- <link rel="stylesheet" href="../css/header.css"> -->
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css"> 
 
 </head>
 <body>
 
+    <header>
+        <div>
+            <img src=".././img/LogoEduConnect.png" alt="Logo EduConnect">
+        </div>
+
+        <div>
+            <h1>EduConnect</h1>
+            <h2>Democratizando a educação e conectando pessoas!</h2>
+            <h2>Estude gratuitamente!</h2>
+        </div>
+
+    </header>
+
     <main>
 
-        <h1>Entrar como:</h1>
+        <main>
+
+            <p>Olá,&ensp;<span id="nome"></span></p>
+    
+            <h1>Entrar como:</h1>
+    
+            <div class="bt-centralizado-coluna">
+              <div id="esconder_aluno">
+                <a href="../pages/tela-aluno-aulas.html"><button target="_self" class="bt-avançar">Aluno</button></a>
+                <br>
+              </div>
+    
+              <div id="esconder_monitor">
+                <a href="./tela-monitor-aulas.html"><button target="_self" class="bt-avançar">Monitor</button></a>
+                <br>
+              </div>
+    
+                <a href="../index.html"><button target="_self" class="bt-voltar">Voltar</button></a>
+            </div>
+    
+            
+        </main>
+    
+    <script src="../js/login-entrar.js"></script>
+
+        <!-- <h1>Entrar como:</h1>
         
         <div class="bt-centralizado-coluna">
             <a href="../pages/tela-aluno-aulas.html"><button target="_self" class="bt-avançar">Aluno</button></a>
@@ -24,7 +62,7 @@
             <a href="./tela-monitor-aulas.html"><button target="_self" class="bt-avançar">Monitor</button></a>
             <br>
             <a href="../pages/home.html"><button target="_self" class="bt-voltar">Voltar</button></a>
-        </div>
+        </div> -->
 
     </main>
 
