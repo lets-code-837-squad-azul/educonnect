@@ -70,21 +70,23 @@ function removerDiaHora(id) {
 function cadastrarMateria() {
 
     console.log( `materiaMonitoria: ${materiaMonitoria.value}`);
-    console.log("diasMonitoria ", diasMonitoria);
+    console.log("diasMonitoria ", sessionStorage.getItem("monitor_id"));
 
 
 for(let i=0; i<diasMonitoria.length; i++){
     fetch(`${URL}/aulas`,{method:"POST", body:JSON.stringify({
-        disciplina_id: 1,
-        monitor_id: 1,
+        disciplina_id: materiaMonitoria.value,
+        monitor_id: sessionStorage.getItem("monitor_id"),
         status: "true",
         hora_inicio: diasMonitoria[i].horaInicio,
         hora_fim: diasMonitoria[i].horaFinal,
-        dia_da_semana: diasMonitoria[i].value
+        dia_da_semana: diasMonitoria[i].diaDaSemana
     }),headers: {
         "Content-type": "application/json; charset=UTF-8"
     }
-}).then(response => response.json()).then(data => console.log(data))
+}).then(response => response.json()).then(data => 
+    console.log(data))
+
 }
 
 }

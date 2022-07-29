@@ -9,6 +9,7 @@ let monitor = sessionStorage.getItem('monitor');
 
     if (monitor == 'false') {
       document.getElementById("esconder_monitor").style.display = "none";
+      
     }
 
     document.querySelector("#nome").innerHTML = sessionStorage.getItem('nome');
