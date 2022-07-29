@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&family=Expletus+Sans&family=PT+Sans&family=Quicksand:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+:root {
+  --cor1: #032CA6;
+  --cor2: #4673cc4b;
+  --cor3: #8C824D;
+  --cor4: #F2B90F;
+  --cor5: #8C6B08;
+  --cor6: #303030;
+  --cor7: #d4d4d4;
+
+  --fonte-inicio:'Averia Libre', cursive;
+  --fonte-padrao: 'Quicksand', sans-serif;
+}
+/* colocar position: absolute; apenas nas páginas que são curtas */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  left: 0;
+  background-color: var(--cor1);
+  font-family: var(--fonte-padrao);
+  font-size: 0.7em;
+}
+
+.footer-absolute {
+  position: absolute;
+}
+
+.footer-relative {
+  position: relative;
+}
+
+.parte1-img {
+  display: flex;
+  justify-content: center;
+}
+
+.img-apoio-inst {
+  height: 40px;
+  border-radius: 1em;
+}
+
+.nome {
+  display: flex;
+  align-items: center;
+}
+
+.nome-dif {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.divisao {
+  padding: 0px 5px 0px 5px;
+}
+
+.divisao p {
+  color: var(--cor7);
+  text-align: center;
+  padding: 0px;
+}
+
+.copyright {
+  margin-top: 80px;
+}
