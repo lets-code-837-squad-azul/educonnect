@@ -70,23 +70,22 @@ function removerDiaHora(id) {
 
 function cadastrarMateria() {
 
- 
+    console.log( `materiaMonitoria: ${materiaMonitoria.value}`);
+    console.log("diasMonitoria ", diasMonitoria);
 
 
 for(let i=0; i<diasMonitoria.length; i++){
     fetch(`${URL}/aulas`,{method:"POST", body:JSON.stringify({
-        disciplina_id: materiaMonitoria.value,
-        monitor_id: sessionStorage.getItem("monitor_id"),
+        disciplina_id: 1,
+        monitor_id: 1,
         status: "true",
         hora_inicio: diasMonitoria[i].horaInicio,
         hora_fim: diasMonitoria[i].horaFinal,
-        dia_da_semana: diasMonitoria[i].diaDaSemana
+        dia_da_semana: diasMonitoria[i].value
     }),headers: {
         "Content-type": "application/json; charset=UTF-8"
     }
-}).then(response => response.json()).then(data => 
-    location.replace("../pages/tela-monitor-aulas.html"))
-
+}).then(response => response.json()).then(data => console.log(data))
 }
 
 }
