@@ -44,26 +44,34 @@ h1, h2 {
     text-align: center;
 }
 
-input, label {
+input, label, select {
     font-family: var(--fonte-padrao);
     font-size: 1em;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
-.input-texto {
+input, select {
     font-size: 0.8em;
     border-radius: 5px;
-    height: 2em;
     margin: 10px;
     width: 100%;
+    border: 1.5px solid;
+    border-color: var(--cor6);
 }
 
-#input-texto {
+/* .input-texto, select {
     font-size: 0.8em;
     border-radius: 5px;
-    height: 2em;
     margin: 10px;
     width: 100%;
+} */
+
+input {
+    height: 2em;
+}
+  
+select {
+    height: 2.4em;
 }
 
 .centralizado-linha {
@@ -75,12 +83,12 @@ input, label {
     margin: 0px;
 }
 
-#email1 {
+#email-css {
     width: 53px;
     padding: 0px;
 }
 
-#data-nascimento {
+#data-nascimento-css {
     width: 161px;
     padding: 0px;
 }

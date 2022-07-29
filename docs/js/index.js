@@ -2,8 +2,8 @@ const ULR = "https://educonnect-lets-code-837.herokuapp.com/api";
 
 
 function entrar(){
-    const cpf = document.getElementById("CPF").value;
-    const senha = document.getElementById("Senha").value;
+    const cpf = document.getElementById("cpf").value;
+    const senha = document.getElementById("senha").value;
 
     fetch(`${ULR}/login?cpf=${cpf}&senha=${senha}`)
     .then(response => response.json())

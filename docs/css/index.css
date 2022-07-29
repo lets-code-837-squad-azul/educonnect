@@ -6,7 +6,7 @@
 
 :root {
   --cor1: #032CA6;
-  --cor2: #4673cc4b;
+  --cor2: #c3d7ff;
   --cor3: #8C824D;
   --cor4: #F2B90F;
   --cor5: #8C6B08;
@@ -24,7 +24,6 @@ body {
   align-items: center;
   margin: auto;
   background-color: var(--cor2);
-  /* background-color:yellow; */
 }
 
 h1 {
@@ -32,14 +31,16 @@ h1 {
   font-size: 2em;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.164);
   color: var(--cor1);
-  padding: 10px;
+  padding: 25px 10px 20px 10px;
+  margin: 0px;
   text-align: center;
 }
 
 h2 {
   font-family: var(--fonte-padrao);
   font-size: 1.5em;
-  padding-bottom: 5px;
+  padding: 0px 10px 15px 10px;
+  /* padding-bottom: 5px; */
   color: var(--cor6);
   text-align: center;
 }
@@ -69,6 +70,9 @@ input, select {
   border-radius: 5px;
   width: 15em;
   margin: 10px;
+  padding-left: 5px;
+  border: 1.5px solid;
+  border-color: var(--cor6);
 }
 
 input {
@@ -120,4 +124,9 @@ table {
 
 .cadastrar-materia label {
   padding: 5px 5px 0px 20px;
+}
+
+.link-denuncia {
+  text-decoration: none;
+  color: var(--cor1);
 }
