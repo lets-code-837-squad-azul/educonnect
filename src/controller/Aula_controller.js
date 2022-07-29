@@ -13,6 +13,13 @@ const getAulas = async (req, res) => {
     return res.status(response.statusCode).json(response.data);
 }
 
+//  Retornar uma aula pelo id
+const getAulaById = async (req, res) => {
+    const id = req.params.id;
+    const response = await Aula_service.getAulaById(id);
+    return res.status(response.statusCode).json(response.data);
+}
+
 //  Atuallizar uma aula
 const updateAula = async (req, res) => {
     const id = req.params.id;
@@ -33,4 +40,5 @@ module.exports = {
     getAulas,
     updateAula,
     deleteAula,
+    getAulaById,
 }
