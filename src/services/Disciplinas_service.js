@@ -68,6 +68,39 @@ const getDisciplinas = async () => {
     }
 }
 
+//  Retornar uma disciplina pelo id
+const getDisciplinaById = async (id) => {
+    try {
+        const disciplina = await Disciplina_repository.getDisciplinaById(id);
+        if (disciplina) {
+            return {
+                statusCode: 200,
+                data: {
+                    message: 'Disciplina retornada com sucesso por id',
+                    disciplina: disciplina
+                }
+            }
+        }
+        else {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Disciplina não encontrada'
+                }
+            }
+        }
+    }
+    catch (error) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao retornar a disciplina por id',
+                error: error
+            }
+        }
+    }
+}
+
 //  Atualizar uma disciplina
 const updateDisciplina = async (id, disciplina) => {
     try {
@@ -137,4 +170,5 @@ module.exports = {
     getDisciplinas,
     updateDisciplina,
     deleteDisciplina,
+    getDisciplinaById,
 }

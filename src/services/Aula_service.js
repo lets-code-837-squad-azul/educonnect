@@ -68,6 +68,39 @@ const getAulas = async () => {
     }
 }
 
+//  Retornar uma aula pelo id
+const getAulaById = async (id) => {
+    try {
+        const aula = await Aula_repository.getAulaById(id);
+        if (aula) {
+            return {
+                statusCode: 200,
+                data: {
+                    message: 'Aula retornada com sucesso pelo id',
+                    aula: aula
+                }
+            }
+        }
+        else {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Aula não encontrada'
+                }
+            }
+        }
+    }
+    catch (erro) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao retornar aula',
+                erro: erro
+            }
+        }
+    }
+}
+
 //  Atuallizar uma aula
 const updateAula = async (id, aula) => {
     try {
@@ -137,4 +170,5 @@ module.exports = {
     getAulas,
     updateAula,
     deleteAula,
+    getAulaById,
 }

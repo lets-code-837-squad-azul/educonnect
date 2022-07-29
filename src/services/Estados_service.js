@@ -71,6 +71,39 @@ const getEstados = async () => {
     }
 }
 
+//  Retorna um estado pelo id
+const getEstadoById = async (id) => {
+    try {
+        const estado = await EstadosRepository.getEstadoById(id);
+        if (estado) {
+            return {
+                statusCode: 200,
+                data: {
+                    message: 'Estado retornado com sucesso por id',
+                    estado: estado
+                }
+            }
+        }
+        else {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Estado não encontrado'
+                }
+            }
+        }
+    }
+    catch (erro) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao retornar estado',
+                error: erro
+            }
+        }
+    }
+}
+
 //  Atualiza um estado
 const updateEstado = async (id, estado) => {
     try {
@@ -140,4 +173,5 @@ module.exports = {
     getEstados,
     updateEstado,
     deleteEstado,
+    getEstadoById,
 }

@@ -13,6 +13,13 @@ const getDisciplinas = async (req, res) => {
     return res.status(response.statusCode).json(response.data);
 }
 
+//  Retornar uma disciplina por id
+const getDisciplinaById = async (req, res) => {
+    const id = req.params.id;
+    const response = await Disciplina_service.getDisciplinaById(id);
+    return res.status(response.statusCode).json(response.data);
+}
+
 //  Atualizar uma disciplina
 const updateDisciplina = async (req, res) => {
     const id = req.params.id;
@@ -33,4 +40,5 @@ module.exports = {
     getDisciplinas,
     updateDisciplina,
     deleteDisciplina,
+    getDisciplinaById,
 }

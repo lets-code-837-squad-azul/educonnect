@@ -12,6 +12,12 @@ const getDisciplinas = async () => {
     return res;
 }
 
+//  Retornar uma disciplina por id
+const getDisciplinaById = async (id) => {
+    const res = await Disciplina.findByPk(id);
+    return res;
+}
+
 //  Atualizar uma disciplina
 const updateDisciplina = async (id, disciplina) => {
     const res = await Disciplina.update(disciplina, {
@@ -37,4 +43,5 @@ module.exports = {
     getDisciplinas,
     updateDisciplina,
     deleteDisciplina,
+    getDisciplinaById,
 }

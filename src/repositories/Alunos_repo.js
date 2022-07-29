@@ -31,6 +31,11 @@ const getAlunoByCpf = async (cpf) => {
     });
 }
 
+//  Retorna um aluno pelo id
+const getAlunoById = async (id) => {
+    return await Aluno.findByPk(id);
+}
+
 // deleta cadastro de usuário no banco de dados pelo "id" (DELETE)
 const deleteAluno = async (id) => {
     return await Aluno.destroy({ where: { id: id } });
@@ -48,4 +53,5 @@ module.exports = {
     updateAluno,
     getAlunoByEmail,
     getAlunoByCpf,
+    getAlunoById,
 }

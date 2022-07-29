@@ -16,6 +16,13 @@ const getEstados = async (req, res) => {
     return res.status(response.statusCode).json(response.data);
 }
 
+//  Retorna um estado pelo id (GET)
+const getEstadoById = async (req, res) => {
+    const id = req.params.id;
+    const response = await EstadosService.getEstadoById(id);
+    return res.status(response.statusCode).json(response.data);
+}
+
 //  Atualiza um estado (PATCH)
 const updateEstado = async (req, res) => {
     const id = req.params.id;
@@ -36,4 +43,5 @@ module.exports = {
     getEstados,
     updateEstado,
     deleteEstado,
+    getEstadoById,
 }
