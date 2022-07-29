@@ -1,4 +1,6 @@
 const Aula = require('../models/Aula');
+const Monitor = require('../models/Monitor');
+const Aluno = require('../models/Aluno');
 
 //  Criar uma nova aula
 const createAula = async (aula) => {
@@ -8,7 +10,7 @@ const createAula = async (aula) => {
 
 //  Retornar todas as aulas
 const getAulas = async () => {
-    const res = await Aula.findAll();
+    const res = await Aula.findAll({ include: [Monitor, Aluno] });
     return res;
 }
 
