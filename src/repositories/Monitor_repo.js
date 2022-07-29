@@ -32,6 +32,12 @@ const getMonitorByCpf = async (cpf) => {
     return res;
 }
 
+//  Retorna um monitor pelo id
+const getMonitorById = async (id) => {
+    const res = await Monitor.findByPk(id);
+    return res;
+}
+
 //  Atualizar um monitor
 const updateMonitor = async (id, monitor) => {
     const res = await Monitor.update(monitor, {
@@ -59,4 +65,5 @@ module.exports = {
     deleteMonitor,
     getMonitorByEmail,
     getMonitorByCpf,
+    getMonitorById,
 }
