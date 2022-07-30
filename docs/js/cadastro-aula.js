@@ -6,6 +6,4 @@ function cadastrarAula() {
     
     console.log("buscaMateriaAula:", buscaMateriaAula);
     console.log("materiaAula:", materiaAula);    
-
-    
 }
