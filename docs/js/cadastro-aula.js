@@ -2,38 +2,39 @@ const URL = 'https://educonnect-lets-code-837.herokuapp.com/api';
 const contador=0
 
 let aulas = []
+let registroDeAulas = [];
+let posicao = 0
 
 function mostrarAulas(){
-    let registroDeAulas = [];
+
     fetch(`${URL}/aulas/`).then(response => response.json()).then(data=>{
 
+        console.log(`Banco de dados = ${JSON.parse(data.aulas)}`);
         console.log(typeof(String(data.aulas[13].disciplina_id)))
         console.log(typeof(document.getElementById("materiaMonitoria").value))
-
-
 
         for(let i =0; i<data.aulas.length; i++){
             if(String(data.aulas[i].disciplina_id) === document.getElementById("materiaMonitoria").value){
                 console.log("entrou no if", data.aulas[i].disciplina_id)
         aulas = {
-            monitor: sessionStorage.getItem('nome'),
-            dia_da_semana: data.aulas[i].dia_da_semana,
-            horario_inicial: data.aulas[i].hora_inicio,
-            horario_final: data.aulas[i].hora_fim
+          monitor: data.aulas[i].Monitor.nome,
+          dia_da_semana: data.aulas[i].dia_da_semana,
+          horario_inicial: data.aulas[i].hora_inicio,
+          horario_final: data.aulas[i].hora_fim
         }
         registroDeAulas.push(aulas)
     }
 }
 
 console.log("registro de aulas",registroDeAulas)
-        
 
         const disponibilidade = document.getElementById("disponibilidade");
 
         disponibilidade.innerHTML = registroDeAulas.map(function(aula, index){
         return `<tr>
         <td class="input-materia">
-            <input class="input-materia" name="selecao-monitor" type="radio" value="">
+              <label>${index}</label>
+              <input id='index'  class="input-materia" name="selecao" type="radio" value="${index}">
         </td>
         <td>
             <input value="${aula.monitor}" disabled></input>
@@ -43,38 +44,50 @@ console.log("registro de aulas",registroDeAulas)
         </td>
         <td>
         <input value="${aula.horario_inicial}" disabled></input>
-        
+
         </td>
         <td>
         <input value="${aula.horario_final}" disabled></input>
         </td>
     </tr>`
 }).join("");
+  console.log(document.getElementById('selecaoDisciolica').value);
 
-    
-    
-    }) 
+
+    })
 }
-
-
 
 function buscarAula(){
     console.log("teste")
 }
 
-function cadastrarAula() {
+function agendarAula() {
 
-    var select = document.getElementById("materiaMonitoria");
+  var radioButtons = document.getElementsByName("selecao");
 
-    console.log('select', select.value)
-    
-    // console.log("Botão salvar aula");
+  let aula_id = ''
 
+  for (let radiobutton of radioButtons) {
+    if (radiobutton.checked) {
+      console.log(radiobutton.value);
+      aula_id = radiobutton.value
+    }
+  }
 
-    // const materiaAula = document.getElementById("materiaAula").value;
-    
+  fetch(`${URL}/aulas/${aula_id}`, {
 
-    // console.log("materiaAula:", materiaAula);    
+    method: "PATCH",
+
+    body: JSON.stringify({
+        aluno_id: sessionStorage.getItem('aluno_id')
+    }),
+
+    headers: {
+        "Content-type": "application/json; charset=UTF-8"
+    }
+  })
+  .then(response => response.json())
+  .then(json => console.log(json));
+
 
 }
-

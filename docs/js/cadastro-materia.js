@@ -42,7 +42,7 @@ function adicionarDiaHora() {
         <td>${horario.horaInicio}</td>
         <td>${horario.horaFinal}</td>
         <td id='tabela_linha_'><abbr title="Remover"><input class="input-mais-menos" type='image' src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"
-        onClick=\"removerDiaHora('tabela_linha_')\"></input></abbr></td>
+        onclick=\"removerDiaHora('tabela_linha_')\"></td>
       </tr> `;
     }).join("") + disponibilidade
 
@@ -61,7 +61,7 @@ function removerDiaHora(id) {
          <td>${horario.horaInicio}</td>
          <td>${horario.horaFinal}</td>
          <td id='tabela_linha_'><abbr title="Remover"><input class="input-mais-menos" type='image' src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"
-         onClick=\"removerDiaHora('tabela_linha_')\"></input></abbr></td>
+         onclick=\"removerDiaHora('tabela_linha_')\"></td>
        </tr> `;
      }).join("") + disponibilidade
 
@@ -84,7 +84,7 @@ for(let i=0; i<diasMonitoria.length; i++){
     }),headers: {
         "Content-type": "application/json; charset=UTF-8"
     }
-}).then(response => response.json()).then(data => 
+}).then(response => response.json()).then(data =>
     console.log(data))
 
 }
