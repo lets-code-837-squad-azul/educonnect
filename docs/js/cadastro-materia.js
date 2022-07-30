@@ -51,6 +51,7 @@ function adicionarDiaHora() {
 
 function removerDiaHora(id) {
     let deletar = document.getElementById("deletar");
+    console.log(deletar)
 
     diasMonitoria.splice(deletar,1)
     console.log(diasMonitoria,'indice')
@@ -85,7 +86,7 @@ for(let i=0; i<diasMonitoria.length; i++){
         "Content-type": "application/json; charset=UTF-8"
     }
 }).then(response => response.json()).then(data => 
-    console.log(data))
+    location.replace("../pages/tela-monitor-aulas.html"))
 
 }
 
