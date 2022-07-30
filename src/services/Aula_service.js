@@ -1,4 +1,5 @@
 const Aula_repository = require('../repositories/Aula_repo');
+const Aluno_repository = require('../repositories/Alunos_repo');
 
 //  Criar uma nova aula
 const createAula = async (aula) => {
@@ -101,6 +102,73 @@ const getAulaById = async (id) => {
     }
 }
 
+//  Retornar aulas de um aluno
+const getAulasByAluno = async (id) => {
+
+    //  Verificar se o id do aluno foi informado
+    if (!id) {
+        return {
+            statusCode: 400,
+            data: {
+                message: 'O campo id do aluno é obrigatório'
+            }
+        }
+    }
+
+    //  Verificar se o aluno existe
+    try {
+        const aluno = await Aluno_repository.getAlunoById(id);
+        if (!aluno) {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Aluno não encontrado'
+                }
+            }
+        }
+    }
+    catch (erro) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao buscar aluno',
+                erro: erro
+            }
+        }
+    }
+
+    //  Se o aluno existir, retornar as aulas do aluno
+    try {
+        const aulas = await Aula_repository.getAulasByAluno(id);
+        if (aulas.length > 0) {
+            return {
+                statusCode: 200,
+                data: {
+                    message: 'Aulas do aluno retornadas com sucesso',
+                    aulas: aulas
+                }
+            }
+        }
+        else {
+            return {
+                statusCode: 404,
+                data: {
+                    message: 'Nenhuma aula encontrada para o aluno'
+                }
+            }
+        }
+    }
+    catch (erro) {
+        return {
+            statusCode: 500,
+            data: {
+                message: 'Erro ao retornar aulas',
+                erro: erro
+            }
+        }
+    }
+}
+
 //  Atuallizar uma aula
 const updateAula = async (id, aula) => {
     try {
@@ -171,4 +239,5 @@ module.exports = {
     updateAula,
     deleteAula,
     getAulaById,
+    getAulasByAluno,
 }

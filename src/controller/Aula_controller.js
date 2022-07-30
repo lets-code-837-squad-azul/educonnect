@@ -9,8 +9,16 @@ const createAula = async (req, res) => {
 
 //  Retornar todas as aulas
 const getAulas = async (req, res) => {
-    const response = await Aula_service.getAulas();
-    return res.status(response.statusCode).json(response.data);
+
+    //  Verifica se o aluno foi informado
+    if (req.query.aluno) {
+        const response = await Aula_service.getAulasByAluno(req.query.aluno);
+        return res.status(response.statusCode).json(response.data);
+    }
+    else {
+        const response = await Aula_service.getAulas();
+        return res.status(response.statusCode).json(response.data);
+    }
 }
 
 //  Retornar uma aula pelo id

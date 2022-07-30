@@ -20,6 +20,15 @@ const getAulaById = async (id) => {
     return res;
 }
 
+//  Retornar todas as aulas de um aluno
+const getAulasByAluno = async (id) => {
+    const res = await Aula.findAll({
+        where: { aluno_id: id },
+        include: [Monitor, Aluno]
+    });
+    return res;
+}
+
 //  Atuallizar uma aula
 const updateAula = async (id, aula) => {
     const res = await Aula.update(aula, {
@@ -46,4 +55,5 @@ module.exports = {
     updateAula,
     deleteAula,
     getAulaById,
+    getAulasByAluno,
 }
