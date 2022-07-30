@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Matéria</title>
+    <link rel="stylesheet" href="./css/reset-min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="./css/normalize-min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/components/button.css">
+    <script type="module" src="../js/header.js"></script>
+    <script type="module" src="../js/footer.js"></script>
+</head>
+<body>
+
+    <my-header></my-header>
+
+    <main>
+
+        <h1>Olá, monitor(a) Fulano!</h1>
+
+        <h2>Cadastre a matéria que deseja realizar a monitoria</h2>
+
+        <form class="form" action="">
+
+            <select id="materiaMonitoria" name="materiaMonitoria" autofocus>
+                <option value="" disabled selected hidden>Lista de matérias</option>
+                <option value="Língua Portuguesa">Língua Portuguesa</option>
+                <option value="Língua Inglesa">Língua Inglesa</option>
+                <option value="Matemática">Matemática</option>
+                <option value="Biologia">Biologia</option>
+                <option value="Física">Física</option>
+                <option value="Química">Química</option>
+                <option value="Geografia">Geografia</option>
+                <option value="História">História</option>
+                <option value="Filosofia">Filosofia</option>
+                <option value="Sociologia">Sociologia</option>
+                <option value="Artes">Artes</option>
+                <option value="Educção Física">Educação Física</option>
+            </select>
+
+            <label>Outra: <input type="text" id="OutraMateriaMonitoria" name="materiaMonitoria" /></label>
+
+            <!-- <label for="instituicaoEnsino"><p>Instituição de ensino:</p></label>
+            <input name="instituicaoEnsino" type="text">
+            <label for="formacaoAcademica"><p>Formação acadêmica:</p></label>
+            <input name="formacaoAcademica" type="text">
+            <p>
+                <input name="concluido" type="radio" value="concluido">
+                <label for="formacaoAcademica">Concluído</label>
+                <input name="concluido" type="radio" value="concluido">
+                <label for="formacaoAcademica">Cursando</label>
+            </p> -->
+
+            <h3>Defina o dia da semana e horário para realizar sua monitoria:</h3>
+
+            <br> <!-- excluir depois o br -->
+
+            <table id="tabelaDiaMonitoria" border="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Dia da semana</th>
+                        <th>Horário início</th>
+                        <th>Horário fim</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="listaMonitoria">
+                    <tr>
+                        <td>
+                            <select id="diaSemana" name="diaSemana" required>
+                                <option value="" disabled selected hidden>Escolha um dia</option>
+                                <option value="Domingo">Domingo</option>
+                                <option value="Segunda-feira">Segunda-feira</option>
+                                <option value="Terça-feira">Terça-feira</option>
+                                <option value="Quarta-feira">Quarta-feira</option>
+                                <option value="Quinta-feira">Quinta-feira</option>
+                                <option value="Sexta-feira">Sexta-feira</option>
+                                <option value="Sábado">Sábado</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="time" id="horaInicio" name="horaInicio" required>
+                        </td>
+                        <td>
+                            <input type="time" id="horaFim" name="horaFim" required>
+                        </td>
+                        <td>
+                            <abbr title="Remover"><input id="deletar" class="input-mais-menos" type="image" onclick="removerDiaHora()" src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"></abbr>
+                            <!-- <input type="button" value="Remover" onclick="removerDiaHora('tabela_linha_1')"> -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- <input type="button" value="Inserir" onClick="adicionarDiaHora()">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/macos-maximize.png" alt="Adicionar mais um dia e horário"/>
+            </input> -->
+
+            <abbr title="Adicionar mais um dia e horário"><input class="input-mais-menos" type="image" onClick="adicionarDiaHora()" src="https://img.icons8.com/ios-glyphs/30/000000/macos-maximize.png" alt="Adicionar mais um dia e horário"/></abbr>
+
+            <!-- <abbr title="Adicionar mais um dia e horário"><a onclick="adicionarDiaHora()" href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/macos-maximize.png" alt="Adicionar mais um dia e horário"/></a></abbr> -->
+
+            <!-- <abbr title="Remover um dia e horário"><a onclick="removerDiaHora()" href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"/></a></abbr> -->
+
+            <br> <!-- excluir depois o br -->
+
+            <div class="bt-container">
+                <button type="submit" onclick="cadastrarMateria()" class="bt-cadastrar">Cadastrar</button>
+                <button type="reset" class="bt-voltar">Voltar</button>
+            </div>
+
+        </form>
+        <p id="teste"></p>
+    </main>
+
+    <script src="../js/cadastroMateria.js"></script>
+
+</body>
+</html>

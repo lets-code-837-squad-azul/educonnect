@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Monitor</title>
-    <link rel="stylesheet" href="./css/reset-min.css">
+    <link rel="stylesheet" href="../css/reset-min.css">
     <link rel="stylesheet" href="../css/components/button.css">
     <link rel="stylesheet" href="../css/cadastro.css">
     <link rel="stylesheet" href="../css/header.css">
@@ -37,25 +37,25 @@
                 <input class="input-texto" id="nome" type="text" required autofocus>
             </div>
             <div class="centralizado-linha">
-                <label for="email"><p id="email-css">E-mail:</p></label>
+                <label for="email" id="email-css"><p id="email1">E-mail:</p></label>
                 <input class="input-texto" id="email" type="email" required>
             </div>
             <div class="centralizado-linha">
                 <label for="senha">Senha:</label>
                 <input class="input-texto" id="senha" type="password" required>
             </div>
-            
+
             <div class="centralizado-linha">
                 <label for="telefone">Telefone:</label>
-                <input id="input-texto" id="telefone" type="tel" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+                <input class="input-texto" id="telefone" type="tel"  required>
             </div>
             <div class="centralizado-linha">
                 <label for="cpf">CPF:</label>
                 <input class="input-texto" id="cpf" type="tel" pattern="[0-9]{11}" required>
             </div>
             <div class="centralizado-linha">
-                <label for="nascimento"><p id="data-nascimento-css">Data de nascimento:</p></label>
-                <input class="input-texto" id="data-nascimento" type="date">
+                <label for="nascimento" id="data-nascimento-css">Data de nascimento:</label>
+                <input class="input-texto" id="data_de_nascimento" type="date" >
             </div>
             <div class="centralizado-linha">
                 <label for="etnia">Etnia:</label>
@@ -70,8 +70,8 @@
                 </select>
             </div>
             <div class="centralizado-linha">
-                <label for="etnia">Gênero:</label>
-                <select id="etnia" name="etnia">
+                <label for="genero">Gênero:</label>
+                <select id="genero" name="genero">
                     <option value="" disabled selected hidden>Selecione uma opção</option>
                     <option value="Homem cis">Homem cis</option>
                     <option value="Mulher cis">Mulher cis</option>
@@ -82,8 +82,8 @@
                 </select>
             </div>
             <div class="centralizado-linha">
-                <label for="etnia">Escolaridade:</label>
-                <select id="etnia" name="etnia">
+                <label for="escolaridade">Escolaridade:</label>
+                <select id="escolaridade" name="escolaridade">
                     <option value="" disabled selected hidden>Selecione uma opção</option>
                     <option value="Ensino fundamental incompleto">Ensino fundamental incompleto</option>
                     <option value="Ensino fundamental completo">Ensino fundamental completo</option>
@@ -128,62 +128,8 @@
                 </select>
             </div>
             <br>
-            <!-- 
-            <label>Etnia:</label>
-            <ul type="none">
-                <li>
-                <input name="etnia" id="etnia1" type="radio" value="amarela" checked={selected == 'amarela'}>
-                    <label for="amarela">Amarela<br></label>
-                    <input name="etnia" id="etnia2" type="radio"  value="branca" checked={selected == 'branca'}>
-                    <label for="branca">Branca<br></label>
-                    <input name="etnia" id="etnia3" type="radio" value="indigena" checked={selected == 'indigena'}>
-                    <label for="indigena">Indígena<br></label>
-                    <input name="etnia" id="etnia4" type="radio" value="parda" checked={selected == 'parda'}>
-                    <label for="parda">Parda<br></label>
-                    <input name="etnia" id="etnia5" type="radio" value="preta" checked={selected == 'preta'}>
-                    <label for="preta">Preta<br></label>
-                    <input name="etnia" id="etnia6" type="radio" value="nResponder" checked={selected == 'nResponder'}>
-                    <label for="nresponder">Prefiro não responder<br></label>
-                </li>
-            </ul>
-            <label>Gênero:</label>
-            <ul type="none">
-                <li>
-                    <input name="genero" id="genero1" type="radio" value="homemCis" checked={selected == 'homemCis'}>
-                    <label for="">Homem cis<br></label>
-                    <input name="genero" id="genero2" type="radio" value="mulherCis" checked={selected == 'mulherCis'}>
-                    <label for="">Mulher cis<br></label>
-                    <input name="genero" id="genero3" type="radio" value="homemTrans" checked={selected == 'homemTrans'}>
-                    <label for="">Homem trans<br></label>
-                    <input name="genero" id="genero4" type="radio" value="mulherTrans" checked={selected == 'mulherTrans'}>
-                    <label for="">Mulher trans<br></label>
-                    <input name="genero" id="genero5" type="radio" value="nResponder" checked={selected == 'nResponder'}>
-                    <label for="">Prefiro não responder<br></label>
-                    <input name="genero" id="genero6" type="radio" value="outro" checked={selected == 'outro'}>
-                    <label for="">Outro </label>
-                </li>
-            </ul>
-            <label>Escolaridade:</label>
-            <ul type="none">
-                <li>
-                    <input name="escolaridade" id="escolaridade1" type="radio" value="fundamentalIncompleto" checked={selected == 'fundamentalIncompleto'}>
-                    <label for="escolaridade">Ensino fundamental incompleto<br></label>
-                    <input name="escolaridade" id="escolaridade2" type="radio" value="fundamentalCompleto" checked={selected == 'fundamentalCompleto'}>
-                    <label for="escolaridade">Ensino fundamental completo<br></label>
-                    <input name="escolaridade" id="escolaridade3" type="radio" value="medioIncompleto" checked={selected == 'mediaIncompleto'}>
-                    <label for="escolaridade">Ensino médio incompleto<br></label>
-                    <input name="escolaridade" id="escolaridade4" type="radio" value="medioCompleto" checked={selected == 'medioCompleto'}>
-                    <label for="escolaridade">Ensino médio completo<br></label>
-                    <input name="escolaridade" id="escolaridade5" type="radio" value="superiorIncompleto" checked={selected == 'superiorIncompleto'}>
-                    <label for="escolaridade">Ensino superior incompleto<br></label>
-                    <input name="escolaridade" id="escolaridade5" type="radio" value="superiorCompleto" checked={selected == 'superiorCompleto'}>
-                    <label for="escolaridade">Ensino superior completo<br></label>
-                    <input name="escolaridade" id="escolaridade6" type="radio" value="especializacao" checked={selected == 'especilizacao'}>
-                    <label for="escolaridade">Pós-graduação (especialização, mestrado ou doutorado) <br></label>
-                </li>
-            </ul> -->
             <!-- <a href="../pages/tela-monitor-cadastro-materia.html"></a> -->
-            <button onclick="setMonitor()" class="bt-avançar">Salvar</button>
+            <button onclick="cadastrarAluno()" class="bt-avançar">Salvar</button>
             <a href="../pages/login-cadastrar.html"><button type="button" class="bt-voltar">Voltar</button></a>
         </div>
 
@@ -246,7 +192,7 @@
 
      </footer>
 
-     <script src="../js/set-monitor.js"></script>
+     <script src="../js/cadastro-monitor.js"></script>
 
 </body>
 </html>

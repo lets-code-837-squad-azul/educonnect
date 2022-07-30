@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aluno - Cadastro Aula</title>
-    <link rel="stylesheet" href="./css/reset-min.css">
+    <link rel="stylesheet" href="../css/reset-min.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/components/button.css">
@@ -49,10 +49,8 @@
                 <option value="11">Artes</option>
                 <option value="12">Educação Física</option>
             </select>
-            <!-- <label>Filtre por palavra-chave:</label>
-            <input type="search" id="buscaMateriaAula" placeholder="Busca" autofocus>
-            &ensp;
-            <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/search--v2.png"/></a> -->
+            <button class="bt-avançar" type="search" id="buscaMateriaAula" placeholder="Busca" onclick="mostrarAulas()">Buscar</button>
+   
         </div>
 
         <br>
@@ -60,6 +58,7 @@
         <h2>Escolha um dos monitores disponíveis:</h2>
 
         <table border="0">
+            <thead>
             <tr>
                 <th></th>
                 <th>
@@ -75,9 +74,11 @@
                     Horário fim
                 </th>
             </tr>
+        </thead>
+        <tbody id="disponibilidade">
             <tr>
-                <td class="input-materia">
-                    <input class="input-materia" name="selecao-monitor" type="radio" value="">
+                <td class="input-materia" value="teste" id="teste">
+
                 </td>
                 <td>
                     <input name="monitor" id="monitor" type="text" disabled>
@@ -92,10 +93,11 @@
                     <input type="time" id="hora" name="horaFim" disabled>
                 </td>
             </tr>
+        </tbody>
         </table>
 
         <div class="bt-centralizado-linha">
-            <a href="../pages/tela-aluno-aulas.html"><button type="submit" onclick="cadastrarAula()" class="bt-avançar">Salvar aula</button></a>
+           <button type="submit" onclick="cadastrarAula()" class="bt-avançar">Salvar aula</button></a>
 
             <a href="../pages/login-entrar.html"><button type="reset" class="bt-voltar">Voltar</button></a>
         </div>

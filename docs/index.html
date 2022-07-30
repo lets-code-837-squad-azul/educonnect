@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduConnect</title>
+    <link rel="stylesheet" href="./css/reset-min.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/components/button.css">
 </head>
@@ -29,21 +30,21 @@
         <h1 id="login">Login</h1>
         <div>
             <label for="cpf" class="color">CPF:</label>
-            <input type="number" name="cpf" id="cpf">
+            <input type="number" name="cpf" id="CPF">
             <label for="senha" class="color">Senha:</label>
-            <input type="password" name="senha" id="senha">
+            <input type="password" name="senha" id="Senha">
         </div>
         <br>
         <div class="bt-centralizado-linha">
             <label id="mensagem" class="mensagem"></label>
             <button class="bt-avançar" target="_self" onclick="entrar()">Entrar</button>
             <a href="./pages/login-cadastrar.html"><button class="bt-avançar" target="_self" onclick="cadastrar()">Cadastrar</button> </a>
+            <label id="mensagem" ></label>
         </div>
         <br>
         <div class="bt-centralizado-linha">
             <a href="./pages/esqueci-senha.html">Esqueceu a senha?</a>
         </div>
-        <label id="mensagem" ></label>
 
         <h1 id="sobre">Sobre</h1>
         <h2>O EduConnect é uma plataforma de ensino que tem como objetivos:</h2>

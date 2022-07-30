@@ -1,6 +1,5 @@
-const URL = 'https://educonnect-lets-code-837.herokuapp.com/api';
 
-const materiaMonitoria = document.getElementById("materiaMonitoria");
+let conta=0;
 const diasMonitoria = [];
 const disponibilidade = `<tr>
 <td>
@@ -16,9 +15,9 @@ const disponibilidade = `<tr>
     </select>
 </td>
 <td><input type="time" id="horaInicio" name="horaInicio" required></td>
-<td><input type="time" id="horaFim" name="horaFim" required></td>
-`;
-document.querySelector("#nome").innerHTML = sessionStorage.getItem('nome');
+           <td><input type="time" id="horaFim" name="horaFim" required></td>
+<td id='tabela_linha_'><abbr title="Remover"><input class="input-mais-menos" type='image' src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"
+onClick=\"removerDiaHora('tabela_linha_')\"></input></abbr>`;
 
 
 function adicionarDiaHora() {
@@ -41,6 +40,7 @@ function adicionarDiaHora() {
        <td>${horario.diaDaSemana}</td>
         <td>${horario.horaInicio}</td>
         <td>${horario.horaFinal}</td>
+        <td>${indice}</td>
         <td id='tabela_linha_'><abbr title="Remover"><input class="input-mais-menos" type='image' src="https://img.icons8.com/ios-glyphs/30/000000/filled-minus-2-math.png" alt="Remover mais um dia e horário"
         onClick=\"removerDiaHora('tabela_linha_')\"></input></abbr></td>
       </tr> `;
@@ -52,9 +52,12 @@ function adicionarDiaHora() {
 function removerDiaHora(id) {
     let deletar = document.getElementById("deletar");
 
-
     diasMonitoria.splice(deletar,1)
+    console.log(diasMonitoria,'indice')
+    // listaMonitoria = document.getElementById(id);
 
+    // listaMonitoria.parentNode.parentNode.removeChild(listaMonitoria.parentNode);
+    // console.log(listaMonitoria.parentNode)
 
     listaMonitoria.innerHTML = diasMonitoria.map(function(horario, indice) {
         return `<tr>
@@ -70,23 +73,10 @@ function removerDiaHora(id) {
 
 function cadastrarMateria() {
 
- 
+    const materiaMonitoria = document.getElementById("materiaMonitoria").value;
+    const OutraMateriaMonitoria = document.getElementById("OutraMateriaMonitoria").value;
 
-
-for(let i=0; i<diasMonitoria.length; i++){
-    fetch(`${URL}/aulas`,{method:"POST", body:JSON.stringify({
-        disciplina_id: materiaMonitoria.value,
-        monitor_id: sessionStorage.getItem("monitor_id"),
-        status: "true",
-        hora_inicio: diasMonitoria[i].horaInicio,
-        hora_fim: diasMonitoria[i].horaFinal,
-        dia_da_semana: diasMonitoria[i].diaDaSemana
-    }),headers: {
-        "Content-type": "application/json; charset=UTF-8"
-    }
-}).then(response => response.json()).then(data => 
-    location.replace("../pages/tela-monitor-aulas.html"))
-
-}
+    console.log("materiaMonitoria:", materiaMonitoria);
+    console.log("OutraMateriaMonitoria:", OutraMateriaMonitoria);
 
 }
