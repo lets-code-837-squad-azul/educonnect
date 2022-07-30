@@ -51,10 +51,10 @@ function adicionarDiaHora() {
 
 function removerDiaHora(id) {
     let deletar = document.getElementById("deletar");
-    console.log(deletar)
+
 
     diasMonitoria.splice(deletar,1)
-    console.log(diasMonitoria,'indice')
+
 
     listaMonitoria.innerHTML = diasMonitoria.map(function(horario, indice) {
         return `<tr>
@@ -70,8 +70,7 @@ function removerDiaHora(id) {
 
 function cadastrarMateria() {
 
-    console.log( `materiaMonitoria: ${materiaMonitoria.value}`);
-    console.log("diasMonitoria ", sessionStorage.getItem("monitor_id"));
+ 
 
 
 for(let i=0; i<diasMonitoria.length; i++){
@@ -92,23 +91,3 @@ for(let i=0; i<diasMonitoria.length; i++){
 
 }
 
-/* const ULR = ""
-
-
-fetch(ULR, {
-	method: "POST",
-
-	body: JSON.stringify({
-    disciplina_id: 'materiaMonitoria',
-		dia_semana: 'dia_semana',
-    hora_inicio: 'hora_inicio',
-    hora_fim: 'hora_fim'
-	}),
-
-	headers: {
-		"Content-type": "application/json; charset=UTF-8"
-	}
-})
-.then(response => response.json())
-.then(json => console.log(json));
- */
