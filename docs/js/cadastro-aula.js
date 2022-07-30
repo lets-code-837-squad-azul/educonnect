@@ -9,7 +9,9 @@ function mostrarAulas(){
 
     fetch(`${URL}/aulas/`).then(response => response.json()).then(data=>{
 
-        console.log(`Banco de dados = ${JSON.parse(data.aulas)}`);
+        const BD = data.aulas
+        console.log(BD);
+
         console.log(typeof(String(data.aulas[13].disciplina_id)))
         console.log(typeof(document.getElementById("materiaMonitoria").value))
 
@@ -17,6 +19,7 @@ function mostrarAulas(){
             if(String(data.aulas[i].disciplina_id) === document.getElementById("materiaMonitoria").value){
                 console.log("entrou no if", data.aulas[i].disciplina_id)
         aulas = {
+          id:data.aulas[i].id,
           monitor: data.aulas[i].Monitor.nome,
           dia_da_semana: data.aulas[i].dia_da_semana,
           horario_inicial: data.aulas[i].hora_inicio,
@@ -57,10 +60,6 @@ console.log("registro de aulas",registroDeAulas)
     })
 }
 
-function buscarAula(){
-    console.log("teste")
-}
-
 function agendarAula() {
 
   var radioButtons = document.getElementsByName("selecao");
@@ -74,7 +73,9 @@ function agendarAula() {
     }
   }
 
-  fetch(`${URL}/aulas/${aula_id}`, {
+  console.log(registroDeAulas[aula_id].id);
+
+  fetch(`${URL}/aulas/${registroDeAulas[aula_id].id}`, {
 
     method: "PATCH",
 
@@ -89,5 +90,6 @@ function agendarAula() {
   .then(response => response.json())
   .then(json => console.log(json));
 
+  location.replace("../pages/tela-aluno-aulas.html")
 
 }
