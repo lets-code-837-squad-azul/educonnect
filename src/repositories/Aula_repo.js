@@ -1,6 +1,7 @@
 const Aula = require('../models/Aula');
 const Monitor = require('../models/Monitor');
 const Aluno = require('../models/Aluno');
+const Disciplina = require('../models/Disciplina');
 
 //  Criar uma nova aula
 const createAula = async (aula) => {
@@ -24,7 +25,7 @@ const getAulaById = async (id) => {
 const getAulasByAluno = async (id) => {
     const res = await Aula.findAll({
         where: { aluno_id: id },
-        include: [Monitor, Aluno]
+        include: [Monitor, Aluno, Disciplina]
     });
     return res;
 }
