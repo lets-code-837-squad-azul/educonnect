@@ -90,13 +90,6 @@ textarea {
   height: 100px;
 }
 
-table {
-  text-align: center;
-  font-family: var(--fonte-padrao);
-  font-size: 1em;
-  color: var(--cor6);
-}
-
 .input-materia {
   width: 5em;
   margin: 0px;
@@ -129,4 +122,11 @@ table {
 .link-denuncia {
   text-decoration: none;
   color: var(--cor1);
+}
+
+table {
+  text-align: center;
+  font-family: var(--fonte-padrao);
+  font-size: 1em;
+  color: var(--cor6);
 }

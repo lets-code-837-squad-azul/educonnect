@@ -1,4 +1,6 @@
-const materiaMonitoria = document.getElementById("materiaMonitoria").value;
+const URL = 'https://educonnect-lets-code-837.herokuapp.com/api';
+
+const materiaMonitoria = document.getElementById("materiaMonitoria");
 const diasMonitoria = [];
 const disponibilidade = `<tr>
 <td>
@@ -16,6 +18,7 @@ const disponibilidade = `<tr>
 <td><input type="time" id="horaInicio" name="horaInicio" required></td>
 <td><input type="time" id="horaFim" name="horaFim" required></td>
 `;
+document.querySelector("#nome").innerHTML = sessionStorage.getItem('nome');
 
 
 function adicionarDiaHora() {
@@ -49,8 +52,9 @@ function adicionarDiaHora() {
 function removerDiaHora(id) {
     let deletar = document.getElementById("deletar");
 
+
     diasMonitoria.splice(deletar,1)
-    console.log(diasMonitoria,'indice')
+
 
     listaMonitoria.innerHTML = diasMonitoria.map(function(horario, indice) {
         return `<tr>
@@ -66,28 +70,23 @@ function removerDiaHora(id) {
 
 function cadastrarMateria() {
 
-    console.log( `materiaMonitoria: ${materiaMonitoria}`);
-    console.log("diasMonitoria ", diasMonitoria);
+ 
+
+
+for(let i=0; i<diasMonitoria.length; i++){
+    fetch(`${URL}/aulas`,{method:"POST", body:JSON.stringify({
+        disciplina_id: materiaMonitoria.value,
+        monitor_id: sessionStorage.getItem("monitor_id"),
+        status: "true",
+        hora_inicio: diasMonitoria[i].horaInicio,
+        hora_fim: diasMonitoria[i].horaFinal,
+        dia_da_semana: diasMonitoria[i].diaDaSemana
+    }),headers: {
+        "Content-type": "application/json; charset=UTF-8"
+    }
+}).then(response => response.json()).then(data => 
+    location.replace("../pages/tela-monitor-aulas.html"))
 
 }
 
-/* const ULR = ""
-
-
-fetch(ULR, {
-	method: "POST",
-
-	body: JSON.stringify({
-    disciplina_id: 'materiaMonitoria',
-		dia_semana: 'dia_semana',
-    hora_inicio: 'hora_inicio',
-    hora_fim: 'hora_fim'
-	}),
-
-	headers: {
-		"Content-type": "application/json; charset=UTF-8"
-	}
-})
-.then(response => response.json())
-.then(json => console.log(json));
- */
+}
